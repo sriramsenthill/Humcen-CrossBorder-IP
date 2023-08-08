@@ -23,26 +23,28 @@ const ServicesArea = () => {
           </div>
         </div>
         <div className="row">
-          {services_items.map((service, i) => {
-            const { delay, duration, id, img, title, border_effect } = service;
-            return <div key={id} className="col-xl-3 col-lg-4 col-md-6 wow tpfadeUp" data-wow-duration={duration} data-wow-delay={delay}>
+          {services_data.map((service) => {
+          const { id, duration, delay, img, title, border_effect, text_1 } = service;
+          return (
+            <div key={id} className="col-xl-3 col-lg-4 col-md-6 wow tpfadeUp" data-wow-duration={duration} data-wow-delay={delay}>
               <div className={`tp-sv-border-effect ${border_effect}`}>
-                <div className={`tp-service-item-four sv-color-${i + 1} mb-30`}>
+                <div className={`tp-service-item-four sv-color-${id} mb-30`}>
                   <div className="tp-service-item-four__img  mb-40">
-                    <img src={img} alt="" />
+                    <img src={img} alt={title} />
                   </div>
                   <div className="tp-service-item-four__title">
                     <h3 className="tp-sv-sm-title">
-                      <Link href={`/service-details/${id}`}>
-                        <a>{title}</a>
-                      </Link>
+                      <a>{title}</a>
                     </h3>
+                  </div>
+                  <div className="tp-service-item-four__text">
+                    <p>{text_1}</p>
                   </div>
                 </div>
               </div>
             </div>
-          })}
-
+          );
+        })}
           <div className="col-xl-3 col-lg-4 col-md-6  wow tpfadeUp" data-wow-duration="1.1s" data-wow-delay="1.3s">
             <div className="sv-color-eight  mb-30">
               <div className="sv-color-eight__title text-center">

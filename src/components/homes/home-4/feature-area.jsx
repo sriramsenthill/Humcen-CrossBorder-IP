@@ -6,8 +6,7 @@ import { FeatureOne, FeatureThree, FeatureTwo } from '../../../svg';
 const feature_contents = {
   feature_img:'/assets/img/feature/fea-1.png',
   subtitle:'Why Choose us',
-  title:'Specialist in aviding clients of financial',
-  highlight_text:'challenges',
+  title:'Global IP Empowerment Platform: Protect, Manage and Monetize!',
   feature_lists:[
     {
       id:1,
