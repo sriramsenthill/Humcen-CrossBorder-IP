@@ -60,7 +60,7 @@ const HeroArea = () => {
               </div>
             </div>
             <div className="col-xl-6 col-lg-6 wow fadeInRight" data-wow-duration=".7s" data-wow-delay=".9s" style={{ marginTop: "-20px" }}>
-  <div className="tp-hero-right-img-four pt-90">
+  <div className="tp-hero-right-img-four pt-90 col-12 d-none d-lg-block">
     <img src={hero_img} alt="" style={{ maxWidth: "170%", height: "auto", marginTop: "-95px", marginLeft: "-300px" }} />
   </div>
 </div>
