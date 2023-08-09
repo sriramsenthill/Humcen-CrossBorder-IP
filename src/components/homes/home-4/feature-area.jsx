@@ -1,10 +1,10 @@
 import React from 'react';
 import { FeatureOne, FeatureThree, FeatureTwo } from '../../../svg';
 
-  const image3 = "/assets/img/feature/fea-3.png";
+  const image3 = "/assets/img/feature/tab_2.png";
 
 const feature_contents = {
-  feature_img:'/assets/img/feature/fea-1.png',
+  feature_img:'/assets/img/feature/tab_1.png',
   subtitle:'Why Choose us',
   title:'Global IP Empowerment Platform: Protect, Manage and Monetize!',
   feature_lists:[
@@ -61,8 +61,8 @@ const FeatureArea = () => {
       <div className="container">
         <div className="row">
         <div className="col-xl-6 col-lg-6 wow tpfadeLeft" data-wow-duration=".5s" data-wow-delay=".5s" style={{ paddingRight: "20px" }}>
-  <div className="tp-fea-img col-12 d-none d-lg-block" style={{ marginLeft: "-418px" , width: "170%", height: "auto", marginTop:"-100px"}}>
-    <img src={feature_img} alt=""  />
+  <div className="tp-fea-img col-12 d-none d-lg-block" style={{ marginLeft: "-308px" , width: "138%", height: "auto", marginTop:"-10px"}}>
+    <img src={feature_img} alt="" className='ml-110 mt-140' />
   </div>
 </div>
 
@@ -117,8 +117,8 @@ const FeatureArea = () => {
           </div>
 
           <div className="col-xl-6 col-lg-6 ml-220 wow tpfadeLeft" data-wow-duration=".5s" data-wow-delay=".5s" style={{ paddingRight: "20px" }}>
-  <div className="tp-fea-img col-12 d-none d-lg-block" style={{  width: "130%", height: "auto", marginTop:"-100px"}}>
-    <img src={image3} alt="" className="ml-10 mt-85" />
+      <div className="tp-fea-img col-12 d-none d-lg-block" style={{  width: "120%", height: "auto", marginTop:"-10px"}}>
+    <img src={image3} alt="" className='mr-120 mt-90'/>
   </div>
 </div>
 

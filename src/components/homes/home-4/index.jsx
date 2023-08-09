@@ -9,6 +9,7 @@ import NewsLetter from './news-letter';
 import ProjectArea from './project-area';
 import ServicesArea from './services-area';
 import TestimonialArea from './testimonial-area';
+import WhatWeDo from './what-we-do';
 
 const HomeFour = () => {
   useEffect(() => {
@@ -21,6 +22,7 @@ const HomeFour = () => {
     <Wrapper>
       <HeaderFour />
       <HeroArea/>
+      <WhatWeDo/>
       <BrandArea/>
       <ServicesArea/>
       <FeatureArea/>

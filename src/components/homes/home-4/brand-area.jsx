@@ -20,6 +20,6 @@ const BrandArea = () => {
       </div>
     </div>
   );
-};
+}; 
 
 export default BrandArea;
