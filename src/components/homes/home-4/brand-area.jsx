@@ -8,7 +8,7 @@ const BrandArea = () => {
         <div className="row">
           <div className="col-12">
             <div className="tp-brand-title-four text-center pb-60">
-              <h4 className="tp-brand-title">Over <b>35k+</b> Software business growing with collax</h4>
+              <h4 className="tp-brand-title">Our Clients</h4>
             </div>
           </div>
         </div>

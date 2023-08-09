@@ -27,11 +27,8 @@ const HomeFour = () => {
       <HelpServices/>
       <ServicesArea/>
       <FeatureArea/>
-      <ProjectArea/>
-      <TestimonialArea/>
       <BrandArea/>
       <NewsLetter/>
-      <BlogArea/>
       <FooterThree home_four={true} />
     </Wrapper>
   );

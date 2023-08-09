@@ -8,12 +8,13 @@ const news_letter_contents = {
   img: '/assets/img/news/news-3.png',
 }
 
+
 const { bg_img, btn_text, img, subtitle, title } = news_letter_contents;
 
 const NewsLetter = () => {
   return (
     <div className="tp-news-letter-area tp-news-letter-bg pt-130 pb-130" 
-    style={{backgroundImage:`url(${bg_img})`}} >
+    style={{ background: "linear-gradient(to right, #02E1B9, #00ACF6)",}} >
       <div className="container">
         <div className="row align-items-center wow tpfadeUp" data-wow-duration=".3s" data-wow-delay=".5s">
           <div className="col-xl-7 col-lg-7 col-md-12 ">
@@ -24,8 +25,8 @@ const NewsLetter = () => {
               </div>
               <div className="tp-news-button p-relative">
                 <form onSubmit={e => e.preventDefault()}>
-                  <input type="text" placeholder="Enter your mail" />
-                  <button className="tp-submit-button tp-btn-yellow" type="submit">{btn_text} <i
+                <input style={{backgroundColor:'#ffffff',color:'black'}} type="text" placeholder="Enter your mail"/>
+                  <button className="tp-submit-button tp-btn-yellow" type="submit" style={{backgroundColor:'#00002B',color:'#ffffff'}}>{btn_text} <i
                     className="fal fa-long-arrow-right"></i></button>
                 </form>
               </div>
@@ -38,6 +39,7 @@ const NewsLetter = () => {
           </div>
         </div>
       </div>
+ 
     </div>
   );
 };

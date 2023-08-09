@@ -22,7 +22,7 @@ const ServicesArea = () => {
           <div className="col-xl-7 col-lg-10">
             <div className="tp-service-section-box text-center pb-60">
               <h5 className="tp-subtitle pb-10 mt-50">Our Services</h5>
-              <h2 className="tp-title-sm">Streamlining Your Cross-Border IP Journey with us!</h2>
+              <h2 className="tp-title-sm" style={{fontSize:'48px'}}>Streamlining Your Cross-Border IP<br/>Journey with us!</h2>
             </div>
           </div>
         </div>
@@ -54,7 +54,7 @@ const ServicesArea = () => {
               <div className="sv-color-eight mb-30" style={{ height: '30vw' }}>
                 <div className="sv-color-eight__title text-center d-flex flex-column align-items-center justify-content-center h-100">
                   <h3 className="tp-sv-sm-title">
-                    <a onClick={toggleMoreServices}>
+                    <a onClick={toggleMoreServices} style={{cursor:'pointer'}}>
                       <i className="fal fa-long-arrow-down"></i>{" "}
                     </a>
                   </h3>

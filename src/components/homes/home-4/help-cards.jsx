@@ -53,14 +53,14 @@ const HelpServices= () => {
           <div className="container">
             <div className="row">
             <div className="tp-service-section-box text-center pb-60"> 
-              <h2 className="tp-title-sm">Our platform solves major stakeholders challenges in <br/>
-              Cross Border IP Industry</h2>
+              <h2>Our platform solves major stakeholders challenges in <br/>
+              <span className='tp-title-sm'style={{fontSize:'48px'}}>Cross Border IP Industry</span></h2>
             </div>
             <div className='d-flex m-0' style={{width:'100%'}}>
               <ChoseItem duration='.3s' delay='.5s' icon='flaticon-group' title={<>Innovators</>}
-                text={'24+ Team Member'} listItems={innovatorsList} image={'/assets/img/service/service-3.png'}/>
-              <ChoseItem duration='.5s' delay='.7s' item_num={'tpchosebox-three'} color="fea-color-5" icon='fas fa-star' title={<>Businesses</>} text={'100% Client Satisfied'} listItems={businessList} image={'/assets/img/service/service-7.png'}/>
-              <ChoseItem duration='.7s' delay='.9s' item_num={'tpchosebox-two'} color="fea-color-4" icon='flaticon-web' title={<>IP Professionals</>} text={'65.04 k Reach'} listItems={ipList} image={'/assets/img/service/service-6.png'}/>
+                text={'24+ Team Member'} listItems={innovatorsList} image={'/assets/img/about/project-management_1087840.png'}/>
+              <ChoseItem duration='.5s' delay='.7s' item_num={'tpchosebox-three'} color="fea-color-5" icon='fas fa-star' title={<>Businesses</>} text={'100% Client Satisfied'} listItems={businessList} image={'/assets/img/about/business_3281412.png'}/>
+              <ChoseItem duration='.7s' delay='.9s' item_num={'tpchosebox-two'} color="fea-color-4" icon='flaticon-web' title={<>IP Professionals</>} text={'65.04 k Reach'} listItems={ipList} image={'/assets/img/about/leadership_1462437.png'}/>
           </div>
           </div>
         </div>
@@ -79,7 +79,7 @@ const ChoseItem = ({ duration, delay, item_num,image,listItems, title, text, col
         <div className="tp-chose-item mb-30 d-flex justify-content-center" style={{width:'120%'}}>
           <div className={`tpchosebox ${item_num && item_num}`} style={{height:'30vw'}}>
             <div className={`tpchosebox__icon ${color && color} mb-30`} style={{textAlign:'center'}}>
-             <img src={image} alt=""/>
+             <img src={image} alt="" style={{width:'88px'}}/>
             </div>
             <div className="tpchosebox__content">
               <h4 style={{textAlign:'center'}}>
