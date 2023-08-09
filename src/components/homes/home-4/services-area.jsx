@@ -16,12 +16,12 @@ const ServicesArea = () => {
   };
 
   return (
-    <div className="tp-service-area pb-90 grey-bg">
+    <div className="tp-service-area pb-90 grey-bg mt-80">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-xl-7 col-lg-10">
             <div className="tp-service-section-box text-center pb-60">
-              <h5 className="tp-subtitle pb-10">Our Services</h5>
+              <h5 className="tp-subtitle pb-10 mt-50">Our Services</h5>
               <h2 className="tp-title-sm">Streamlining Your Cross-Border IP Journey with us!</h2>
             </div>
           </div>
@@ -49,17 +49,16 @@ const ServicesArea = () => {
               </div>
             );
           })}
-          <div className={`col-xl-3 col-lg-4 col-md-6 wow tpfadeUp ${showMoreServices ? 'd-none' : ''}`} data-wow-duration="1.1s" data-wow-delay="1.3s">
-            <div className="tp-sv-border-effect">
-              <div className="sv-color-eight mb-30">
-                <div className="sv-color-eight__title text-center">
+          <div className={`col-xl-3 col-lg-4 col-md-6 wow tpfadeUp ${showMoreServices ? 'd-none' : ''}`}   data-wow-duration="1.1s" data-wow-delay="1.3s">
+            
+              <div className="sv-color-eight mb-30" style={{ height: '30vw' }}>
+                <div className="sv-color-eight__title text-center d-flex flex-column align-items-center justify-content-center h-100">
                   <h3 className="tp-sv-sm-title">
                     <a onClick={toggleMoreServices}>
                       <i className="fal fa-long-arrow-down"></i>{" "}
-                      {showMoreServices ? "Show Less Services" : "More Services"}
                     </a>
                   </h3>
-                </div>
+                 <p className='tp-sv-sm-title'>{showMoreServices ? "Show Less Services" : "More Services"}</p>
               </div>
             </div>
           </div>
