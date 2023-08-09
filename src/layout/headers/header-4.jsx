@@ -37,7 +37,7 @@ const HeaderFour = () => {
                   </div>
                   <div className="tp-header-yellow-button tp-yellow-space">
                     <Link href="/contact">
-                      <a className="tp-btn-black">Let’s Talk 👋</a>
+                      <a className="tp-btn-black" style={{ backgroundColor: "#00002B" }}>Platform</a>
                     </Link>
                   </div>
                 </div>

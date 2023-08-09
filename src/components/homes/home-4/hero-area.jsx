@@ -27,8 +27,10 @@ const HeroArea = () => {
   return (
     <React.Fragment>
       <div className="tp-hero-area-two  pt-130 p-relative fix">
-        <div className="tp-hero-yellow-shape d-none d-lg-block"></div>
-        {shapes.map((s, i) => <div key={i} className={`ce-hero-shape${s.num ? s.num : ''} d-none d-lg-block`}>
+      <div className="tp-hero-yellow-shape d-none d-lg-block" style={{
+  background: "linear-gradient(to right, #02E1B9, #00ACF6)",
+}}></div>
+          {shapes.map((s, i) => <div key={i} className={`ce-hero-shape${s.num ? s.num : ''} d-none d-lg-block`}>
           <img src={`/assets/img/hero/${s.img}.png`} alt="" />
         </div>)}
         <div className="container">
@@ -40,9 +42,10 @@ const HeroArea = () => {
                 </h3>
                 <p className="wow tpfadeUp" data-wow-duration=".5s" data-wow-delay=".7s">{text}</p>
                 <div className="tp-hero-three-button-box d-flex align-items-center wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".9s">
-                  <Link href="/about">
-                    <a className="tp-btn mr-55">{btn_text}</a>
-                  </Link>
+                <Link href="/about">
+  <a className="tp-btn mr-55" style={{ backgroundColor: "#00002B" }}>{btn_text}</a>
+</Link>
+
                   <div className="tp-hero-paly-button-four">
                     <button onClick={() => setIsVideoOpen(true)} className="popup-video">
                       <i className="far fa-play"></i> <span>{video_title}</span></button>
