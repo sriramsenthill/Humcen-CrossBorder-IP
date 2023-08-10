@@ -16,13 +16,8 @@ const About = () => {
   }, []);
   return (
     <Wrapper>
-      <HeaderSix />
-      <Breadcrumb title={'About Collax'} />
-      <AboutArea/>
-      <ServicesArea/>
-      <FeatureArea/>
-      <TeamArea/>
-      <CtaTwo/>
+     <HeaderSix />
+      <Breadcrumb/>
       <FooterThree />
     </Wrapper>
   );
