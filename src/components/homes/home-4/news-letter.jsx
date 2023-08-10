@@ -11,8 +11,8 @@ const { bg_img, btn_text, img, subtitle, title } = news_letter_contents;
 
 const NewsLetter = () => {
   return (
-    <div className="tp-news-letter-area tp-news-letter-bg pt-130 pb-130 mb-55 mr-25 ml-25" 
-    style={{ backgroundImage:`url('https://teamup.money/wp-content/uploads/2022/08/team-cta.jpg')`,borderRadius:'28px'}} >
+    <div className="tp-news-letter-area tp-news-letter-bg pt-130 pb-130 mb-55 mr-65 ml-130 mt-55" 
+    style={{ backgroundImage:`url('https://teamup.money/wp-content/uploads/2022/08/team-cta.jpg')`,borderRadius:'28px',width:'1300px'}} >
       <div className="container">
         <div className="row align-items-center wow tpfadeUp" data-wow-duration=".3s" data-wow-delay=".5s">
           <div className="col-12">
@@ -20,7 +20,7 @@ const NewsLetter = () => {
               <div className="tp-news-letter-section-box">
               <h2 className="pb-55" style={{ textAlign: 'center',color:'#ffffff' }}>
             <span style={{fontSize:'65px',fontWeight:'600',    fontFamily: "Poppins,sans-serif",marginBottom:'0'}}>Ready to</span><br />
-           <span className='tp-title-sm' style={{color:'#ffffff',fontSize:'75px',fontWeight:'600', fontFamily: "Poppins,sans-serif",marginBottom:'0'}}>Elevate Your <span style={{fontStyle:'italic'}}>IP Strategy?</span></span> <br />
+           <span className='tp-title-sm' style={{color:'#ffffff',fontSize:'70px',fontWeight:'600', fontFamily: "Poppins,sans-serif",marginBottom:'0'}}>Elevate Your <span style={{fontStyle:'italic'}}>IP Strategy?</span></span> <br />
           <p style={{color:'#f1f1f1',marginTop:'30px',fontSize:'32px'}}>
                If you're ready to simplify global IP protection, <br/> management, and monetization, connect with our experts for a <br/> personalized consultation.
           </p>

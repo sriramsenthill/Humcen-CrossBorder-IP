@@ -7,6 +7,7 @@ import AboutArea from './about-area';
 import FeatureArea from './feature-area';
 import ServicesArea from './services-area';
 import TeamArea from './team-area';
+import Stories from '../common/stories/stories';
 
 const About = () => {
   useEffect(() => {
@@ -18,6 +19,7 @@ const About = () => {
     <Wrapper>
      <HeaderSix />
       <Breadcrumb/>
+      <Stories/>
       <FooterThree />
     </Wrapper>
   );

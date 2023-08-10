@@ -9,6 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
+    "@mui/material": "^5.14.4",
     "@popperjs/core": "^2.11.6",
     "@reduxjs/toolkit": "^1.8.5",
     "bootstrap": "^5.2.1",
@@ -16,6 +22,7 @@
     "formik": "^2.2.9",
     "next": "12.3.0",
     "react": "18.2.0",
+    "react-chrono": "^2.2.4",
     "react-dom": "18.2.0",
     "react-image-lightbox": "^5.1.4",
     "react-modal-video": "^1.2.10",
@@ -24,6 +31,7 @@
     "react-redux": "^8.0.2",
     "react-toastify": "^9.0.8",
     "react-tooltip": "^4.2.21",
+    "react-vertical-timeline-component": "^3.6.0",
     "sass": "^1.54.9",
     "swiper": "^8.3.2",
     "wowjs": "^1.1.3",

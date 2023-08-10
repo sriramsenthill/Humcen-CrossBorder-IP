@@ -1,6 +1,8 @@
 import React from 'react';
-import { FeatureOne, FeatureThree, FeatureTwo } from '../../../svg';
-
+import { FeatureOne, FeatureThree, FeatureTwo, } from '../../../svg';
+import FeatureOnes from '../../../svg/feature-one';
+import FeatureTwos from '../../../svg/feature-two';
+import FeatureThrees from '../../../svg/feature-three';
   const image3 = "/assets/img/feature/tab_2.png";
 
 const feature_contents = {
@@ -32,19 +34,19 @@ const feature_contents = {
 const feature_lists_2=[
   {
     id:1,
-    icon:<FeatureOne/>,
+    icon:<FeatureOnes/>,
     title:'NFT IP Marketplace',
     subtitle:<>Empower your IP with NFT tech for global monetization, unlocking new avenues for IP value and reach.</>,
   },
   {
     id:2,
-    icon:<FeatureTwo/>,
+    icon:<FeatureTwos/>,
     title:'Blockchain Security',
     subtitle:<>Ensure trust and transparency in cross-border IP transactions, leveraging the power of blockchain technology.</>,
   },
   {
     id:3,
-    icon:<FeatureThree/>,
+    icon:<FeatureThrees/>,
     title:'Bulk Monetization Made Easy',
     subtitle:<>Monetize large IP volumes in one shot and tap into lucrative global markets with seamless ease.</>,
   },
@@ -70,7 +72,7 @@ const FeatureArea = () => {
             <div className="tp-fea-right-side">
               <div className="tp-fea-section-box">
                 <h5 className="tp-subtitle pb-10">{subtitle}</h5>
-                <h2 className="tp-title-sm pb-40">{title}
+                <h2 className="tp-title-sm pb-40" style={{fontSize:'42px'}}>{title}
                   <span className="tp-section-highlight">
                     {highlight_text}
                     <svg width="240" height="11" viewBox="0 0 240 11" fill="none"

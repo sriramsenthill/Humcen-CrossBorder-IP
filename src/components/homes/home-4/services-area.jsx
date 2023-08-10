@@ -32,7 +32,7 @@ const ServicesArea = () => {
             return (
               <div key={id} className="col-xl-3 col-lg-4 col-md-6 wow tpfadeUp" data-wow-duration={duration} data-wow-delay={delay}>
                 <div className={`tp-sv-border-effect ${border_effect}`}>
-                  <div className={`tp-service-item-four sv-color-${id} mb-30`} style={{ height: '30vw' }}>
+                  <div className={`tp-service-item-four sv-color-${id} mb-30`} style={{ height: '31vw' }}>
                     <div className="tp-service-item-four__img mb-40">
                       <img src={img} alt={title} />
                     </div>
@@ -41,7 +41,7 @@ const ServicesArea = () => {
                         <a>{title}</a>
                       </h3>
                     </div>
-                    <div className="tp-service-item-four__text">
+                    <div className="tp-service-item-four__text text-justify">
                       <p>{text_1}</p>
                     </div>
                   </div>
