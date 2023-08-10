@@ -2,8 +2,6 @@ import React from 'react';
 
 const news_letter_contents = {
   bg_img: '/assets/img/news/news-bg.jpg',
-  subtitle: 'Get every update',
-  title: 'Subscribe newslater get latest updates and deals',
   btn_text: 'Subscribe',
   img: '/assets/img/news/news-3.png',
 }
@@ -13,30 +11,28 @@ const { bg_img, btn_text, img, subtitle, title } = news_letter_contents;
 
 const NewsLetter = () => {
   return (
-    <div className="tp-news-letter-area tp-news-letter-bg pt-130 pb-130" 
-    style={{ background: "linear-gradient(to right, #02E1B9, #00ACF6)",}} >
+    <div className="tp-news-letter-area tp-news-letter-bg pt-130 pb-130 mb-55 mr-25 ml-25" 
+    style={{ backgroundImage:`url('https://teamup.money/wp-content/uploads/2022/08/team-cta.jpg')`,borderRadius:'28px'}} >
       <div className="container">
         <div className="row align-items-center wow tpfadeUp" data-wow-duration=".3s" data-wow-delay=".5s">
-          <div className="col-xl-7 col-lg-7 col-md-12 ">
-            <div className="tp-news-sub-wrapper pr-50">
+          <div className="col-12">
+            <div className="tp-news-sub-wrapper"style={{ display: 'flex', flexDirection:'column', justifyContent: 'center', alignItems: 'center' }}>
               <div className="tp-news-letter-section-box">
-                <h5 className="tp-subtitle subtitle-secondary-color">{subtitle}</h5>
-                <h2 className="tp-title-sm tp-title-sm tp-white-text pb-25">{title}</h2>
+              <h2 className="pb-55" style={{ textAlign: 'center',color:'#ffffff' }}>
+            <span style={{fontSize:'65px',fontWeight:'600',    fontFamily: "Poppins,sans-serif",marginBottom:'0'}}>Ready to</span><br />
+           <span className='tp-title-sm' style={{color:'#ffffff',fontSize:'75px',fontWeight:'600', fontFamily: "Poppins,sans-serif",marginBottom:'0'}}>Elevate Your <span style={{fontStyle:'italic'}}>IP Strategy?</span></span> <br />
+          <p style={{color:'#f1f1f1',marginTop:'30px',fontSize:'32px'}}>
+               If you're ready to simplify global IP protection, <br/> management, and monetization, connect with our experts for a <br/> personalized consultation.
+          </p>
+       </h2>
               </div>
-              <div className="tp-news-button p-relative">
-                <form onSubmit={e => e.preventDefault()}>
-                <input style={{backgroundColor:'#ffffff',color:'black'}} type="text" placeholder="Enter your mail"/>
-                  <button className="tp-submit-button tp-btn-yellow" type="submit" style={{backgroundColor:'#00002B',color:'#ffffff'}}>{btn_text} <i
-                    className="fal fa-long-arrow-right"></i></button>
-                </form>
+              <div className="tp-news-button p-relative ml-190">
+               
+                  <button className="tp-submit-button tp-btn-yellow" type="submit" style={{backgroundColor:'#00002B',color:'#ffffff',width:'210px',margin: '0 auto'}}>Sign Up Today</button>
               </div>
             </div>
           </div>
-          <div className="col-xl-5 col-lg-5 col-md-12">
-            <div className="tp-news-letter-img text-md-start text-lg-end pr-45">
-              <img src={img} alt="" />
-            </div>
-          </div>
+
         </div>
       </div>
  

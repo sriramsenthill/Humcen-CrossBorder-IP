@@ -3,7 +3,7 @@ const menu_data = [
     id:1,
     mega_menu:false,
     has_dropdown:true,
-    title:'Home',
+    title:'About Us',
     link:'/',
     sub_menus:[
       {link:'/',title:'Creative Agency'},
@@ -18,7 +18,7 @@ const menu_data = [
     id:2,
     mega_menu:false,
     has_dropdown:true,
-    title:'Portfolio',
+    title:'User',
     link:'/portfolio',
     sub_menus:[
       {link:'/portfolio',title:'Portfolio Full Width'},
@@ -32,7 +32,7 @@ const menu_data = [
     id:3,
     mega_menu:true,
     has_dropdown:true,
-    title:'Pages',
+    title:'IP Professionals',
     link:'#',
     sub_menus:[
       {link:'/about',title:'About'},
@@ -55,17 +55,6 @@ const menu_data = [
       {link:'/wishlist',title:'Wishlist'},
       {link:'/checkout',title:'Checkout'},
       {link:'/404',title:'404'},
-    ]
-  },
-  {
-    id:4,
-    mega_menu:false,
-    has_dropdown:true,
-    title:'Blog',
-    link:'/blog',
-    sub_menus:[
-      {link:'/blog',title:'Blog Sidebar'},
-      {link:'/blog-details',title:'Blog Details'},
     ]
   },
   {

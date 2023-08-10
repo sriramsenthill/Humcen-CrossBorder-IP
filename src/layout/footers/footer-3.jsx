@@ -9,13 +9,13 @@ const footer_contents = {
   footer_widgets: [
     {
       w_class: 'd-flex justify-content-lg-center',
-      title: 'Useful Links',
-      widget_lists: ['Contact us', 'How it Works', 'Create', 'Explore', 'Terms & Services']
+      title: 'Resources',
+      widget_lists: ['Terms Of Service', 'Privacy Policy', 'Evolve Bank & Trust Electronic', 'Explore', 'Agreement']
     },
     {
       padd: 'pl-20',
-      title: 'Community',
-      widget_lists: ['Help Center', 'Partners', 'Suggestions', 'Blog', 'Newsletters']
+      title: 'Get in Touch',
+      widget_lists: [ 'Contact Us', 'Get Started','Help Center', 'Partners', 'Suggestions']
     },
   ],
   subscribe_title: 'Subscribe Newslatter',
@@ -33,7 +33,7 @@ const FooterThree = ({ home_four = false }) => {
         <div className="tp-footer-area black-bg pt-130 pb-30">
           <div className="container">
             <div className="row wow tpfadeUp" data-wow-duration=".3s" data-wow-delay=".5s">
-              <div className="col-xl-3 col-lg-4 col-md-6">
+              <div className="col-xl-4 col-lg-4 col-md-4">
                 <div className="tp-footer-widget">
                   {!home_four && <div className="tp-footer-widget__logo mb-30">
                     <Link href="/">
@@ -41,7 +41,7 @@ const FooterThree = ({ home_four = false }) => {
                     </Link>
                   </div>}
                   {home_four && <div className="tp-footer-widget__title mb-30">
-                    <h3 className="footer-title">About Collax</h3>
+                    <h3 className="footer-title">Company</h3>
                   </div>}
                   <div className="tp-footer-widget__text mb-30">
                     <p>{widget_desc}</p>
@@ -53,7 +53,7 @@ const FooterThree = ({ home_four = false }) => {
               </div>
               {footer_widgets.map((w, i) => {
                 const { title, widget_lists, w_class, padd } = w;
-                return <div key={i} className={`col-xl-3 col-lg-2 col-md-6 ${w_class ? w_class : ''}`}>
+                return <div key={i} className={`col-xl-4 col-lg-4 col-md-4 ${w_class ? w_class : ''}`}>
                   <div className={`tp-footer-widget ${padd ? padd : ''}`}>
                     <div className="tp-footer-widget__title pb-15">
                       <h3 className="footer-title">{title}</h3>
@@ -66,7 +66,7 @@ const FooterThree = ({ home_four = false }) => {
                   </div>
                 </div>
               })}
-              {!home_four && <div className="col-xl-3 col-lg-4 col-md-6">
+              {!home_four && <div className="col-xl-4 col-lg-4 col-md-4">
                 <div className="tp-footer-widget">
                   <div className="tp-footer-widget__title pb-15">
                     <h3 className="footer-title">{subscribe_title}</h3>
@@ -82,21 +82,7 @@ const FooterThree = ({ home_four = false }) => {
                   </div>
                 </div>
               </div>}
-              {home_four && <div className="col-xl-3 col-lg-3 col-md-6 col-12">
-                <div className="tp-footer-widget">
-                  <div className="tp-footer-widget__title mb-40">
-                    <h3 className="footer-title">Instagram post</h3>
-                  </div>
-                  <div className="row gx-3">
-                    <InstagramItem img={'1'} />
-                    <InstagramItem img={'2'} />
-                    <InstagramItem img={'3'} />
-                    <InstagramItem img={'4'} />
-                    <InstagramItem img={'5'} />
-                    <InstagramItem img={'6'} />
-                  </div>
-                </div>
-              </div>}
+             
             </div>
           </div>
 
