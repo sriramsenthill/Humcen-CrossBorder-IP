@@ -2,7 +2,8 @@ import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRocket } from '@fortawesome/free-solid-svg-icons';
+import { faRocket,faCompass,faToolbox,faCheckCircle} from '@fortawesome/free-solid-svg-icons';
+
 
 const cardStyle = {
   backgroundColor: '#fff',
@@ -35,14 +36,19 @@ const Stories = () => {
       fontSize: '58px',
     }}
   >
-    The Story,<br/>Unearthing Our <span style={{color:'#9b51e0'}}>Journey</span>  
+    The Story,<br/>Unearthing Our <span style={{color:'#9b51e0'}}>Journey</span>  
   </h3>
+  
     <VerticalTimeline>
+    <div style={connectingLineStyle}></div>
       <VerticalTimelineElement
         className="vertical-timeline-element"
         date="Starting Point"
         style={{ color: '#9b51e0',}} 
+        iconStyle={{ background: '#9b51e0', color: '#fff' }}
+          icon={<FontAwesomeIcon icon={faRocket} />}
       >
+      
       <div style={cardStyle}>
         <h3 style={{fontSize:'32px',color:'#232323',fontWeight:'800'}}>
         The Starting Point 
@@ -59,6 +65,8 @@ const Stories = () => {
         className="vertical-timeline-element"
         date="Exploring Further"
         style={{ color: '#9b51e0' }} 
+        iconStyle={{ background: '#9b51e0', color: '#fff' }}
+        icon={<FontAwesomeIcon icon={faCompass} />}
       >
        <div style={cardStyle}>
         <h3 style={{fontSize:'32px',color:'#232323',fontWeight:'800'}}>
@@ -74,6 +82,8 @@ const Stories = () => {
         className="vertical-timeline-element"
         date="Crafting the Solution"
         style={{ color: '#9b51e0' }} 
+        iconStyle={{ background: '#9b51e0', color: '#fff' }}
+          icon={<FontAwesomeIcon icon={faToolbox} />}
       >
        <div style={cardStyle}>
         <h3 style={{fontSize:'32px',color:'#232323',fontWeight:'800'}}>
@@ -88,6 +98,8 @@ const Stories = () => {
         className="vertical-timeline-element"
         date="The Outcome"
         style={{ color: '#9b51e0' }} 
+        iconStyle={{ background: '#9b51e0', color: '#fff' }}
+          icon={<FontAwesomeIcon icon={faCheckCircle} />}
       >
       <div style={cardStyle}>
       <h3 style={{fontSize:'32px',color:'#232323',fontWeight:'800'}}>
@@ -104,4 +116,4 @@ const Stories = () => {
   );
 };
 
-export default Stories;
+export default Stories
