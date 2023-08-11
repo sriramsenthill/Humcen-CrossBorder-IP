@@ -1,13 +1,15 @@
-import { Wrapper } from "../layout";
-import HomeMain from '../components/homes/home';
-import SEO from "../components/seo";
+import React from 'react';
+import SEO from '../components/seo';
+import { Wrapper } from '../layout';
+import HomeFourMain from '../components/homes/home-4';
 
-export default function index() {
-  
+const index = () => {
   return (
     <Wrapper>
-      <SEO pageTitle={'Home Default'} />
-      <HomeMain />
+      <SEO pageTitle={'Home Four'} />
+      <HomeFourMain />
     </Wrapper>
-  )
-}
+  );
+};
+
+export default index;
