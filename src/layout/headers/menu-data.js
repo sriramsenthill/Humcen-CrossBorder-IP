@@ -58,11 +58,13 @@ const menu_data = [
     ]
   },
   {
-  id:5,
+  id:4,
   mega_menu:false,
   has_dropdown:false,
-  title:'For Business',
-  link:'/business'
+  link: '/business',
+  title: 'For Business',
+  sub_menus: [
+  ],
   },
  
 ]

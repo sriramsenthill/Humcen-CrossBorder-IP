@@ -1,40 +1,13 @@
 import React from 'react';
 
-const pointsData = [
-  {
-    title: 'Secure Your Creations',
-    description: 'Shield your intellectual property (IP) through cutting-edge security measures, ensuring its protection and integrity.',
-  },
-  {
-    title: 'Effortless Management',
-    description: 'Simplify IP management with our user-friendly platform. Organize, track, and optimize your IP assets for maximum value.',
-  },
-  {
-    title: 'Unlock Monetization',
-    description: 'Explore new avenues of income by effectively monetizing your IP. Leverage innovative strategies to capitalize on its potential.',
-  },
-  {
-    title: 'Streamlined IP Oversight',
-    description: 'Centralize IP monitoring through a unified dashboard. Seamlessly manage your IP portfolio for informed decision-making.',
-  },
-  {
-    title: 'Future-Focused IP Strategies',
-    description: 'Position your IP for success. Shape its value early and optimize its worth through strategic management.',
-  },
-  {
-    title: 'Seize Opportunities',
-    description: 'Maximize the potential of your IP. Utilize our platform\'s capabilities to protect, manage, and profit from your intellectual property.',
-  },
-];
-
-const GameChanger = () => {
+const GameChangerIP = () => {
     return (
         <div className="ac-chose-area mb-130 ac-chose-bg2">
           <div className="container">
             <div className="row">
               <div className="tp-service-section-box text-center pb-60">
                 <h2  className='tp-title-sm'style={{fontSize:'58px'}}>
-                   Why HumCen.io Is a Game-Changer for IP Creators
+                   Why HumCen.io is a Game-Changing Partner for IP Professionals
                 </h2>
               </div>
               
@@ -47,13 +20,13 @@ const GameChanger = () => {
                     <div className="col medium-2 small-12 large-2">
                       <div className="col-inner">
                         <div className="text">
-                          <h3 style={{ fontSize: '40px',fontWeight:'800', color: '#6f4ea0' }}>1. Secure Your Creations</h3>
+                          <h3 style={{ fontSize: '40px',fontWeight:'800', color: '#6f4ea0' }}>1. Job Opportunities at Your Fingertips </h3>
                         </div>
                       </div>
                     </div>
                     <div className="col medium-10 small-12 large-10">
                       <div className="col-inner">
-                        <p style={{color:'#232323',fontSize:'20px',fontWeight:'500'}}> Shield your intellectual property (IP) through cutting-edge security measures, ensuring its protection and integrity.</p>
+                        <p style={{color:'#232323',fontSize:'20px',fontWeight:'500'}}>Seize diverse job orders tailored to your expertise. Connect with opportunities that align with your skills and aspirations.</p>
                       </div>
                     </div>
                     </div>
@@ -62,13 +35,13 @@ const GameChanger = () => {
                     <div className="col medium-2 small-12 large-2">
                       <div className="col-inner">
                         <div className="text">
-                          <h3 style={{ fontSize: '40px',fontWeight:'800', color: '#6f4ea0' }}>2. Effortless Management</h3>
+                          <h3 style={{ fontSize: '40px',fontWeight:'800', color: '#6f4ea0' }}>2. Effortless IP Portfolio Management </h3>
                         </div>
                       </div>
                     </div>
                     <div className="col medium-10 small-12 large-10">
                       <div className="col-inner">
-                        <p style={{color:'#232323',fontSize:'20px',fontWeight:'500'}}> Simplify IP management with our user-friendly platform. Organize, track, and optimize your IP assets for maximum value.</p>
+                        <p style={{color:'#232323',fontSize:'20px',fontWeight:'500'}}>Simplify IP asset administration through our user-friendly platform. Organize, track, and optimize assets for amplified value.</p>
                       </div>
                     </div>
                     </div>
@@ -77,13 +50,13 @@ const GameChanger = () => {
                     <div className="col medium-2 small-12 large-2">
                       <div className="col-inner">
                         <div className="text">
-                          <h3 style={{ fontSize: '40px',fontWeight:'800', color: '#6f4ea0' }}>3. Unlock Monetization</h3>
+                          <h3 style={{ fontSize: '40px',fontWeight:'800', color: '#6f4ea0' }}>3. Amplify Earnings Potential </h3>
                         </div>
                       </div>
                     </div>
                     <div className="col medium-10 small-12 large-10">
                       <div className="col-inner">
-                        <p style={{color:'#232323',fontSize:'20px',fontWeight:'500'}}> Explore new avenues of income by effectively monetizing your IP. Leverage innovative strategies to capitalize on its potential.</p>
+                        <p style={{color:'#232323',fontSize:'20px',fontWeight:'500'}}>Experience higher earnings by capitalizing on the vast scope of our platform. Unlock the potential to maximize your income.</p>
                       </div>
                     </div>
                   </div>
@@ -101,13 +74,13 @@ const GameChanger = () => {
                     <div className="col medium-2 small-12 large-2">
                       <div className="col-inner">
                         <div className="text">
-                          <h3 style={{ fontSize: '40px',fontWeight:'800', color: '#6f4ea0' }}>4. Streamlined IP Oversight</h3>
+                          <h3 style={{ fontSize: '40px',fontWeight:'800', color: '#6f4ea0' }}>4. Embrace Future-Ready Work Dynamics </h3>
                         </div>
                       </div>
                     </div>
                     <div className="col medium-10 small-12 large-10">
                       <div className="col-inner">
-                        <p style={{color:'#232323',fontSize:'20px',fontWeight:'500'}}> Centralize IP monitoring through a unified dashboard. Seamlessly manage your IP portfolio for informed decision-making.</p>
+                        <p style={{color:'#232323',fontSize:'20px',fontWeight:'500'}}>Step into the future of work with flexible modes. Embrace remote collaboration and shape your work environment.</p>
                       </div>
                     </div>
                     </div>
@@ -116,13 +89,13 @@ const GameChanger = () => {
                     <div className="col medium-2 small-12 large-2">
                       <div className="col-inner">
                         <div className="text">
-                          <h3 style={{ fontSize: '40px',fontWeight:'800', color: '#6f4ea0' }}>5. Future-Focused IP Strategies</h3>
+                          <h3 style={{ fontSize: '40px',fontWeight:'800', color: '#6f4ea0' }}>5. Access Cross-Border Demand </h3>
                         </div>
                       </div>
                     </div>
                     <div className="col medium-10 small-12 large-10">
                       <div className="col-inner">
-                        <p style={{color:'#232323',fontSize:'20px',fontWeight:'500'}}> Position your IP for success. Shape its value early and optimize its worth through strategic management.</p>
+                        <p style={{color:'#232323',fontSize:'20px',fontWeight:'500'}}>Connect with a global demand for IP expertise. Seamlessly access cross-border opportunities and broaden your impact.</p>
                       </div>
                     </div>
                     </div>
@@ -131,13 +104,13 @@ const GameChanger = () => {
                     <div className="col medium-2 small-12 large-2">
                       <div className="col-inner">
                         <div className="text">
-                          <h3 style={{ fontSize: '40px',fontWeight:'800', color: '#6f4ea0' }}>6. Seize Opportunities</h3>
+                          <h3 style={{ fontSize: '40px',fontWeight:'800', color: '#6f4ea0' }}>6. Knowledge Exchange with Fellow Experts </h3>
                         </div>
                       </div>
                     </div>
                     <div className="col medium-10 small-12 large-10">
                       <div className="col-inner">
-                        <p style={{color:'#232323',fontSize:'20px',fontWeight:'500'}}> Maximize the potential of your IP. Utilize our platform's capabilities to protect, manage, and profit from your intellectual property.</p>
+                        <p style={{color:'#232323',fontSize:'20px',fontWeight:'500'}}>Tap into a community of IP professionals. Learn, collaborate, and expand your insights through knowledge sharing.</p>
                       </div>
                     </div>
                   </div>
@@ -152,4 +125,4 @@ const GameChanger = () => {
       
 };
 
-export default GameChanger;
+export default GameChangerIP;

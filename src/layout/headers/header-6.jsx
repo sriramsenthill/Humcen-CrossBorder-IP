@@ -35,7 +35,7 @@ const HeaderSix = () => {
                   </Link>
                 </div>
               </div>
-              <div className="col-xxl-5 col-xl-6 col-lg-6">
+              <div className="col-xxl-6 col-xl-6 col-lg-6">
                 <div className="tp-main-menu tp-menu-black tp-bs-menu tp-bp-menu text-center">
                   <nav id="mobile-menu">
                     {/* nav menus start */}
@@ -44,7 +44,7 @@ const HeaderSix = () => {
                   </nav>
                 </div>
               </div>
-              <div className="col-xxl-4 col-xl-3 col-lg-3">
+              <div className="col-xxl-3 col-xl-3 col-lg-3">
                 <div className="tp-header-left d-flex align-items-center justify-content-end ">
                   <ul className="d-none d-xxl-block">
                     {!user?.email && <li>
@@ -61,9 +61,11 @@ const HeaderSix = () => {
                       <Languages />
                     </li>
                   </ul>
-                  <div className="tp-header-yellow-button">
+                  <div className="tp-header-yellow-button" style={{
+                    width : "100 px",
+                  }}>
                     <Link href="/about">
-                      <a className="tp-btn-white">How it Works</a>
+                      <a className="tp-btn-white">How it Works?</a>
                     </Link>
                   </div>
                 </div>
