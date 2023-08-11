@@ -9,7 +9,7 @@ const cardStyle = {
   backgroundColor: '#fff',
   borderRadius: '8px',
   padding: '16px',
-  boxShadow: '0 8px 12px rgba(0, 0, 0, 0.1)', // Adjust the values for a thicker shadow
+  boxShadow: '0 8px 12px rgba(0, 0, 0, 0.1)' , // Adjust the values for a thicker shadow
   /* Add any additional inline styling you want for the card appearance */
 };
 
@@ -18,9 +18,9 @@ const connectingLineStyle = {
   top: 0,
   left: '50%', // Position in the middle
   transform: 'translateX(-50%)',
-  width: '2px', // Adjust thickness as needed
-  height: '100%', // Height spanning the entire timeline section
-  background: '#ccc', // Adjust color as needed
+  width: '2px', 
+  height: '100%', 
+  background: '#ccc', 
 };
 
 const Stories = () => {
@@ -48,7 +48,6 @@ const Stories = () => {
         iconStyle={{ background: '#9b51e0', color: '#fff' }}
           icon={<FontAwesomeIcon icon={faRocket} />}
       >
-      
       <div style={cardStyle}>
         <h3 style={{fontSize:'32px',color:'#232323',fontWeight:'800'}}>
         The Starting Point 

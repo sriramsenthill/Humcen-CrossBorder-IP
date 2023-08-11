@@ -18,7 +18,7 @@ const menu_data = [
     id:2,
     mega_menu:false,
     has_dropdown:true,
-    title:'User',
+    title:'For Creators',
     link:'/portfolio',
     sub_menus:[
       {link:'/portfolio',title:'Portfolio Full Width'},
@@ -32,7 +32,7 @@ const menu_data = [
     id:3,
     mega_menu:true,
     has_dropdown:true,
-    title:'IP Professionals',
+    title:'For IP Professionals',
     link:'#',
     sub_menus:[
       {link:'/about',title:'About'},
@@ -58,12 +58,13 @@ const menu_data = [
     ]
   },
   {
-    id:5,
-    mega_menu:false,
-    has_dropdown:false,
-    title:'Contact',
-    link:'/contact',
-  }
+  id:5,
+  mega_menu:false,
+  has_dropdown:false,
+  title:'For Business',
+  link:'/business'
+  },
+ 
 ]
 export default menu_data;
 

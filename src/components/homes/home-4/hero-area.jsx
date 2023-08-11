@@ -27,8 +27,7 @@ const HeroArea = () => {
   return (
     <React.Fragment>
       <div className="tp-hero-area-two  pt-130 p-relative fix">
-      <div className="tp-hero-yellow-shape d-none d-lg-block" style={{
-  background: "linear-gradient(to right, #02E1B9, #00ACF6)",
+      <div className="tp-hero-yellow-shape d-none d-lg-block" style={{background: "linear-gradient(to right, #02E1B9, #00ACF6)",
 }}></div>
           {shapes.map((s, i) => <div key={i} className={`ce-hero-shape${s.num ? s.num : ''} d-none d-lg-block`}>
           <img src={`/assets/img/hero/${s.img}.png`} alt="" />
