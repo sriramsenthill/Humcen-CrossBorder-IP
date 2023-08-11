@@ -5,7 +5,8 @@ import Breadcrumb from '../components/common/breadcrumb/breadcrumb';
 import Breadcrumpbusiness from '../components/common/breadcrumb/Breadcrumpbusiness';
 import PortfolioArea from '../components/portfolios/portfolio/portfolio-area';
 import HelpBusiness from '../components/portfolios/portfolio/helpBusiness';
-import PlatformCreators from '../components/portfolios/portfolio/platformcreators';
+import PlatformBusiness from '../components/business/platform_business';
+import GameChangerBusiness from '../components/business/gamechanger_business';
 import GameChanger from '../components/portfolios/portfolio/gamechanger';
 import BusinessCreators from '../components/portfolios/portfolio/business';
 
@@ -22,8 +23,8 @@ const business = () => {
      <HeaderSix/>
      <Breadcrumpbusiness/>
      <HelpBusiness/>
-     <PlatformCreators/>
-     <GameChanger/>
+     <PlatformBusiness/>
+     <GameChangerBusiness/>
      <BusinessCreators/>
      <FooterThree/>
     </Wrapper>

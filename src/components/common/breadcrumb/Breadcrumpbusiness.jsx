@@ -48,7 +48,9 @@ const Breadcrumpbusiness = ({ title, back_home = false }) => {
                   fontSize: '38px',
                 }}
               >
-               Cross-Border IP Opportunities Await: Join, Work Remotely, and Thrive.
+            Elevate Your Business with <br /> Robust IP Protection and Revenue Optimization. <br />
+              Strategically Boost Your IP Portfolio's Worth
+
               </h3>
               <p
                 style={{
@@ -60,8 +62,7 @@ const Breadcrumpbusiness = ({ title, back_home = false }) => {
                   marginTop:'20px',
                 }}
               >
-Join our platform as we onboard skilled IP professionals from around the world. Unlock abundant job prospects, work remotely, and boost your earnings.
-              </p>
+Seamless Transactions, Transparency, and Cost Efficiency Propel Your Business's IP Advancement! </p>
               <div style={{textAlign:'center'}}>
               <button  style={{backgroundColor:'#6f4ea0',color:'#ffffff',width:'210px',fontSize:'25px',
              fontWeight:'600', margin: '0 auto',padding: "18px 18px",borderRadius:'32px',marginTop:'18px'}}>Get Started</button>
