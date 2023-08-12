@@ -51,7 +51,7 @@ const HeaderSix = () => {
                     width : "100 px",
                   }}>
                     <Link href="/about">
-                      <a className="tp-btn-white">Platform</a>
+                      <a className="tp-btn-white" style= {{background:"#00002B", color: "white"}}>Platform</a>
                     </Link>
                   </div>
                 </div>

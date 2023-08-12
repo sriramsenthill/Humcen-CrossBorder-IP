@@ -8,6 +8,7 @@ import HelpCreators from './helpcreators';
 import PlatformCreators from './platformcreators';
 import GameChanger from './gamechanger';
 import BusinessCreators from './business';
+import NewsLetter from '../../homes/home-4/news-letter';
 const Portfolio = () => {
 
   useEffect(() => {
@@ -23,7 +24,7 @@ const Portfolio = () => {
      <HelpCreators/>
      <PlatformCreators/>
      <GameChanger/>
-     <BusinessCreators/>
+     <NewsLetter/>
      <FooterThree/>
     </Wrapper>
   );

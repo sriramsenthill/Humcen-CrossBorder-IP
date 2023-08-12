@@ -36,7 +36,16 @@ const Stories = () => {
       fontSize: '58px',
     }}
   >
-    The Story,<br/>Unearthing Our <span style={{color:'#9b51e0'}}>Journey</span>  
+    The Story,<br/>Unearthing Our <span
+  style={{
+    background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
+    color: 'transparent', // Make the text transparent
+  }}
+>
+  Journey
+</span>
+
   </h3>
   
     <VerticalTimeline>
@@ -44,12 +53,14 @@ const Stories = () => {
       <VerticalTimelineElement
         className="vertical-timeline-element"
         date="Starting Point"
-        style={{ color: '#9b51e0',}} 
-        iconStyle={{ background: '#9b51e0', color: '#fff' }}
+        style={{ color: '#000000',}} 
+        iconStyle={{ background: '#00002B', color: '#fff' }}
           icon={<FontAwesomeIcon icon={faRocket} />}
       >
       <div style={cardStyle}>
-        <h3 style={{fontSize:'32px',color:'#232323',fontWeight:'800'}}>
+        <h3 style={{fontSize:'32px',    background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
+    color: 'transparent', fontWeight:'800'}}>
         The Starting Point 
         </h3>
         <p className='vertical-timeline-element-title' style={{fontSize:'22px',color:'#000000'}}>
@@ -63,12 +74,14 @@ const Stories = () => {
       <VerticalTimelineElement
         className="vertical-timeline-element"
         date="Exploring Further"
-        style={{ color: '#9b51e0' }} 
-        iconStyle={{ background: '#9b51e0', color: '#fff' }}
+        style={{ color: '#000000' }} 
+        iconStyle={{ background: '#00002B', color: '#fff' }}
         icon={<FontAwesomeIcon icon={faCompass} />}
       >
        <div style={cardStyle}>
-        <h3 style={{fontSize:'32px',color:'#232323',fontWeight:'800'}}>
+       <h3 style={{fontSize:'32px',    background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
+    color: 'transparent', fontWeight:'800'}}>
         Exploring Further 
         </h3>
         <p className='vertical-timeline-element-title' style={{fontSize:'22px',color:'#000000'}}>
@@ -80,12 +93,14 @@ const Stories = () => {
       <VerticalTimelineElement
         className="vertical-timeline-element"
         date="Crafting the Solution"
-        style={{ color: '#9b51e0' }} 
-        iconStyle={{ background: '#9b51e0', color: '#fff' }}
+        style={{ color: '#000000' }} 
+        iconStyle={{ background: '#00002B', color: '#fff' }}
           icon={<FontAwesomeIcon icon={faToolbox} />}
       >
        <div style={cardStyle}>
-        <h3 style={{fontSize:'32px',color:'#232323',fontWeight:'800'}}>
+       <h3 style={{fontSize:'32px',    background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
+    color: 'transparent', fontWeight:'800'}}>
         Crafting the Solution 
         </h3>
         <p className='vertical-timeline-element-title' style={{fontSize:'22px',color:'#000000'}}>
@@ -96,12 +111,14 @@ const Stories = () => {
       <VerticalTimelineElement
         className="vertical-timeline-element"
         date="The Outcome"
-        style={{ color: '#9b51e0' }} 
-        iconStyle={{ background: '#9b51e0', color: '#fff' }}
+        style={{ color: '#000000' }} 
+        iconStyle={{ background: '#00002B', color: '#fff' }}
           icon={<FontAwesomeIcon icon={faCheckCircle} />}
       >
       <div style={cardStyle}>
-      <h3 style={{fontSize:'32px',color:'#232323',fontWeight:'800'}}>
+      <h3 style={{fontSize:'32px',    background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
+    color: 'transparent', fontWeight:'800'}}>
       The Outcome 
         </h3>
         <p className='vertical-timeline-element-title' style={{fontSize:'22px',color:'#000000'}}>

@@ -12,7 +12,7 @@ const { bg_img, btn_text, img, subtitle, title } = news_letter_contents;
 const NewsLetter = () => {
   return (
     <div className="tp-news-letter-area tp-news-letter-bg pt-130 pb-130 mb-55 mr-65 ml-130 mt-55" 
-    style={{ backgroundImage:`url('https://teamup.money/wp-content/uploads/2022/08/team-cta.jpg')`,borderRadius:'28px',width:'1300px'}} >
+    style={{ backgroundImage:'url(assets/img/brand/newbg.png)',borderRadius:'28px',width:'1300px'}} >
       <div className="container">
         <div className="row align-items-center wow tpfadeUp" data-wow-duration=".3s" data-wow-delay=".5s">
           <div className="col-12">
@@ -28,7 +28,7 @@ const NewsLetter = () => {
               </div>
               <div className="tp-news-button p-relative ml-190">
                
-                  <button className="tp-submit-button tp-btn-yellow" type="submit" style={{backgroundColor:'#00002B',color:'#ffffff',width:'210px',margin: '0 auto'}}>Sign Up Today</button>
+                  <button className="tp-submit-button tp-btn-yellow" type="submit" style={{backgroundColor:'#ffffff',color:'#00002B',width:'210px',margin: '0 auto'}}>Sign Up Today</button>
               </div>
             </div>
           </div>

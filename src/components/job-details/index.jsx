@@ -7,6 +7,7 @@ import HelpIP from "./help_ip";
 import PlatformIP from './platform_ip';
 import GameChangerIP from './gamechanger_ip';
 import BusinessIP from './business_ip';
+import NewsLetter from '../homes/home-4/news-letter';
 
 const JobDetails = ({job}) => {
 
@@ -23,7 +24,7 @@ const JobDetails = ({job}) => {
       <HelpIP />
       <PlatformIP />
       <GameChangerIP />
-      <BusinessIP />
+      <NewsLetter/>
       <FooterThree />
     </Wrapper>
   );

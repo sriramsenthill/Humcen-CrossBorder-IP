@@ -8,6 +8,8 @@ import FeatureArea from './feature-area';
 import ServicesArea from './services-area';
 import TeamArea from './team-area';
 import Stories from '../common/stories/stories';
+import NewsLetter from '../homes/home-4/news-letter';
+
 
 const About = () => {
   useEffect(() => {
@@ -20,6 +22,7 @@ const About = () => {
      <HeaderSix />
       <Breadcrumb/>
       <Stories/>
+      <NewsLetter/>
       <FooterThree />
     </Wrapper>
   );

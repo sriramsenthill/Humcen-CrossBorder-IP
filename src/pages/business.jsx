@@ -9,6 +9,7 @@ import PlatformBusiness from '../components/business/platform_business';
 import GameChangerBusiness from '../components/business/gamechanger_business';
 import GameChanger from '../components/portfolios/portfolio/gamechanger';
 import BusinessCreators from '../components/portfolios/portfolio/business';
+import NewsLetter from '../components/homes/home-4/news-letter';
 
 const business = () => {
 
@@ -25,7 +26,7 @@ const business = () => {
      <HelpBusiness/>
      <PlatformBusiness/>
      <GameChangerBusiness/>
-     <BusinessCreators/>
+     <NewsLetter/>
      <FooterThree/>
     </Wrapper>
   );

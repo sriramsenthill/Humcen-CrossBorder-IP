@@ -4,14 +4,15 @@ import React from 'react';
 const BreadcrumbIP = ({ title, back_home = false }) => {
   return (
     <section
-      style={{
-        backgroundImage: 'url(https://teamup.money/wp-content/uploads/2022/08/about-us-top.jpg)',
-        height: '100vh',
-        backgroundPosition: '2% 27%',
-        position: 'relative', // Add this to enable curved bottom
-        overflow: 'hidden', // Hide the overflow for curved effect
-      }}
-    >
+    style={{
+      backgroundImage: 'url(assets/img/brand/bg.png)', // Updated image path
+      height: '100vh',
+      backgroundPosition: 'center', // Center the background image
+      backgroundSize: 'cover', // Make the background image cover the entire area
+      position: 'relative', // Add this to enable curved bottom
+      overflow: 'hidden', // Hide the overflow for curved effect
+    }}
+  >
       <div
         className="curved-bottom"
         style={{
@@ -22,7 +23,6 @@ const BreadcrumbIP = ({ title, back_home = false }) => {
           height: '250px', // Adjust this value for desired curvature height
           width: "auto",
           background: '#ffffff', // Background color to cover the curve
-          borderRadius: '50%', // Create the curved effect
         }}
       ></div>
 
@@ -45,10 +45,10 @@ const BreadcrumbIP = ({ title, back_home = false }) => {
                   textAlign: 'center',
                   fontFamily: 'Poppins, sans-serif',
                   fontWeight: '800',
-                  fontSize: '38px',
+                  fontSize: '50px',
                 }}
               >
-                Cross-Border IP Opportunities Await <br/>Join, Work Remotely, and Thrive.
+                For IP Professionals
               </h3>
               <p
                 style={{
@@ -60,10 +60,14 @@ const BreadcrumbIP = ({ title, back_home = false }) => {
                   marginTop:'20px',
                 }}
               >
+               Cross-Border IP Opportunities Await Join, Work Remotely, and Thrive.
+                                <br/>
+                                <br/>
+
              Join our platform as we onboard skilled IP professionals from around the world.<br/> Unlock abundant job prospects, work remotely, and boost your earnings.
               </p>
               <div style={{textAlign:'center'}}>
-              <button  style={{backgroundColor:'#6f4ea0',color:'#ffffff',width:'210px',fontSize:'25px',
+              <button  style={{backgroundColor:'#ffffff',color:'#00002B',width:'210px',fontSize:'25px',
              fontWeight:'600', margin: '0 auto',padding: "18px 18px",borderRadius:'32px',marginTop:'18px'}}>Get Started</button>
            </div>
             </div>
