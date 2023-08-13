@@ -33,7 +33,7 @@ const GameChanger = () => {
           <div className="container">
             <div className="row">
               <div className="tp-service-section-box text-center pb-60">
-                <h2  className='tp-title-sm'style={{fontSize:'58px'}}>
+                <h2  className='tp-title-sm'style={{fontSize:'40px'}}>
                    Why HumCen.io Is a Game-Changer for IP Creators
                 </h2>
               </div>
@@ -47,7 +47,9 @@ const GameChanger = () => {
                     <div className="col medium-2 small-12 large-2">
                       <div className="col-inner">
                         <div className="text">
-                          <h3 style={{ fontSize: '40px',fontWeight:'800', color: '#6f4ea0' }}>1. Secure Your Creations</h3>
+                        <h3 style={{ fontSize: '35px',fontWeight:'800',background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
+    color: 'transparent', fontWeight:'800'}}>Secure Your Creations</h3>
                         </div>
                       </div>
                     </div>
@@ -62,7 +64,9 @@ const GameChanger = () => {
                     <div className="col medium-2 small-12 large-2">
                       <div className="col-inner">
                         <div className="text">
-                          <h3 style={{ fontSize: '40px',fontWeight:'800', color: '#6f4ea0' }}>2. Effortless Management</h3>
+                        <h3 style={{ fontSize: '35px',fontWeight:'800',background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
+    color: 'transparent', fontWeight:'800'}}>Effortless Management</h3>
                         </div>
                       </div>
                     </div>
@@ -77,7 +81,9 @@ const GameChanger = () => {
                     <div className="col medium-2 small-12 large-2">
                       <div className="col-inner">
                         <div className="text">
-                          <h3 style={{ fontSize: '40px',fontWeight:'800', color: '#6f4ea0' }}>3. Unlock Monetization</h3>
+                        <h3 style={{ fontSize: '35px',fontWeight:'800',background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
+    color: 'transparent', fontWeight:'800'}}>Unlock Monetization</h3>
                         </div>
                       </div>
                     </div>
@@ -101,7 +107,9 @@ const GameChanger = () => {
                     <div className="col medium-2 small-12 large-2">
                       <div className="col-inner">
                         <div className="text">
-                          <h3 style={{ fontSize: '40px',fontWeight:'800', color: '#6f4ea0' }}>4. Streamlined IP Oversight</h3>
+                        <h3 style={{ fontSize: '35px',fontWeight:'800',background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
+    color: 'transparent', fontWeight:'800'}}>Streamlined IP Oversight</h3>
                         </div>
                       </div>
                     </div>
@@ -116,7 +124,9 @@ const GameChanger = () => {
                     <div className="col medium-2 small-12 large-2">
                       <div className="col-inner">
                         <div className="text">
-                          <h3 style={{ fontSize: '40px',fontWeight:'800', color: '#6f4ea0' }}>5. Future-Focused IP Strategies</h3>
+                        <h3 style={{ fontSize: '35px',fontWeight:'800',background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
+    color: 'transparent', fontWeight:'800'}}>Future-Focused IP Strategies</h3>
                         </div>
                       </div>
                     </div>
@@ -131,7 +141,9 @@ const GameChanger = () => {
                     <div className="col medium-2 small-12 large-2">
                       <div className="col-inner">
                         <div className="text">
-                          <h3 style={{ fontSize: '40px',fontWeight:'800', color: '#6f4ea0' }}>6. Seize Opportunities</h3>
+                        <h3 style={{ fontSize: '35px',fontWeight:'800',background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
+    color: 'transparent', fontWeight:'800'}}>Seize Opportunities</h3>
                         </div>
                       </div>
                     </div>

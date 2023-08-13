@@ -12,11 +12,6 @@ const hero_contents = {
   btn_text: 'How it Works',
   video_title: 'Behind the scenes',
   video_id: 'LJbkLdtEW00',
-  social_links: [
-    { id: 1, icon: 'fab fa-facebook-f social-icon-1', title: 'Facebook',link: 'http://facebook.com' },
-    { id: 3, icon: 'fab fa-youtube social-icon-3', title: 'Youtube',link: 'https://www.youtube.com/' },
-    { id: 2, icon: 'fab fa-twitter social-icon-2', title: 'Twitter',link: 'http://twitter.com' },
-  ],
   hero_img: '/assets/img/hero/hero-5.png'
 }
 
@@ -49,15 +44,6 @@ const HeroArea = () => {
                     <button onClick={() => setIsVideoOpen(true)} className="popup-video">
                       <i className="far fa-play"></i> <span>{video_title}</span></button>
                   </div>
-                </div>
-              </div>
-              <div className="tp-hero-social pb-90 wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".9s">
-                <div className="tp-hero-social bp-hero-social">
-                  {social_links.map((l, i) => (
-                    <a key={i} className={`social-icon-${l.id}`} href={l.link} target="_blank" rel="noreferrer">
-                      <i className={l.icon}></i><span>{l.title}</span>
-                    </a>
-                  ))}
                 </div>
               </div>
             </div>

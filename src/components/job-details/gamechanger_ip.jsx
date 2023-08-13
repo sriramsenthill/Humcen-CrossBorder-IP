@@ -6,7 +6,8 @@ const GameChangerIP = () => {
           <div className="container">
             <div className="row">
               <div className="tp-service-section-box text-center pb-60">
-                <h2  className='tp-title-sm'style={{fontSize:'58px'}}>
+              <h2  className='tp-title-sm'style={{fontSize:'40px'}}>
+
                    Why HumCen.io is a Game-Changing Partner for IP Professionals
                 </h2>
               </div>
@@ -20,7 +21,9 @@ const GameChangerIP = () => {
                     <div className="col medium-2 small-12 large-2">
                       <div className="col-inner">
                         <div className="text">
-                          <h3 style={{ fontSize: '40px',fontWeight:'800', color: '#6f4ea0' }}>1. Job Opportunities at Your Fingertips </h3>
+                          <h3 style={{ fontSize: '35px',fontWeight:'800',background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
+    color: 'transparent', fontWeight:'800'}}>Job Opportunities at Your Fingertips </h3>
                         </div>
                       </div>
                     </div>
@@ -35,7 +38,9 @@ const GameChangerIP = () => {
                     <div className="col medium-2 small-12 large-2">
                       <div className="col-inner">
                         <div className="text">
-                          <h3 style={{ fontSize: '40px',fontWeight:'800', color: '#6f4ea0' }}>2. Effortless IP Portfolio Management </h3>
+                          <h3 style={{ fontSize: '35px',fontWeight:'800',background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
+    color: 'transparent', fontWeight:'800'}}>Effortless IP Portfolio Management </h3>
                         </div>
                       </div>
                     </div>
@@ -50,7 +55,9 @@ const GameChangerIP = () => {
                     <div className="col medium-2 small-12 large-2">
                       <div className="col-inner">
                         <div className="text">
-                          <h3 style={{ fontSize: '40px',fontWeight:'800', color: '#6f4ea0' }}>3. Amplify Earnings Potential </h3>
+                          <h3 style={{ fontSize: '35px',fontWeight:'800', background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
+    color: 'transparent', fontWeight:'800'}}>Amplify Earnings Potential </h3>
                         </div>
                       </div>
                     </div>
@@ -74,7 +81,9 @@ const GameChangerIP = () => {
                     <div className="col medium-2 small-12 large-2">
                       <div className="col-inner">
                         <div className="text">
-                          <h3 style={{ fontSize: '40px',fontWeight:'800', color: '#6f4ea0' }}>4. Embrace Future-Ready Work Dynamics </h3>
+                          <h3 style={{ fontSize: '35px',fontWeight:'800',background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
+    color: 'transparent', fontWeight:'800' }}>Future-Ready Work Dynamics </h3>
                         </div>
                       </div>
                     </div>
@@ -89,7 +98,9 @@ const GameChangerIP = () => {
                     <div className="col medium-2 small-12 large-2">
                       <div className="col-inner">
                         <div className="text">
-                          <h3 style={{ fontSize: '40px',fontWeight:'800', color: '#6f4ea0' }}>5. Access Cross-Border Demand </h3>
+                          <h3 style={{ fontSize: '35px',fontWeight:'800', background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
+    color: 'transparent', fontWeight:'800' }}>Access Cross-Border Demand </h3>
                         </div>
                       </div>
                     </div>
@@ -104,7 +115,9 @@ const GameChangerIP = () => {
                     <div className="col medium-2 small-12 large-2">
                       <div className="col-inner">
                         <div className="text">
-                          <h3 style={{ fontSize: '40px',fontWeight:'800', color: '#6f4ea0' }}>6. Knowledge Exchange with Fellow Experts </h3>
+                          <h3 style={{ fontSize: '35px',fontWeight:'800', background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
+    color: 'transparent', fontWeight:'800' }}>Knowledge Exchange with Experts </h3>
                         </div>
                       </div>
                     </div>

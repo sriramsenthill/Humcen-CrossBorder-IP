@@ -21,8 +21,8 @@ const menu_data = [
     id:3,
     mega_menu:false,
     has_dropdown:false,
-    title:'For IP Professionals',
-    link:'/job-details',
+    link: '/business',
+    title: 'For Business',
     sub_menus:[
     ],
   },
@@ -30,8 +30,8 @@ const menu_data = [
   id:4,
   mega_menu:false,
   has_dropdown:false,
-  link: '/business',
-  title: 'For Business',
+  title:'For IP Professionals',
+  link:'/job-details',
   sub_menus: [
   ],
   },
