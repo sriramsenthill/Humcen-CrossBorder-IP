@@ -11,8 +11,7 @@ import GameChanger from '../components/portfolios/portfolio/gamechanger';
 import BusinessCreators from '../components/portfolios/portfolio/business';
 import NewsLetter from '../components/homes/home-4/news-letter';
 
-const business = () => {
-
+const Business = () => {
   useEffect(() => {
     setTimeout(() => {
       animationCreate();
@@ -21,15 +20,15 @@ const business = () => {
 
   return (
     <Wrapper>
-     <HeaderSix/>
-     <Breadcrumpbusiness/>
-     <HelpBusiness/>
-     <PlatformBusiness/>
-     <GameChangerBusiness/>
-     <NewsLetter/>
-     <FooterThree/>
+      <HeaderSix />
+      <Breadcrumpbusiness />
+      <HelpBusiness />
+      <PlatformBusiness />
+      <GameChangerBusiness />
+      <NewsLetter />
+      <FooterThree />
     </Wrapper>
   );
 };
 
-export default business;
+export default Business;
