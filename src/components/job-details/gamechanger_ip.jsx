@@ -23,7 +23,13 @@ const GameChangerIP = () => {
                         <div className="text">
                           <h3 style={{ fontSize: '35px',fontWeight:'800',background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
     WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
-    color: 'transparent', fontWeight:'800'}}>Job Opportunities at Your Fingertips </h3>
+    color: 'transparent', fontWeight:'800'}}><i className="fa fa-search" style={{
+           
+           fontSize: '30px',
+           padding: '5px',
+           borderRadius: '50%',
+           marginRight: '10px'
+         }}></i>Job Opportunities at Your Fingertips </h3>
                         </div>
                       </div>
                     </div>
@@ -40,7 +46,13 @@ const GameChangerIP = () => {
                         <div className="text">
                           <h3 style={{ fontSize: '35px',fontWeight:'800',background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
     WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
-    color: 'transparent', fontWeight:'800'}}>Effortless IP Portfolio Management </h3>
+    color: 'transparent', fontWeight:'800'}}><i className="fa fa-folder-open" style={{
+           
+           fontSize: '30px',
+           padding: '5px',
+           borderRadius: '50%',
+           marginRight: '10px'
+         }}></i>Effortless IP Portfolio Management </h3>
                         </div>
                       </div>
                     </div>
@@ -57,7 +69,13 @@ const GameChangerIP = () => {
                         <div className="text">
                           <h3 style={{ fontSize: '35px',fontWeight:'800', background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
     WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
-    color: 'transparent', fontWeight:'800'}}>Amplify Earnings Potential </h3>
+    color: 'transparent', fontWeight:'800'}}><i className="fa fa-bullhorn" style={{
+           
+           fontSize: '30px',
+           padding: '5px',
+           borderRadius: '50%',
+           marginRight: '10px'
+         }}></i>Amplify Earnings Potential </h3>
                         </div>
                       </div>
                     </div>
@@ -83,7 +101,13 @@ const GameChangerIP = () => {
                         <div className="text">
                           <h3 style={{ fontSize: '35px',fontWeight:'800',background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
     WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
-    color: 'transparent', fontWeight:'800' }}>Future-Ready Work Dynamics </h3>
+    color: 'transparent', fontWeight:'800' }}><i className="fa fa-cogs" style={{
+           
+           fontSize: '30px',
+           padding: '5px',
+           borderRadius: '50%',
+           marginRight: '10px'
+         }}></i>Future-Ready Work Dynamics </h3>
                         </div>
                       </div>
                     </div>
@@ -100,7 +124,13 @@ const GameChangerIP = () => {
                         <div className="text">
                           <h3 style={{ fontSize: '35px',fontWeight:'800', background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
     WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
-    color: 'transparent', fontWeight:'800' }}>Access Cross-Border Demand </h3>
+    color: 'transparent', fontWeight:'800' }}><i className="fa fa-globe-americas" style={{
+           
+           fontSize: '30px',
+           padding: '5px',
+           borderRadius: '50%',
+           marginRight: '10px'
+         }}></i>Access Cross-Border Demand </h3>
                         </div>
                       </div>
                     </div>
@@ -117,7 +147,13 @@ const GameChangerIP = () => {
                         <div className="text">
                           <h3 style={{ fontSize: '35px',fontWeight:'800', background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
     WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
-    color: 'transparent', fontWeight:'800' }}>Knowledge Exchange with Experts </h3>
+    color: 'transparent', fontWeight:'800' }}><i className="fa fa-users" style={{
+           
+           fontSize: '30px',
+           padding: '5px',
+           borderRadius: '50%',
+           marginRight: '10px'
+         }}></i>Knowledge Exchange with Experts </h3>
                         </div>
                       </div>
                     </div>
