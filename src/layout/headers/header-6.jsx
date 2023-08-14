@@ -1,13 +1,55 @@
 import Link from 'next/link';
 import React from 'react';
-import { useEffect } from 'react';
+import { useEffect,useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import useFirebase from '../../hooks/use-firebase';
+import styled from 'styled-components';
 import useSticky from '../../hooks/use-sticky';
 import { get_user } from '../../redux/features/auth-slice';
 import Languages from './component/languages';
 import MobileMenu from './mobile-menu';
 import NavMenus from './nav-menus';
+import Dialog from '@material-ui/core/Dialog';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogActions from '@material-ui/core/DialogActions';
+import Button from '@material-ui/core/Button';
+
+
+
+
+const ColorButton = styled(Button)(({ theme }) => ({
+  color: "white",
+  width: "80%",
+  height: "45px",
+  borderRadius: "100px",
+  marginBottom: "30px",
+  background: "linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)",
+  "&:hover": {
+    background: "linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)",
+  },
+  textTransform: "none",
+  fontSize: "14px",
+  fontWeight: "400",
+}));
+
+const WhiteDialog = styled(Dialog)(({ theme }) => ({
+  "& .MuiPaper-root": {
+    backgroundColor: "white",
+    width: "490px",
+    height: "320px",
+  padding:'25px',
+    borderRadius: "10px",
+  },
+}));
+
+
+const CenteredDialogActions = styled(DialogActions)({
+  display: 'flex',
+  justifyContent: 'center',
+  flexDirection:'column',
+});
+
 
 const HeaderSix = () => {
   // headerSticky
@@ -18,6 +60,16 @@ const HeaderSix = () => {
   const {logout} = useFirebase();
   // dispatch
   const dispatch = useDispatch();
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+
+  const openDialog = () => {
+    setIsDialogOpen(true);
+  };
+
+  const closeDialog = () => {
+    setIsDialogOpen(false);
+  };
+  
   // get_user
   useEffect(() => {
     dispatch(get_user())
@@ -50,9 +102,22 @@ const HeaderSix = () => {
                   <div className="tp-header-yellow-button" style={{
                     width : "100 px",
                   }}>
-                    <Link href="/about">
-                      <a className="tp-btn-white" style= {{background:"#00002B", color: "white"}}>Platform</a>
-                    </Link>
+                      <button className="tp-btn-white" style= {{background:"#00002B", color: "white"}} onClick={openDialog}>Platform</button>
+                      <WhiteDialog open={isDialogOpen} onClose={closeDialog}>
+     <CenteredDialogActions>
+      <DialogTitle>
+      <h2>Coming Soon!</h2>
+      </DialogTitle>
+      <DialogContent>
+       
+        <p style={{textAlign:"center",fontWeight:"500",fontSize:"20px",fontFamily:'Inter',color:"#8C8E8F"}}>The platform is currently under development. Stay tuned for updates!</p>
+      </DialogContent>
+      <DialogActions>
+        <ColorButton onClick={closeDialog} style={{width:"120px",height:"40px",fontFamily:'Inter'}}>Ok</ColorButton>
+      </DialogActions>
+      </CenteredDialogActions>
+
+</WhiteDialog>
                   </div>
                 </div>
               </div>
@@ -64,6 +129,7 @@ const HeaderSix = () => {
       {/* <!-- mobile-menu-area --> */}
       <MobileMenu logo={"logo-blue.png"} transparent={false} />
       {/* <!-- mobile-menu-area-end --> */}
+     
     </React.Fragment>
   );
 };
