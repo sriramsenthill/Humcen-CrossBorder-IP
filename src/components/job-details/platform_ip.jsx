@@ -11,7 +11,7 @@ const PlatformIP = () => {
         <div className="row">
         <div className="col-xl-5 col-lg-5 wow tpfadeLeft" data-wow-duration=".5s" data-wow-delay=".5s" style={{ paddingRight: "20px" }}>
      <div className="tp-fea-img col-12 d-none d-lg-block" style={{ marginLeft: "-308px" , width: "148%", height: "auto", marginTop:"-10px"}}>
-    <img src={image3} alt="" className='ml-130 mt-70' />
+    <img src={image3} alt="" className='ml-130 mt-40' />
   </div>
      </div>
 
