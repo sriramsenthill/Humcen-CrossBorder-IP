@@ -1,4 +1,14 @@
 const menu_data = [
+  {
+    id:0,
+    mega_menu:false,
+    has_dropdown:false,
+    title:'Home',
+    link:'/',
+    sub_menus:[
+    ],
+
+  },
 
   {
     id:1,

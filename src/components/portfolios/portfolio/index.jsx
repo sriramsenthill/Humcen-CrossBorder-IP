@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { FooterThree, HeaderSix, Wrapper } from '../../../layout';
+import { FooterThree, HeaderFour, HeaderSix, Wrapper } from '../../../layout';
 import { animationCreate } from '../../../utils/utils';
 import Breadcrumb from '../../common/breadcrumb/breadcrumb';
 import PortfolioArea from './portfolio-area';
@@ -19,7 +19,7 @@ const Portfolio = () => {
 
   return (
     <Wrapper>
-     <HeaderSix/>
+    <HeaderSix/>
      <BreadcrumbCreators/>
      <HelpCreators/>
      <PlatformCreators/>

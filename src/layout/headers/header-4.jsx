@@ -9,7 +9,7 @@ const HeaderFour = () => {
   return (
     <React.Fragment>
       <header className="d-none d-lg-block">
-        <div id="header-sticky" className={`tp-header-area-two header-transparent header-space-three pl-115 pr-115 pt-35 ${headerSticky ? 'header-sticky' : ''}`}>
+      <div id="header-sticky" className={`tp-header-area-two header-transparent header-space-three pl-115 pr-115 pt-35 ${headerSticky ? 'header-sticky' : ''}`}>
           <div className="container-fluid">
             <div className="row align-items-center">
               <div className="col-xxl-3 col-xl-3 col-lg-3">
@@ -19,7 +19,7 @@ const HeaderFour = () => {
                   </Link>
                 </div>
               </div>
-              <div className="col-xxl-5 col-xl-6 col-lg-6">
+              <div className="col-lg-6">
                 <div className="tp-main-menu tp-menu-black text-center">
                   <nav id="mobile-menu">
                     {/* nav menus start */}
@@ -28,7 +28,7 @@ const HeaderFour = () => {
                   </nav>
                 </div>
               </div>
-              <div className="col-xxl-4 col-xl-3 col-lg-3">
+              <div className="col-lg-3">
                 <div className="tp-header-left d-flex align-items-center justify-content-end">
                   <div className="tp-header-login login-color-black d-none d-xxl-block ">
                     <Link href="/login">
@@ -44,8 +44,8 @@ const HeaderFour = () => {
               </div>
             </div>
           </div>
-        </div>
-      </header>
+          </div>
+           </header>
 
       {/* <!-- mobile-menu-area --> */}
       <MobileMenu logo={"logo-blue.png"} />

@@ -19,7 +19,7 @@ const About = () => {
   }, []);
   return (
     <Wrapper>
-     <HeaderSix />
+     <HeaderSix/>
       <Breadcrumb/>
       <Stories/>
       <NewsLetter/>

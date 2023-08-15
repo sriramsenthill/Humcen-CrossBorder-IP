@@ -6,8 +6,6 @@ import VideoModal from '../../common/modals/modal-video';
 
 const hero_contents = {
   shapes: [{ img: 'hero-shape-4' }, { num: '-two', img: 'hero-shape-4.1' }],
-  title: <><h1 style={{background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',fontSize:"67px",color: 'transparent',WebkitBackgroundClip: 'text',}}>Cross-Border <br/>
- IP Aggregator,and beyond</h1> </>,
   text: 'Redefines how the Intellectual Property is protected, managed and monetized on a global scale.',
   btn_text: 'Get in touch',
   video_title: 'Behind the scenes',
@@ -29,9 +27,8 @@ const HeroArea = () => {
           <div className="row">
             <div className="col-xl-6 col-lg-6">
               <div className="tp-hero-section-box tp-hero-section-box-four pt-120 pb-140">
-                <h3 className="tp-hero-bd-title text-black wow tpfadeUp" data-wow-duration=".3s" data-wow-delay=".6s">
-                  {title}
-                </h3>
+              <h3 className="tp-hero-bd-title  wow tpfadeUp" data-wow-duration=".3s" data-wow-delay=".6s" style={{background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',fontSize:"67px",color: 'transparent',WebkitBackgroundClip: 'text',}}>Cross-Border <br/>
+ IP Aggregator,and beyond</h3>
                 <p className="wow tpfadeUp" data-wow-duration=".5s" data-wow-delay=".7s">{text}</p>
                 <div className="tp-hero-three-button-box d-flex align-items-center wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".9s">
               

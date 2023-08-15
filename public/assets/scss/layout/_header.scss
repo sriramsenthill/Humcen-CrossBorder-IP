@@ -45,7 +45,7 @@
                     left: 0;
                     width: 0;
                     height: 4px;
-                    background-color: var(--tp-theme-1);
+                    background-color:#02E1B9;
                     border-radius: 33px;
                     opacity: 1;
                     visibility: visible;
@@ -59,7 +59,7 @@
                     right: 0;
                     width: 0;
                     height: 4px;
-                    background-color: var(--tp-theme-primary);
+                    background-color:#00ACF6;
                     border-radius: 33px;
                     z-index: 9;
                     opacity: 0;
@@ -70,7 +70,7 @@
 
             &:hover {
                 & a {
-                    color: var(--tp-common-black);
+                    color:var(--tp-common-black);
 
                     &::after {
                         visibility: visible;
@@ -778,7 +778,7 @@
         }
         & span{
             font-size: 14px;
-            color: #888888;
+            color: #6e6b6b;
             font-weight: 700;
             text-transform: uppercase;
             letter-spacing: 2px;

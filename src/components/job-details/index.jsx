@@ -19,7 +19,7 @@ const JobDetails = ({job}) => {
 
   return (
     <Wrapper>
-      <HeaderSix />
+      <HeaderSix/>
       <BreadcrumbIP />
       <HelpIP />
       <PlatformIP />

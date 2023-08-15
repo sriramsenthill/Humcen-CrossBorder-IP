@@ -14,6 +14,7 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import DialogContent from '@material-ui/core/DialogContent';
 import DialogActions from '@material-ui/core/DialogActions';
 import Button from '@material-ui/core/Button';
+import { Typography } from '@material-ui/core';
 
 
 
@@ -33,7 +34,7 @@ const ColorButton = styled(Button)(({ theme }) => ({
   fontWeight: "400",
 }));
 
-const WhiteDialog = styled(Dialog)(({ theme }) => ({
+const WhiteDialog = styled(Dialog)(() => ({
   "& .MuiPaper-root": {
     backgroundColor: "white",
     width: "590px",
@@ -104,14 +105,14 @@ const HeaderSix = () => {
                     width : "100 px",
                   }}>
                         <button className="tp-btn mr-55" style={{ backgroundColor: "#00002B" }} onClick={openDialog}>Platform</button>
-                      <WhiteDialog open={isDialogOpen} onClose={closeDialog}>
+                        <WhiteDialog open={isDialogOpen} onClose={closeDialog}>
      <CenteredDialogActions>
-      <DialogTitle>
-      <h2 style={{textAlign:'center'}}>We're Excited to Bring You Our Cross Border IP Platform!</h2>
+      <DialogTitle  style={{textAlign:'center'}}>
+       We're Excited to Bring You Our Cross Border IP Platform!
       </DialogTitle>
-      <DialogContent>
+      <DialogContent style={{textAlign:"center",fontWeight:"500",fontSize:"20px",fontFamily:'Inter',color:"#8C8E8F"}}>
        
-        <p style={{textAlign:"center",fontWeight:"500",fontSize:"20px",fontFamily:'Inter',color:"#8C8E8F"}}>Currently Under Construction, Coming Soon!<br/>Click the Button Below to Get Notified When We Launch!</p>
+        Currently Under Construction, Coming Soon!<br/>Click the Button Below to Get Notified When We Launch!
       </DialogContent>
       <DialogActions>
         <ColorButton onClick={closeDialog} style={{width:"170px",height:"60px",fontFamily:'Inter',fontWeight:'600'}}>Notify Me on Launch</ColorButton>
