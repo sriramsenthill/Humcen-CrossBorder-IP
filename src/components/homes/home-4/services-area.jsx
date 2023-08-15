@@ -22,7 +22,7 @@ const ServicesArea = () => {
           <div className="col-xl-7 col-lg-10">
             <div className="tp-service-section-box text-center pb-60">
               <h5 className="tp-subtitle pb-10 mt-50">Our Services</h5>
-              <h2 className="tp-title-sm" style={{fontSize:'48px'}}>Streamlining Your Cross-Border IP<br/>Journey with us!</h2>
+              <h2 className="tp-title-sm" style={{fontSize:'48px'}}><span style={{background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',color: 'transparent',WebkitBackgroundClip: 'text',}}>Streamlining</span> Your Cross-Border IP<br/>Journey with us!</h2>
             </div>
           </div>
         </div>
@@ -42,7 +42,8 @@ const ServicesArea = () => {
                       </h3>
                     </div>
                     <div className="tp-service-item-four__text text-justify">
-                      <p>{text_1}</p>
+                    <p style={{fontSize:'20px'}}>{text_1}</p>
+
                     </div>
                   </div>
                 </div>

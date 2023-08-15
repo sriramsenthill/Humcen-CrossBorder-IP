@@ -1,4 +1,5 @@
 const menu_data = [
+
   {
     id:1,
     mega_menu:false,
@@ -22,7 +23,7 @@ const menu_data = [
     mega_menu:false,
     has_dropdown:false,
     link: '/business',
-    title: 'For Business',
+    title: 'For Businesses',
     sub_menus:[
     ],
   },

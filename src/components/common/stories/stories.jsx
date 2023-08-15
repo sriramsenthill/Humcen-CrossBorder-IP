@@ -2,7 +2,7 @@ import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRocket,faCompass,faToolbox,faCheckCircle} from '@fortawesome/free-solid-svg-icons';
+import { faRocket,faCompass,faCheckCircle,faDraftingCompass} from '@fortawesome/free-solid-svg-icons';
 
 
 const cardStyle = {
@@ -52,8 +52,7 @@ const Stories = () => {
     <div style={connectingLineStyle}></div>
       <VerticalTimelineElement
         className="vertical-timeline-element"
-        date="Starting Point"
-        style={{ color: '#000000',}} 
+        contentStyle={{ background:  'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)', color: '#000000' }}
         iconStyle={{ background: '#00002B', color: '#fff' }}
           icon={<FontAwesomeIcon icon={faRocket} />}
       >
@@ -63,7 +62,8 @@ const Stories = () => {
     color: 'transparent', fontWeight:'800'}}>
         The Starting Point 
         </h3>
-        <p className='vertical-timeline-element-title' style={{fontSize:'22px',color:'#000000'}}>
+        <p className='vertical-timeline-element-title' style={{fontSize:'22px',color:'#000000',  textAlign: 'justify',    // Aligns text to justify both left and right edges
+  lineHeight: '1.5',}}>
         Our platform began with a simple yet powerful idea – to make global intellectual property (IP) easy and effective. Like a solution for a puzzle, we envisioned a way for innovators, businesses, and experts to protect, manage, and profit from their ideas worldwide.
 
         </p>
@@ -73,8 +73,8 @@ const Stories = () => {
   
       <VerticalTimelineElement
         className="vertical-timeline-element"
-        date="Exploring Further"
-        style={{ color: '#000000' }} 
+       
+        contentStyle={{ background:  'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)', color: '#000000' }}
         iconStyle={{ background: '#00002B', color: '#fff' }}
         icon={<FontAwesomeIcon icon={faCompass} />}
       >
@@ -84,7 +84,8 @@ const Stories = () => {
     color: 'transparent', fontWeight:'800'}}>
         Exploring Further 
         </h3>
-        <p className='vertical-timeline-element-title' style={{fontSize:'22px',color:'#000000'}}>
+        <p className='vertical-timeline-element-title' style={{fontSize:'22px',color:'#000000',textAlign: 'justify',    // Aligns text to justify both left and right edges
+  lineHeight: '1.5'}}>
         As we delved into the world of IP, we discovered that the challenges were widespread. People from all walks of life faced difficulties in handling their IP. Businesses, creators, and professionals needed a better way to navigate the complex world of IP process and management, and that's where our journey took a new direction.
         </p>
         </div>
@@ -92,10 +93,11 @@ const Stories = () => {
       
       <VerticalTimelineElement
         className="vertical-timeline-element"
-        date="Crafting the Solution"
-        style={{ color: '#000000' }} 
+     
+        contentStyle={{ background:  'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)', color: '#000000' }}
         iconStyle={{ background: '#00002B', color: '#fff' }}
-          icon={<FontAwesomeIcon icon={faToolbox} />}
+        icon={<FontAwesomeIcon icon={faDraftingCompass} />}
+
       >
        <div style={cardStyle}>
        <h3 style={{fontSize:'32px',    background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
@@ -103,15 +105,14 @@ const Stories = () => {
     color: 'transparent', fontWeight:'800'}}>
         Crafting the Solution 
         </h3>
-        <p className='vertical-timeline-element-title' style={{fontSize:'22px',color:'#000000'}}>
-        Our experienced team deep understanding of the field, we crafted a comprehensive platform that simplifies the entire IP journey. From safeguarding ideas to strategic management and finding ways to profit, our platform offers a unified space for all IP needs.
+        <p className='vertical-timeline-element-title' style={{fontSize:'22px',color:'#000000',textAlign: 'justify',lineHeight: '1.5'}}>Our experienced team deep understanding of the field, we crafted a comprehensive platform that simplifies the entire IP journey. From safeguarding ideas to strategic management and finding ways to profit, our platform offers a unified space for all IP needs.
         </p>
         </div>
       </VerticalTimelineElement>
       <VerticalTimelineElement
         className="vertical-timeline-element"
-        date="The Outcome"
-        style={{ color: '#000000' }} 
+      
+        contentStyle={{ background:  'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)', color: '#000000' }}
         iconStyle={{ background: '#00002B', color: '#fff' }}
           icon={<FontAwesomeIcon icon={faCheckCircle} />}
       >
@@ -121,12 +122,12 @@ const Stories = () => {
     color: 'transparent', fontWeight:'800'}}>
       The Outcome 
         </h3>
-        <p className='vertical-timeline-element-title' style={{fontSize:'22px',color:'#000000'}}>
+        <p className='vertical-timeline-element-title' style={{fontSize:'22px',color:'#000000',textAlign: 'justify',    // Aligns text to justify both left and right edges
+  lineHeight: '1.5'}}>
         After careful development, our platform emerged as a transformative solution. It empowers anyone with ideas, creations, or innovations to thrive in the world of intellectual property. Our story is an invitation to join us and shape a future where IP isn't a challenge but an opportunity for all.
         </p>
         </div>
       </VerticalTimelineElement>
-     
     </VerticalTimeline>
     </>
   );

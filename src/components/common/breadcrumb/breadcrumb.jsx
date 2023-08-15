@@ -46,6 +46,7 @@ const Breadcrumb = ({ title, back_home = false }) => {
                   fontFamily: 'Poppins, sans-serif',
                   fontWeight: '800',
                   fontSize: '70px',
+                  background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',color: 'transparent',WebkitBackgroundClip: 'text',
                 }}
               >
                 About Us
@@ -73,8 +74,7 @@ const Breadcrumb = ({ title, back_home = false }) => {
                 seamless IP asset management, protection, and monetization.
               </p>
               <div style={{textAlign:'center'}}>
-              <button  style={{backgroundColor:'#ffffff',color:'#00002B',width:'210px',fontSize:'25px',
-             fontWeight:'600', margin: '0 auto',padding: "18px 18px",borderRadius:'32px',marginTop:'18px'}}>Get Started</button>
+              <button className="tp-btn mr-55" style={{ backgroundColor: "#ffffff",color:'#232323' }}>Get In Touch</button>
            </div>
             </div>
           </div>

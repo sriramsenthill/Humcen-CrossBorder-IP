@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { FooterThree, HeaderFour, Wrapper } from '../../../layout';
+import { FooterThree, HeaderFour, HeaderSix, Wrapper } from '../../../layout';
 import { animationCreate } from '../../../utils/utils';
 import BlogArea from './blog-area';
 import BrandArea from './brand-area';

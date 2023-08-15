@@ -30,7 +30,7 @@ const FooterThree = ({ home_four = false }) => {
   return (
     <React.Fragment>
       <footer>
-        <div className="tp-footer-area black-bg pt-130 pb-30">
+        <div className="tp-footer-area black-bg pt-30 pb-20">
           <div className="container">
             <div className="row wow tpfadeUp" data-wow-duration=".3s" data-wow-delay=".5s">
               <div className="col-xl-4 col-lg-4 col-md-4">

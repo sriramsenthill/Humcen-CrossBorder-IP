@@ -10,7 +10,7 @@ const GameChanger = () => {
             <div className="row">
               <div className="tp-service-section-box text-center pb-60">
                 <h2  className='tp-title-sm'style={{fontSize:'40px'}}>
-                   Why HumCen.io Is a Game-Changer for IP Creators
+                   Why HumCen.io Is a <span style={{  background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',color: 'transparent',WebkitBackgroundClip: 'text',}}>Game-Changer for IP Creators</span>
                 </h2>
               </div>
               
@@ -31,7 +31,7 @@ const GameChanger = () => {
             padding: '5px',
             borderRadius: '50%',
             marginRight: '10px'
-          }}></i>Secure Your Creations</h3>
+          }}></i><span style={{color:'#232323',fontSize:'30px'}}>Secure Your Creations</span></h3>
                         </div>
                       </div>
                     </div>
@@ -54,7 +54,7 @@ const GameChanger = () => {
             padding: '5px',
             borderRadius: '50%',
             marginRight: '10px'
-          }}></i>Effortless Management</h3>
+          }}></i><span style={{color:'#232323',fontSize:'30px'}}>Effortless Management</span></h3>
                         </div>
                       </div>
                     </div>
@@ -77,7 +77,7 @@ const GameChanger = () => {
             padding: '5px',
             borderRadius: '50%',
             marginRight: '10px'
-          }}></i>Unlock Monetization</h3>
+          }}></i><span style={{color:'#232323',fontSize:'30px'}}>Unlock Monetization</span></h3>
                         </div>
                       </div>
                     </div>
@@ -109,7 +109,7 @@ const GameChanger = () => {
             padding: '5px',
             borderRadius: '50%',
             marginRight: '10px'
-          }}></i>Streamlined IP Oversight</h3>
+          }}></i><span style={{color:'#232323',fontSize:'30px'}}>Streamlined IP Oversight</span></h3>
                         </div>
                       </div>
                     </div>
@@ -132,7 +132,7 @@ const GameChanger = () => {
             padding: '5px',
             borderRadius: '50%',
             marginRight: '10px'
-          }}></i>Future-Focused IP Strategies</h3>
+          }}></i><span style={{color:'#232323',fontSize:'30px'}}>Future-Focused IP Strategies</span></h3>
                         </div>
                       </div>
                     </div>
@@ -155,7 +155,7 @@ const GameChanger = () => {
             padding: '5px',
             borderRadius: '50%',
             marginRight: '10px'
-          }}></i>Seize Opportunities</h3>
+          }}></i><span style={{color:'#232323',fontSize:'30px'}}>Seize Opportunities</span></h3>
                         </div>
                       </div>
                     </div>

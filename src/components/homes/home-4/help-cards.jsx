@@ -34,11 +34,11 @@ const businessList=[
 const ipList=[
     {
         id:0,
-        text:'Opportunities beyond the local markets'
+        text:'Beyond local market scope'
     },
     {
         id:1,
-        text:'Work from Anywhere, On-Time'
+        text:'Work from Anywhere'
     },
     {
         id:2,
@@ -54,10 +54,10 @@ const HelpServices= () => {
             <div className="row">
             <div className="tp-service-section-box text-center pb-60"> 
               <h2>Our platform solves major stakeholders challenges in <br/>
-              <span className='tp-title-sm'style={{fontSize:'48px'}}>Cross Border IP Industry</span></h2>
+              <span className='tp-title-sm'style={{fontSize:'48px',background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',color: 'transparent',WebkitBackgroundClip: 'text',}}>Cross Border IP Industry</span></h2>
             </div>
             <div className='d-flex m-0' style={{width:'100%'}}>
-              <ChoseItem duration='.3s' delay='.5s' icon='flaticon-group' title={<>Innovators</>}
+              <ChoseItem duration='.3s' delay='.5s' icon='flaticon-group' title={<>Creators</>}
                 text={'24+ Team Member'} listItems={innovatorsList} image={'/assets/img/about/project-management_1087840.png'}/>
               <ChoseItem duration='.5s' delay='.7s' item_num={'tpchosebox-three'} color="fea-color-5" icon='fas fa-star' title={<>Businesses</>} text={'100% Client Satisfied'} listItems={businessList} image={'/assets/img/about/business_3281412.png'}/>
               <ChoseItem duration='.7s' delay='.9s' item_num={'tpchosebox-two'} color="fea-color-4" icon='flaticon-web' title={<>IP Professionals</>} text={'65.04 k Reach'} listItems={ipList} image={'/assets/img/about/leadership_1462437.png'}/>
@@ -88,7 +88,7 @@ const ChoseItem = ({ duration, delay, item_num,image,listItems, title, text, col
               </div>
               <ul>
                 {listItems.map(item => (
-             <li key={item.id} style={{ listStyle: 'disc',fontSize:'21px',margin:'15px' }}>{item.text}</li>
+             <li key={item.id} style={{ listStyle: 'disc',fontSize:'21px',margin:'15px',textAlign:'justify'}}>{item.text}</li>
             ))}
              </ul>
             </div>

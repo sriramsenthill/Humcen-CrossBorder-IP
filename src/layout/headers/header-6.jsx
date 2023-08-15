@@ -20,8 +20,8 @@ import Button from '@material-ui/core/Button';
 
 const ColorButton = styled(Button)(({ theme }) => ({
   color: "white",
-  width: "80%",
-  height: "45px",
+  width: "100%",
+  height: "55px",
   borderRadius: "100px",
   marginBottom: "30px",
   background: "linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)",
@@ -36,8 +36,9 @@ const ColorButton = styled(Button)(({ theme }) => ({
 const WhiteDialog = styled(Dialog)(({ theme }) => ({
   "& .MuiPaper-root": {
     backgroundColor: "white",
-    width: "490px",
-    height: "320px",
+    width: "590px",
+    height: "380px",
+    textAlign:'center',
   padding:'25px',
     borderRadius: "10px",
   },
@@ -102,18 +103,18 @@ const HeaderSix = () => {
                   <div className="tp-header-yellow-button" style={{
                     width : "100 px",
                   }}>
-                      <button className="tp-btn-white" style= {{background:"#00002B", color: "white"}} onClick={openDialog}>Platform</button>
+                        <button className="tp-btn mr-55" style={{ backgroundColor: "#00002B" }} onClick={openDialog}>Platform</button>
                       <WhiteDialog open={isDialogOpen} onClose={closeDialog}>
      <CenteredDialogActions>
       <DialogTitle>
-      <h2>Coming Soon!</h2>
+      <h2 style={{textAlign:'center'}}>We're Excited to Bring You Our Cross Border IP Platform!</h2>
       </DialogTitle>
       <DialogContent>
        
-        <p style={{textAlign:"center",fontWeight:"500",fontSize:"20px",fontFamily:'Inter',color:"#8C8E8F"}}>The platform is currently under development. Stay tuned for updates!</p>
+        <p style={{textAlign:"center",fontWeight:"500",fontSize:"20px",fontFamily:'Inter',color:"#8C8E8F"}}>Currently Under Construction, Coming Soon!<br/>Click the Button Below to Get Notified When We Launch!</p>
       </DialogContent>
       <DialogActions>
-        <ColorButton onClick={closeDialog} style={{width:"120px",height:"40px",fontFamily:'Inter'}}>Ok</ColorButton>
+        <ColorButton onClick={closeDialog} style={{width:"170px",height:"60px",fontFamily:'Inter',fontWeight:'600'}}>Notify Me on Launch</ColorButton>
       </DialogActions>
       </CenteredDialogActions>
 

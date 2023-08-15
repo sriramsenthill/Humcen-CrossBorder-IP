@@ -7,7 +7,7 @@ const GameChangerBusiness = () => {
             <div className="row">
               <div className="tp-service-section-box text-center pb-60">
               <h2  className='tp-title-sm'style={{fontSize:'40px'}}>
-                Why HumCen.io Is a Paradigm Shift for Businesses
+                Why HumCen.io Is a <span style={{  background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',color: 'transparent',WebkitBackgroundClip: 'text',}}>Paradigm Shift for Businesses</span>
                 </h2>
               </div>
               
@@ -28,7 +28,7 @@ const GameChangerBusiness = () => {
            padding: '5px',
            borderRadius: '50%',
            marginRight: '10px'
-         }}></i>Elevate IP Security </h3>
+         }}></i><span style={{color:'#232323',fontSize:'30px'}}>Elevate IP Security</span> </h3>
                         </div>
                       </div>
                     </div>
@@ -51,7 +51,7 @@ const GameChangerBusiness = () => {
            padding: '5px',
            borderRadius: '50%',
            marginRight: '10px'
-         }}></i>Simplify Asset Management</h3>
+         }}></i><span style={{color:'#232323',fontSize:'30px'}}>Simplify Asset Management</span></h3>
                         </div>
                       </div>
                     </div>
@@ -74,7 +74,7 @@ const GameChangerBusiness = () => {
            padding: '5px',
            borderRadius: '50%',
            marginRight: '10px'
-         }}></i>Monetization Advancement</h3>
+         }}></i><span style={{color:'#232323',fontSize:'30px'}}>Monetization Advancement</span></h3>
                         </div>
                       </div>
                     </div>
@@ -106,7 +106,7 @@ const GameChangerBusiness = () => {
            padding: '5px',
            borderRadius: '50%',
            marginRight: '10px'
-         }}></i>Unified IP Control </h3>
+         }}></i><span style={{color:'#232323',fontSize:'30px'}}>Unified IP Control</span> </h3>
                         </div>
                       </div>
                     </div>
@@ -129,7 +129,7 @@ const GameChangerBusiness = () => {
            padding: '5px',
            borderRadius: '50%',
            marginRight: '10px'
-         }}></i>Future-Proof IP Strategies</h3>
+         }}></i><span style={{color:'#232323',fontSize:'30px'}}>Future-Proof IP Strategies</span></h3>
                         </div>
                       </div>
                     </div>
@@ -152,7 +152,7 @@ const GameChangerBusiness = () => {
            padding: '5px',
            borderRadius: '50%',
            marginRight: '10px'
-         }}></i>Capitalize on Opportunities </h3>
+         }}></i><span style={{color:'#232323',fontSize:'30px'}}>Capitalize on Opportunities</span> </h3>
                         </div>
                       </div>
                     </div>

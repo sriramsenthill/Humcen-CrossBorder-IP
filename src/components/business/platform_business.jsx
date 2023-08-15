@@ -12,7 +12,7 @@ const PlatformBusiness = () => {
           <div className="col-xl-6 col-lg-6  wow tpfadeRight ml-110" data-wow-duration=".5s" data-wow-delay=".7s">
             <div className="tp-fea-right-side">
               <div className="tp-fea-section-box">
-                <h2 className="tp-title-sm pb-40" style={{fontSize:'47px'}}>The HumCen.io Platform for Businesses
+                <h2 className="tp-title-sm pb-40" style={{fontSize:'47px'}}>The HumCen.io Platform for <span style={{  background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',color: 'transparent',WebkitBackgroundClip: 'text',}}>Businesses</span>
                 </h2>
               </div>
               <div className="fea-wrapper-main">

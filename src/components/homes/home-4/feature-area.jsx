@@ -8,7 +8,6 @@ import FeatureThrees from '../../../svg/feature-three';
 const feature_contents = {
   feature_img:'/assets/img/feature/tab_1.png',
   subtitle:'Why Choose us',
-  title:'Global IP Empowerment Platform: Protect, Manage and Monetize!',
   feature_lists:[
     {
       id:1,
@@ -72,7 +71,7 @@ const FeatureArea = () => {
             <div className="tp-fea-right-side">
               <div className="tp-fea-section-box">
                 <h5 className="tp-subtitle pb-10">{subtitle}</h5>
-                <h2 className="tp-title-sm pb-40" style={{fontSize:'42px'}}>{title}
+                <h2 className="tp-title-sm pb-40" style={{fontSize:'42px'}}>Global IP Empowerment Platform: <span style={{background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',color: 'transparent',WebkitBackgroundClip: 'text',}} >Protect, Manage and Monetize!</span>
                   <span className="tp-section-highlight">
                     {highlight_text}
                     <svg width="240" height="11" viewBox="0 0 240 11" fill="none"

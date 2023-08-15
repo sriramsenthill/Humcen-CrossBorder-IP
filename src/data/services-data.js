@@ -10,6 +10,7 @@ const services_data = [
     text_1: 'We offer expert patent consultation services to guide you through the process.',
     home: true,
     service_p_2: true,
+    border_effect: 'sv-border-effect-1',
   },
   {
     id: 2,
@@ -20,6 +21,7 @@ const services_data = [
     text_1: 'Our team provides high-quality patent drafting services for clear documentation.',
     home: true,
     service_p_2: true,
+    border_effect: 'sv-border-effect-1',
   },
   {
     id: 3,
@@ -30,6 +32,7 @@ const services_data = [
     text_1: 'We assist in the effective filing of patent applications for your innovations.',
     home: true,
     service_p_2: true,
+    border_effect: 'sv-border-effect-1',
   },
   {
     id: 4,
@@ -39,6 +42,7 @@ const services_data = [
     title: 'Patent Search',
     text_1: 'Our team conducts thorough patent searches to identify existing inventions.',
     service_p_2: true,
+    border_effect: 'sv-border-effect-1',
   },
   // Response to FER/Office action
   {
@@ -50,6 +54,7 @@ const services_data = [
     title: 'Response to FER/Office Action',
     text_1: 'We assist in preparing responses to patent office actions for successful outcomes.',
     home_2: true,
+    border_effect: 'sv-border-effect-1',
     service_p_3: true,
   },
   // Freedom to operate (FTO) Search
@@ -62,6 +67,7 @@ const services_data = [
     title: 'Freedom to Operate (FTO) Search',
     text_1: 'We perform comprehensive FTO searches to ensure your innovations comply with existing patents.',
     home_2: true,
+    border_effect: 'sv-border-effect-1',
     service_p_3: true,
   },
   // Patent Landscape
@@ -74,6 +80,7 @@ const services_data = [
     title: 'Patent Landscape Analysis',
     text_1: 'We provide insights into the patent landscape to guide your strategic decisions.',
     home_2: true,
+    border_effect: 'sv-border-effect-1',
     service_p_3: true,
   },
   // Patent portfolio analysis
@@ -86,6 +93,7 @@ const services_data = [
     color: 'service-color-1',
     text_1: 'We offer comprehensive analysis of your patent portfolio to optimize your IP strategy.',
     home_3: true,
+    border_effect: 'sv-border-effect-1',
     service_p_4: true,
   },
   // Patent Translation Service
@@ -98,6 +106,7 @@ const services_data = [
     color: 'service-color-2',
     text_1: 'We provide accurate patent translation services to facilitate global patent filings.',
     home_3: true,
+    border_effect: 'sv-border-effect-1',
     service_p_4: true,
   },
   // Patent Illustrations
@@ -110,6 +119,7 @@ const services_data = [
     color: 'service-color-3',
     text_1: 'Our skilled illustrators create detailed patent illustrations to enhance your applications.',
     home_3: true,
+    border_effect: 'sv-border-effect-1',
     service_p_4: true,
   },
   // Patent Watch
@@ -119,9 +129,9 @@ const services_data = [
     delay: '.5s',
     img: '/assets/img/service/007-email.png',
     title: 'Patent Watch Services',
-    border_effect: '',
     text_1: 'We offer patent watch services to keep you informed about relevant patent activities.',
     home_4: true,
+    border_effect: 'sv-border-effect-1',
     service_p: true,
   },
   // Patent Licensing and Commercialization services

@@ -25,7 +25,7 @@ const NewsLetter = () => {
               </h2>
               <br/>
               <div className="tp-news-button p-relative mx-auto" >
-                <button className="tp-submit-button tp-btn-yellow" type="submit" style={{ backgroundColor: '#ffffff', color: '#00002B', width: '150px', margin: '0 auto', fontSize: '18px', marginRight :"410px" }}>SignUp</button>
+              <button className="tp-btn mr-55" style={{ backgroundColor: "#ffffff",color:'#232323' }}>Get In Touch</button>
               </div>
             </div>
           </div>

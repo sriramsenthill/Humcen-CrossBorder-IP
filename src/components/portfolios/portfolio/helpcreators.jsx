@@ -30,7 +30,7 @@ const HelpCreators= () => {
             <div className="row">
             <div className="tp-service-section-box text-center pb-60"> 
               <h2>Help Creators in Crafting a Strong<br/>
-              <span className='tp-title-sm'style={{fontSize:'48px'}}>IP Future</span></h2>
+              <span className='tp-title-sm'style={{fontSize:'48px', background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',color: 'transparent',WebkitBackgroundClip: 'text',}}>IP Future!</span></h2>
             </div>
             <div className='d-flex m-0' style={{width:'100%'}}>
               <ChoseItem duration='.3s' delay='.5s' icon='flaticon-group' image={'/assets/img/about/security_10650589.png'} title={<>Protect Your IP Creations</>}

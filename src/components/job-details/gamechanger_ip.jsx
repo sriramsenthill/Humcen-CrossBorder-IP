@@ -8,7 +8,7 @@ const GameChangerIP = () => {
               <div className="tp-service-section-box text-center pb-60">
               <h2  className='tp-title-sm'style={{fontSize:'40px'}}>
 
-                   Why HumCen.io is a Game-Changing Partner for IP Professionals
+                   Why HumCen.io is a <span style={{background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',color: 'transparent',WebkitBackgroundClip: 'text',}}>Game-Changing Partner</span> for IP Professionals
                 </h2>
               </div>
               
@@ -29,7 +29,7 @@ const GameChangerIP = () => {
            padding: '5px',
            borderRadius: '50%',
            marginRight: '10px'
-         }}></i>Job Opportunities at Your Fingertips </h3>
+         }}></i><span style={{color:'#232323',fontSize:'30px'}}>Global Job Opportunities</span> </h3>
                         </div>
                       </div>
                     </div>
@@ -52,7 +52,7 @@ const GameChangerIP = () => {
            padding: '5px',
            borderRadius: '50%',
            marginRight: '10px'
-         }}></i>Effortless IP Portfolio Management </h3>
+         }}></i><span style={{color:'#232323',fontSize:'30px'}}>Seamless IP Management</span> </h3>
                         </div>
                       </div>
                     </div>
@@ -69,13 +69,13 @@ const GameChangerIP = () => {
                         <div className="text">
                           <h3 style={{ fontSize: '35px',fontWeight:'800', background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
     WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
-    color: 'transparent', fontWeight:'800'}}><i className="fa fa-bullhorn" style={{
+    color: 'transparent', fontWeight:'800'}}><i className="fas fa-dollar-sign" style={{
            
            fontSize: '30px',
            padding: '5px',
            borderRadius: '50%',
            marginRight: '10px'
-         }}></i>Amplify Earnings Potential </h3>
+         }}></i><span style={{color:'#232323',fontSize:'30px'}}>Amplify Earnings Potential</span> </h3>
                         </div>
                       </div>
                     </div>
@@ -107,7 +107,7 @@ const GameChangerIP = () => {
            padding: '5px',
            borderRadius: '50%',
            marginRight: '10px'
-         }}></i>Future-Ready Work Dynamics </h3>
+         }}></i><span style={{color:'#232323',fontSize:'30px'}}>Flexi Work Approach</span> </h3>
                         </div>
                       </div>
                     </div>
@@ -130,7 +130,7 @@ const GameChangerIP = () => {
            padding: '5px',
            borderRadius: '50%',
            marginRight: '10px'
-         }}></i>Access Cross-Border Demand </h3>
+         }}></i><span style={{color:'#232323',fontSize:'30px'}}>Global Market Access</span> </h3>
                         </div>
                       </div>
                     </div>
@@ -153,7 +153,7 @@ const GameChangerIP = () => {
            padding: '5px',
            borderRadius: '50%',
            marginRight: '10px'
-         }}></i>Knowledge Exchange with Experts </h3>
+         }}></i><span style={{color:'#232323',fontSize:'30px'}}>Expertise Sharing Hub</span> </h3>
                         </div>
                       </div>
                     </div>

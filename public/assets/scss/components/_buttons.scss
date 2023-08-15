@@ -14,21 +14,21 @@
 	position: relative;
 	z-index: 1;
 	overflow: hidden;
-    border-radius: 10px;
+    border-radius:12px;
 	text-transform: capitalize;
 	& i{
 		padding-left: 17px;
 	}
 	&:hover{
 		color: var(--tp-common-black);
-		background-color: var(--tp-theme-primary);
+		background-color: var(--tp-theme-primary);  
 		& i {
 			animation: tfLeftToRight 0.5s forwards;
 		}
 	}
 	&::before, &::after {
 		content: '';
-		background: #FFDC60;
+		background: linear-gradient(to right, #02E1B9, #00ACF6);
 		height: 50%;
 		width: 0;
 		position: absolute;

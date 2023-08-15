@@ -6,26 +6,24 @@ import VideoModal from '../../common/modals/modal-video';
 
 const hero_contents = {
   shapes: [{ img: 'hero-shape-4' }, { num: '-two', img: 'hero-shape-4.1' }],
-  title: <>Cross-Border 
-  <span className="tp-highlight"> <HighlightTwo /> <i>IP Aggregator,</i></span> and beyond </>,
+  title: <><h1 style={{background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',fontSize:"67px",color: 'transparent',WebkitBackgroundClip: 'text',}}>Cross-Border <br/>
+ IP Aggregator,and beyond</h1> </>,
   text: 'Redefines how the Intellectual Property is protected, managed and monetized on a global scale.',
-  btn_text: 'How it Works',
+  btn_text: 'Get in touch',
   video_title: 'Behind the scenes',
   video_id: 'LJbkLdtEW00',
   hero_img: '/assets/img/hero/hero-5.png'
 }
 
-const { btn_text, hero_img, shapes, social_links, text, title, video_id, video_title } = hero_contents;
+const { btn_text, hero_img, shapes,text, title } = hero_contents;
 
 const HeroArea = () => {
-  const { isVideoOpen, setIsVideoOpen } = useModal();
   return (
     <React.Fragment>
       <div className="tp-hero-area-two  pt-130 p-relative fix">
       <div className="tp-hero-yellow-shape d-none d-lg-block" style={{background: "linear-gradient(to right, #02E1B9, #00ACF6)",
 }}></div>
           {shapes.map((s, i) => <div key={i} className={`ce-hero-shape${s.num ? s.num : ''} d-none d-lg-block`}>
-          <img src={`/assets/img/hero/${s.img}.png`} alt="" />
         </div>)}
         <div className="container">
           <div className="row">
@@ -36,14 +34,10 @@ const HeroArea = () => {
                 </h3>
                 <p className="wow tpfadeUp" data-wow-duration=".5s" data-wow-delay=".7s">{text}</p>
                 <div className="tp-hero-three-button-box d-flex align-items-center wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".9s">
-                <Link href="/about">
-  <a className="tp-btn mr-55" style={{ backgroundColor: "#00002B" }}>{btn_text}</a>
-</Link>
+              
+  <button className="tp-btn mr-55" style={{ backgroundColor: "#00002B" }}>{btn_text}</button>
 
-                  <div className="tp-hero-paly-button-four">
-                    <button onClick={() => setIsVideoOpen(true)} className="popup-video">
-                      <i className="far fa-play"></i> <span>{video_title}</span></button>
-                  </div>
+                 
                 </div>
               </div>
             </div>
@@ -57,9 +51,6 @@ const HeroArea = () => {
         </div>
       </div>
 
-      {/* video modal start */}
-      <VideoModal isVideoOpen={isVideoOpen} setIsVideoOpen={setIsVideoOpen} videoId={video_id} />
-      {/* video modal end */}
     </React.Fragment>
   );
 };

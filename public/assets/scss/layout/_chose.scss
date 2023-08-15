@@ -48,3 +48,18 @@
         
     }
 }
+
+.ac-chose-bg3{
+    background-color: var(--tp-grey-1);
+    padding: 80px 80px 50px 80px;
+    width:100%;
+    @media #{$xl} {
+        padding: 40px 40px 0px 40px;
+
+    }
+    @media #{$xs} {
+        padding: 30px 30px 0px 30px;
+        
+    }
+    
+}
