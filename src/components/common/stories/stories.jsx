@@ -85,7 +85,7 @@ const Stories = () => {
         </h3>
         <p className='vertical-timeline-element-title' style={{fontSize:'22px',color:'#000000',textAlign: 'justify',    // Aligns text to justify both left and right edges
   lineHeight: '1.5'}}>
-        As we delved into the world of IP, we discovered that the challenges were widespread. People from all walks of life faced difficulties in handling their IP. Businesses, creators, and professionals needed a better way to navigate the complex world of IP process and management, and that's where our journey took a new direction.
+        As we delved into the world of IP, we discovered that the challenges were widespread. People from all walks of life faced difficulties in handling their IP. Businesses, creators, and professionals needed a better way to navigate the complex world of IP process and management, and thats where our journey took a new direction.
         </p>
         </div>
       </VerticalTimelineElement>
@@ -121,7 +121,7 @@ const Stories = () => {
         </h3>
         <p className='vertical-timeline-element-title' style={{fontSize:'22px',color:'#000000',textAlign: 'justify',    // Aligns text to justify both left and right edges
   lineHeight: '1.5'}}>
-        After careful development, our platform emerged as a transformative solution. It empowers anyone with ideas, creations, or innovations to thrive in the world of intellectual property. Our story is an invitation to join us and shape a future where IP isn't a challenge but an opportunity for all.
+        After careful development, our platform emerged as a transformative solution. It empowers anyone with ideas, creations, or innovations to thrive in the world of intellectual property. Our story is an invitation to join us and shape a future where IP isnt a challenge but an opportunity for all.
         </p>
         </div>
       </VerticalTimelineElement>

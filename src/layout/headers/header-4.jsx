@@ -101,7 +101,7 @@ const HeaderFour = () => {
            <WhiteDialog open={isDialogOpen} onClose={closeDialog}>
      <CenteredDialogActions>
       <DialogTitle style={{textAlign:'center',}}>
-       We're Excited to Bring You Our Cross Border IP Platform!
+       We are Excited to Bring You Our Cross Border IP Platform!
       </DialogTitle>
       <DialogContent style={{textAlign:"center",fontWeight:"400",fontSize:"19px",fontFamily:'Inter',color:"#8C8E8F"}}>
        

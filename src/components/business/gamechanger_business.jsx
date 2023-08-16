@@ -158,7 +158,7 @@ const GameChangerBusiness = () => {
                     </div>
                     <div className="col medium-10 small-12 large-10">
                       <div className="col-inner">
-                        <p style={{color:'#232323',fontSize:'20px',fontWeight:'500'}}> Maximize your IP's potential. Utilize our platform's features to safeguard, manage, and monetize your intellectual property for business growth.</p>
+                        <p style={{color:'#232323',fontSize:'20px',fontWeight:'500'}}> Maximize your IPs potential. Utilize our platforms features to safeguard, manage, and monetize your intellectual property for business growth.</p>
                       </div>
                     </div>
                   </div>

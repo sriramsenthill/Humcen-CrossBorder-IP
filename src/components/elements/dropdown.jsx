@@ -14,7 +14,7 @@ export default function DropDown ({intro, choices, onSelect, selectedType}) {
     <CDropdownMenu>
     {
         choices.map((choice) => {
-           return <CDropdownItem onClick={() => handleChoiceClick(choice)}>{choice}</CDropdownItem>
+           return <CDropdownItem key={choice} onClick={() => handleChoiceClick(choice)}>{choice}</CDropdownItem>
         })
     }
     </CDropdownMenu>

@@ -20,7 +20,7 @@ const NewsLetter = () => {
                 <span style={{ fontSize: '40px', fontWeight: '600', fontFamily: "Poppins, sans-serif", marginBottom: '0' }}>Ready to</span><br />
                 <span className='tp-title-sm' style={{ color: '#ffffff', fontSize: '45px', fontWeight: '600', fontFamily: "Poppins, sans-serif", marginBottom: '0' }}>Elevate Your <span style={{ fontStyle: 'italic' }}>IP Strategy?</span></span> <br />
                 <p style={{ color: '#f1f1f1', marginTop: '15px', fontSize: '20px' }}>
-                  If you're ready to simplify global IP protection, <br /> management, and monetization, connect with our experts for a <br /> personalized consultation.
+                  If you are ready to simplify global IP protection, <br /> management, and monetization, connect with our experts for a <br /> personalized consultation.
                 </p>
               </h2>
               <br/>

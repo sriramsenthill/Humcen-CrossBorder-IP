@@ -161,7 +161,7 @@ const GameChanger = () => {
                     </div>
                     <div className="col medium-10 small-12 large-10">
                       <div className="col-inner">
-                        <p style={{color:'#232323',fontSize:'20px',fontWeight:'500'}}> Maximize the potential of your IP. Utilize our platform's capabilities to protect, manage, and profit from your intellectual property.</p>
+                        <p style={{color:'#232323',fontSize:'20px',fontWeight:'500'}}> Maximize the potential of your IP. Utilize our platforms capabilities to protect, manage, and profit from your intellectual property.</p>
                       </div>
                     </div>
                   </div>

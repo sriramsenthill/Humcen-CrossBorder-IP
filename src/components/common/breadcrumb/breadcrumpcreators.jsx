@@ -65,11 +65,11 @@ const BreadcrumbCreators = ({ title, back_home = false }) => {
                 Safeguard your Intellectual Property (IP) effortlessly <br/> and maximize your revenue streams.<br/>
                 <br/>
 
-                Enhance Your IP Portfolio's Value Over Time. <br/>
+                Enhance Your IP Portfolios Value Over Time. <br/>
 
                 <br/>
 
-               Stress-Free Transactions with Transparent Process <br/> and No Hidden Costs Propel Your IP's Success!
+               Stress-Free Transactions with Transparent Process <br/> and No Hidden Costs Propel Your IP Success!
 
               </p>
               <div style={{textAlign:'center'}}>

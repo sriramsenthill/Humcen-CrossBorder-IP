@@ -63,8 +63,8 @@ const Breadcrumpbusiness = ({ title, back_home = false }) => {
                 }}
               >
                   Elevate Your Business with <br /> Robust IP Protection and Revenue Optimization. <br /> <br /> 
-              Strategically Boost Your IP Portfolio's Worth
-Seamless Transactions, Transparency, <br />and Cost Efficiency Propel Your Business's IP Advancement! </p>
+              Strategically Boost Your IP Portfolios Worth
+Seamless Transactions, Transparency, <br />and Cost Efficiency Propel Your Business IP Advancement! </p>
 <div style={{textAlign:'center'}}>
 <button className="tp-btn mr-55" style={{ backgroundColor: "#ffffff",color:'#232323' }}>Get In Touch</button>
            </div>
