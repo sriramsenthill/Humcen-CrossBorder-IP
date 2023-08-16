@@ -68,7 +68,7 @@ const BreadcrumbIP = ({ title, back_home = false }) => {
              Join our platform as we onboard skilled IP professionals from around the world.<br/> Unlock abundant job prospects, work remotely, and boost your earnings.
               </p>
               <div style={{textAlign:'center'}}>
-              <button className="tp-btn mr-55" style={{ backgroundColor: "#ffffff",color:'#232323' }}>Get In Touch</button>
+              <button className="tp-btn mr-55" style={{ backgroundColor: "#ffffff",color:'#232323' }}><a href="/register">Get In Touch</a></button>
            </div>
             </div>
           </div>

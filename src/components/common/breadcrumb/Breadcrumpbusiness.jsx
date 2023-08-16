@@ -66,7 +66,7 @@ const Breadcrumpbusiness = ({ title, back_home = false }) => {
               Strategically Boost Your IP Portfolios Worth
 Seamless Transactions, Transparency, <br />and Cost Efficiency Propel Your Business IP Advancement! </p>
 <div style={{textAlign:'center'}}>
-<button className="tp-btn mr-55" style={{ backgroundColor: "#ffffff",color:'#232323' }}>Get In Touch</button>
+<button className="tp-btn mr-55" style={{ backgroundColor: "#ffffff",color:'#232323' }}><a href="/register">Get In Touch</a></button>
            </div>
             </div>
           </div>

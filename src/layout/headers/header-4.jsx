@@ -71,7 +71,7 @@ const HeaderFour = () => {
                   </Link>
                 </div>
               </div>
-              <div className="col-lg-6">
+              <div className="col-lg-8">
                 <div className="tp-main-menu tp-menu-black text-center">
                   <nav id="mobile-menu">
                     {/* nav menus start */}
@@ -80,16 +80,11 @@ const HeaderFour = () => {
                   </nav>
                 </div>
               </div>
-              <div className="col-lg-3">
+              <div className="col-lg-1">
                 <div className="tp-header-left d-flex align-items-center justify-content-end">
-                  <div className="tp-header-login login-color-black d-none d-xxl-block ">
-                    <Link href="/login">
-                      <a> <i className="fal fa-user"></i> Login</a>
-                    </Link>
-                  </div>
                   <div className="tp-header-yellow-button tp-yellow-space">
                     
-                    <button className="tp-btn mr-55" style={{ backgroundColor: "#00002B" }} onClick={openDialog}>Platform</button>
+                    <button className="tp-btn" style={{ backgroundColor: "#00002B" }} onClick={openDialog}>Platform</button>
                     
                   </div>
                 </div>
