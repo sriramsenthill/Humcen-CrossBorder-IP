@@ -59,9 +59,9 @@ const HelpServices= () => {
             </div>
             <div className='d-flex m-0' style={{width:'100%'}}>
               <ChoseItem duration='.3s' delay='.5s' icon='flaticon-group' title={<>Creators</>}
-                text={'24+ Team Member'} listItems={innovatorsList} image={'/assets/img/about/project-management_1087840.png'}/>
-              <ChoseItem duration='.5s' delay='.7s' item_num={'tpchosebox-three'} color="fea-color-5" icon='fas fa-star' title={<>Businesses</>} text={'100% Client Satisfied'} listItems={businessList} image={'/assets/img/about/business_3281412.png'}/>
-              <ChoseItem duration='.7s' delay='.9s' item_num={'tpchosebox-two'} color="fea-color-4" icon='flaticon-web' title={<>IP Professionals</>} text={'65.04 k Reach'} listItems={ipList} image={'/assets/img/about/leadership_1462437.png'}/>
+                text={'24+ Team Member'} listItems={innovatorsList} image={'/assets/img/about/innovator (1).png'}/>
+              <ChoseItem duration='.5s' delay='.7s' item_num={'tpchosebox-three'} color="fea-color-5" icon='fas fa-star' title={<>Businesses</>} text={'100% Client Satisfied'} listItems={businessList} image={'/assets/img/about/corporation.png'}/>
+              <ChoseItem duration='.7s' delay='.9s' item_num={'tpchosebox-two'} color="fea-color-4" icon='flaticon-web' title={<>IP Professionals</>} text={'65.04 k Reach'} listItems={ipList} image={'/assets/img/about/professional.png'}/>
           </div>
           </div>
         </div>
