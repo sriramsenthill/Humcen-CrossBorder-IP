@@ -13,7 +13,7 @@ const GameChangerIP = () => {
               </div>
               
               {/* Row 1 */}
-              <div className="col medium-10 small-12 large-4">
+              <div className="col medium-10 col-12 col-lg-6 small-12 large-4">
                 <div className="col-inner">
                   <div className="row">
                     {/* Point 01 */}

@@ -19,7 +19,7 @@ const PlatformCreators = () => {
   </div>
      </div>
 
-          <div className="col-xl-6 col-lg-6  wow tpfadeRight ml-110" data-wow-duration=".5s" data-wow-delay=".7s">
+          <div className="col-xl-6 col-lg-6  wow tpfadeRight ml-110 ml-lg-0 mr-lg-50" data-wow-duration=".5s" data-wow-delay=".7s">
             <div className="tp-fea-right-side">
               <div className="tp-fea-section-box">
                 <h2 className="tp-title-sm pb-40" style={{fontSize:'39px'}}>The HumCen.io Platform for <span style={{  background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',color: 'transparent',WebkitBackgroundClip: 'text',fontSize:'40px'}}>Creators</span>

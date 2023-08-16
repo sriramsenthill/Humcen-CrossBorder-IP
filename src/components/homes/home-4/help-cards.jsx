@@ -45,7 +45,8 @@ const ipList=[
         text:'Dynamic Earnings Potential'
     }
 ]
-
+//col-xl-3 col-lg-4 col-md-6
+//col-12 col-md-6 col-xl-3 col-lg-6
 const HelpServices= () => {
     return (
       <>
@@ -74,8 +75,9 @@ export default HelpServices;
 const ChoseItem = ({ duration, delay, item_num,image,listItems, title, text, color }) => {
 
     return (
-      <div className="col-12 col-md-6 col-xl-3 col-lg-6 wow tpfadeUp mr-120"
-        data-wow-duration={duration} data-wow-delay={delay}>
+     <div className="col-12 col-md-6 col-xl-3 col-lg-6 wow tpfadeUp mr-120"
+      data-wow-duration={duration}
+     data-wow-delay={delay}>
         <div className="tp-chose-item mb-30 d-flex justify-content-center" style={{width:'120%'}}>
           <div className={`tpchosebox ${item_num && item_num}`} style={{height:'100%'}}>
             <div className={`tpchosebox__icon ${color && color} mb-30`} style={{textAlign:'center'}}>
