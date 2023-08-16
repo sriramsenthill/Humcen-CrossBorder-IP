@@ -53,7 +53,7 @@ const FooterThree = ({ home_four = false }) => {
                     </div>
                     <div className="tp-footer-widget__list">
                       <ul>
-                        {widget_lists.map((l, i) => <li key={i}><a href="/register">{l}</a></li>)}
+                        {widget_lists.map((l, i) =>  <Link key={i} href="/register"><li  style={{cursor:'pointer'}}>{l}</li></Link>)}
                       </ul>
                     </div>
                   </div>

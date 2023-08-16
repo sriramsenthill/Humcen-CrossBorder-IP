@@ -52,7 +52,7 @@ const ServicesArea = () => {
           })}
           <div className={`col-xl-3 col-lg-4 col-md-6 wow tpfadeUp ${showMoreServices ? 'd-none' : ''}`}   data-wow-duration="1.1s" data-wow-delay="1.3s">
             
-              <div className="sv-color-eight mb-30" style={{ height: '31vw' }}>
+              <div className="sv-color-eight mb-30" style={{ height: '500px' }}>
                 <div className="sv-color-eight__title text-center d-flex flex-column align-items-center justify-content-center h-100">
                   <h3 className="tp-sv-sm-title">
                     <a onClick={toggleMoreServices} style={{cursor:'pointer'}}>

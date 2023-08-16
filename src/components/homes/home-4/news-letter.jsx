@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const news_letter_contents = {
@@ -25,7 +26,9 @@ const NewsLetter = () => {
               </h2>
               <br/>
               <div className="tp-news-button p-relative mx-auto" >
-              <button className="tp-btn mr-55" style={{ backgroundColor: "#ffffff",color:'#232323' }}><a href="/register">Get In Touch</a></button>
+              <Link href="/register">
+              <button className="tp-btn mr-55" style={{ backgroundColor: "#ffffff",color:'#232323' }}>Get In Touch</button>
+              </Link>
               </div>
             </div>
           </div>

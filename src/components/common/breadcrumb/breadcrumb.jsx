@@ -79,7 +79,9 @@ const Breadcrumb = ({ title, back_home = false }) => {
                 seamless IP asset management, protection, and monetization.
               </p>
               <div style={{textAlign:'center'}}>
-              <button className="tp-btn mr-55" style={{ backgroundColor: "#ffffff",color:'#232323' }}><a href="/register">Get In Touch</a></button>
+              <Link href="/register">
+              <button className="tp-btn mr-55" style={{ backgroundColor: "#ffffff",color:'#232323' }}>Get In Touch</button>
+           </Link>
            </div>
             </div>
           </div>
