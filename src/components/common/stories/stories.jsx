@@ -52,9 +52,9 @@ const Stories = () => {
     <div style={connectingLineStyle}></div>
       <VerticalTimelineElement
         className="vertical-timeline-element"
-        contentStyle={{ background:  'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)', color: '#000000' }}
-        iconStyle={{ background: '#00002B', color: '#fff' }}
-          icon={<FontAwesomeIcon icon={faRocket} />}
+  iconStyle={{ background: '#00002B', color: '#fff' }}
+  icon={<FontAwesomeIcon icon={faRocket} />}
+  contentStyle={{ border: 'none', padding: '0' }}
       >
       <div style={cardStyle}>
         <h3 style={{fontSize:'32px',    background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
@@ -73,9 +73,8 @@ const Stories = () => {
   
       <VerticalTimelineElement
         className="vertical-timeline-element"
-       
-        contentStyle={{ background:  'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)', color: '#000000' }}
-        iconStyle={{ background: '#00002B', color: '#fff' }}
+  iconStyle={{ background: '#00002B', color: '#fff' }}
+  contentStyle={{ border: 'none', padding: '0' }}
         icon={<FontAwesomeIcon icon={faCompass} />}
       >
        <div style={cardStyle}>
@@ -92,10 +91,9 @@ const Stories = () => {
       </VerticalTimelineElement>
       
       <VerticalTimelineElement
-        className="vertical-timeline-element"
-     
-        contentStyle={{ background:  'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)', color: '#000000' }}
-        iconStyle={{ background: '#00002B', color: '#fff' }}
+       className="vertical-timeline-element"
+  iconStyle={{ background: '#00002B', color: '#fff' }}
+  contentStyle={{ border: 'none', padding: '0' }}
         icon={<FontAwesomeIcon icon={faDraftingCompass} />}
 
       >
@@ -110,11 +108,10 @@ const Stories = () => {
         </div>
       </VerticalTimelineElement>
       <VerticalTimelineElement
-        className="vertical-timeline-element"
-      
-        contentStyle={{ background:  'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)', color: '#000000' }}
-        iconStyle={{ background: '#00002B', color: '#fff' }}
-          icon={<FontAwesomeIcon icon={faCheckCircle} />}
+      className="vertical-timeline-element"
+  iconStyle={{ background: '#00002B', color: '#fff' }}
+  icon={<FontAwesomeIcon icon={faCheckCircle} />}
+  contentStyle={{ border: 'none', padding: '0' }}
       >
       <div style={cardStyle}>
       <h3 style={{fontSize:'32px',    background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',

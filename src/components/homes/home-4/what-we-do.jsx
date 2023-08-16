@@ -23,4 +23,4 @@ const WhatWeDo = () => {
   );
 };
 
-export default WhatWeDo;
+export default WhatWeDo; 

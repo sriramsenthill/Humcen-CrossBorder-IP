@@ -10,7 +10,7 @@ const Breadcrumb = ({ title, back_home = false }) => {
     backgroundPosition: 'center', // Center the background image
     backgroundSize: 'cover', // Make the background image cover the entire area
     position: 'relative', // Add this to enable curved bottom
-    overflow: 'hidden', // Hide the overflow for curved effect
+    overflow: 'hidden',
   }}
 >
 <div
@@ -38,7 +38,12 @@ const Breadcrumb = ({ title, back_home = false }) => {
       >
         <div className="row">
           <div className="col-xxl-12">
-            <div>
+            <div style={{
+                padding: '20px', // Add padding to create space for the shadow
+              opacity:'8.5',
+                borderRadius: '10px', // Add border radius for the shadow effect
+                boxShadow: '0px 1px 1px rgba(0, 0, 0, 0.05)', // Add an extremely subtle box shadow
+              }}>
               <h3
                 style={{
                   color: '#ffffff',

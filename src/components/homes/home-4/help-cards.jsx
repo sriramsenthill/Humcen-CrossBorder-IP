@@ -74,10 +74,10 @@ export default HelpServices;
 const ChoseItem = ({ duration, delay, item_num,image,listItems, title, text, color }) => {
 
     return (
-      <div className="col-xl-3 col-lg-6 col-md-6 col-12 wow tpfadeUp mr-120"
+      <div className="col-12 col-md-6 col-xl-3 col-lg-6 wow tpfadeUp mr-120"
         data-wow-duration={duration} data-wow-delay={delay}>
         <div className="tp-chose-item mb-30 d-flex justify-content-center" style={{width:'120%'}}>
-          <div className={`tpchosebox ${item_num && item_num}`} style={{height:'30vw'}}>
+          <div className={`tpchosebox ${item_num && item_num}`} style={{height:'100%'}}>
             <div className={`tpchosebox__icon ${color && color} mb-30`} style={{textAlign:'center'}}>
              <img src={image} alt="" style={{width:'88px'}}/>
             </div>
@@ -94,5 +94,6 @@ const ChoseItem = ({ duration, delay, item_num,image,listItems, title, text, col
             </div>
           </div>
           </div>
+
     );
   }

@@ -2,10 +2,62 @@ import Link from 'next/link';
 import React from 'react';
 import useSticky from '../../hooks/use-sticky';
 import MobileMenu from './mobile-menu';
+import styled from 'styled-components';
 import NavMenus from './nav-menus';
+import Dialog from '@material-ui/core/Dialog';
+import DialogTitle from '@material-ui/core/DialogTitle';
+import DialogContent from '@material-ui/core/DialogContent';
+import DialogActions from '@material-ui/core/DialogActions';
+import Button from '@material-ui/core/Button';
+import { Typography } from '@material-ui/core';
+import { useState } from 'react';
+
+
+const ColorButton = styled(Button)(({ theme }) => ({
+  color: "white",
+  width: "100%",
+  height: "55px",
+  borderRadius: "100px",
+  marginBottom: "30px",
+  background: "linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)",
+  "&:hover": {
+    background: "linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)",
+  },
+  textTransform: "none",
+  fontSize: "14px",
+  fontWeight: "400",
+}));
+
+const WhiteDialog = styled(Dialog)(() => ({
+  "& .MuiPaper-root": {
+    backgroundColor: "white",
+    width: "590px",
+    height: "380px",
+    textAlign:'center',
+  padding:'25px',
+    borderRadius: "10px",
+  },
+}));
+
+
+const CenteredDialogActions = styled(DialogActions)({
+  display: 'flex',
+  justifyContent: 'center',
+  flexDirection:'column',
+});
+
 
 const HeaderFour = () => {
   const { headerSticky } = useSticky();
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
+
+  const openDialog = () => {
+    setIsDialogOpen(true);
+  };
+
+  const closeDialog = () => {
+    setIsDialogOpen(false);
+  };
   return (
     <React.Fragment>
       <header className="d-none d-lg-block">
@@ -37,7 +89,7 @@ const HeaderFour = () => {
                   </div>
                   <div className="tp-header-yellow-button tp-yellow-space">
                     
-                    <button className="tp-btn mr-55" style={{ backgroundColor: "#00002B" }}>Platform</button>
+                    <button className="tp-btn mr-55" style={{ backgroundColor: "#00002B" }} onClick={openDialog}>Platform</button>
                     
                   </div>
                 </div>
@@ -46,6 +98,21 @@ const HeaderFour = () => {
           </div>
           </div>
            </header>
+           <WhiteDialog open={isDialogOpen} onClose={closeDialog}>
+     <CenteredDialogActions>
+      <DialogTitle style={{textAlign:'center',}}>
+       We're Excited to Bring You Our Cross Border IP Platform!
+      </DialogTitle>
+      <DialogContent style={{textAlign:"center",fontWeight:"400",fontSize:"19px",fontFamily:'Inter',color:"#8C8E8F"}}>
+       
+        Currently Under Construction, Coming Soon!<br/>Click the Button Below to Get Notified When We Launch!
+      </DialogContent>
+      <DialogActions>
+        <ColorButton onClick={closeDialog} style={{width:"170px",height:"60px",fontFamily:'Inter',fontWeight:'600'}}>Notify Me on Launch</ColorButton>
+      </DialogActions>
+      </CenteredDialogActions>
+
+</WhiteDialog>
 
       {/* <!-- mobile-menu-area --> */}
       <MobileMenu logo={"logo-blue.png"} />
