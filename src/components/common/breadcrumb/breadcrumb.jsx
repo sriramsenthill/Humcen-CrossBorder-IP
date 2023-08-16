@@ -36,7 +36,7 @@ const Breadcrumb = ({ title, back_home = false }) => {
           height: '100%',
         }}
       >
-        <div className="row">
+        <div className="row wow tpfadeUp">
           <div className="col-xxl-12">
             <div style={{
                 padding: '20px', // Add padding to create space for the shadow

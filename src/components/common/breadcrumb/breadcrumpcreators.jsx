@@ -36,7 +36,7 @@ const BreadcrumbCreators = ({ title, back_home = false }) => {
           height: '100%',
         }}
       >
-        <div className="row">
+        <div className="row wow tpfadeUp">
           <div className="col-xxl-12">
             <div>
               <h3
