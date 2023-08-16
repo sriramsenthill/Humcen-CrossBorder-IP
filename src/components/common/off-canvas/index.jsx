@@ -58,16 +58,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
               </ul>
             </div>
           </div>
-          <div className="tpoffcanvas__contact">
-            <span>Contact us</span>
-            <ul>
-              <li>
-                <i className="fas fa-star"></i> <a href="https://goo.gl/maps/abHegV4AoiJA6Syd8" rel="noreferrer" target="_blank">Melbone st, Australia, Ny 12099</a>
-              </li>
-              <li><i className="fas fa-star"></i><a href="tel:8180012345678">+81 800 123 456 78</a></li>
-              <li><i className="fas fa-star"></i><a href="mailto:Collaxmail@gmail.com">Collaxmail@gmail.com</a></li>
-            </ul>
-          </div>
+        
           <div className="tpoffcanvas__input d-none d-sm-block">
             <p>Get UPdate</p>
             <form className="p-relative" action="#">

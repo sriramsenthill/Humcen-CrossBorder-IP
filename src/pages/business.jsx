@@ -10,7 +10,7 @@ import GameChangerBusiness from '../components/business/gamechanger_business';
 import GameChanger from '../components/portfolios/portfolio/gamechanger';
 import BusinessCreators from '../components/portfolios/portfolio/business';
 import NewsLetter from '../components/homes/home-4/news-letter';
-
+import SEO from '../components/seo';
 const Business = () => {
   useEffect(() => {
     setTimeout(() => {
@@ -20,6 +20,7 @@ const Business = () => {
 
   return (
     <Wrapper>
+     <SEO pageTitle={'Humcen - Cross Border IP Aggregator'} />
       <HeaderSix />
       <Breadcrumpbusiness />
       <HelpBusiness />
