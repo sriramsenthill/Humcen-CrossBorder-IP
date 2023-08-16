@@ -19,6 +19,7 @@
     "@mui/material": "^5.14.4",
     "@popperjs/core": "^2.11.6",
     "@reduxjs/toolkit": "^1.8.5",
+    "axios": "^1.4.0",
     "bootstrap": "^5.2.1",
     "firebase": "^9.10.0",
     "formik": "^2.2.9",
