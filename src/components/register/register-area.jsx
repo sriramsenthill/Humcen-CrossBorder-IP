@@ -11,7 +11,7 @@ const RegisterArea = () => {
               <div className="tp-login-thumb login-space sky-bg d-flex justify-content-center h-100" style={{
                 backgroundColor: "white",
               }}>
-                <img className='h-100' src="/assets/img/contact/login.png" alt="" />
+                <img className='h-100' src="/assets/img/contact/icon humcen.png" style={{marginBottom:"350px"}} alt="" />
               </div>
             </div>
             <div className="col-xl-6 col-lg-6 col-12">
