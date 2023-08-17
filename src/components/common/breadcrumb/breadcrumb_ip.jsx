@@ -46,6 +46,7 @@ const BreadcrumbIP = ({ title, back_home = false }) => {
                   fontFamily: 'Poppins, sans-serif',
                   fontWeight: '800',
                   fontSize: '50px',
+                  marginTop:'40px',
                   background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',color: 'transparent',WebkitBackgroundClip: 'text',
                 }}
               >
@@ -58,7 +59,7 @@ const BreadcrumbIP = ({ title, back_home = false }) => {
                   fontFamily: 'sans-serif',
                   fontWeight: '200',
                   fontSize: '25px',
-                  marginTop:'20px',
+                  marginTop:'40px',
                 }}
               >
                Cross-Border IP Opportunities Await Join, Work Remotely, and Thrive.
@@ -69,7 +70,7 @@ const BreadcrumbIP = ({ title, back_home = false }) => {
               </p>
               <div style={{textAlign:'center'}}>
               <Link href="/register">
-              <button className="tp-btn mr-55 mt-20" style={{ backgroundColor: "#ffffff",color:'#232323' }}>Get In Touch</button>
+              <button className="tp-btn mr-55 mt-70" style={{ backgroundColor: "#ffffff",color:'#232323' }}>Get In Touch</button>
               </Link>
            </div>
             </div>

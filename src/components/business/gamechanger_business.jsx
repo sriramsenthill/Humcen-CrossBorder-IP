@@ -23,7 +23,8 @@ const GameChangerBusiness = () => {
                         <h3 style={{ fontSize: '35px',fontWeight:'800',background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
     WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
     color: 'transparent', fontWeight:'800'}}><i className="fa fa-shield-alt" style={{
-           
+      background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text',
            fontSize: '30px',
            padding: '5px',
            borderRadius: '50%',
@@ -46,7 +47,8 @@ const GameChangerBusiness = () => {
                         <h3 style={{ fontSize: '35px',fontWeight:'800',background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
     WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
     color: 'transparent', fontWeight:'800'}}><i className="fa fa-cube" style={{
-           
+      background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text',
            fontSize: '30px',
            padding: '5px',
            borderRadius: '50%',
@@ -69,7 +71,8 @@ const GameChangerBusiness = () => {
                         <h3 style={{ fontSize: '35px',fontWeight:'800',background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
     WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
     color: 'transparent', fontWeight:'800'}}><i className="fa fa-money-bill-wave-alt" style={{
-           
+      background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text',
            fontSize: '30px',
            padding: '5px',
            borderRadius: '50%',
@@ -101,7 +104,8 @@ const GameChangerBusiness = () => {
                         <h3 style={{ fontSize: '35px',fontWeight:'800',background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
     WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
     color: 'transparent', fontWeight:'800'}}><i className="fa fa-globe" style={{
-           
+      background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text',
            fontSize: '30px',
            padding: '5px',
            borderRadius: '50%',
@@ -124,7 +128,8 @@ const GameChangerBusiness = () => {
                         <h3 style={{ fontSize: '35px',fontWeight:'800',background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
     WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
     color: 'transparent', fontWeight:'800'}}><i className="fa fa-shield-check"  style={{
-           
+      background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text',
            fontSize: '30px',
            padding: '5px',
            borderRadius: '50%',
@@ -147,7 +152,8 @@ const GameChangerBusiness = () => {
                         <h3 style={{ fontSize: '35px',fontWeight:'800',background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
     WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
     color: 'transparent', fontWeight:'800'}}><i  className="fa fa-chart-line" style={{
-           
+      background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text',
            fontSize: '30px',
            padding: '5px',
            borderRadius: '50%',

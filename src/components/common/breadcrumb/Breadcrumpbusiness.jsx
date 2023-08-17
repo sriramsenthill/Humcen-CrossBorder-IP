@@ -46,6 +46,7 @@ const Breadcrumpbusiness = ({ title, back_home = false }) => {
                   fontFamily: 'Poppins, sans-serif',
                   fontWeight: '800',
                   fontSize: '50px',
+                  marginTop:'45px',
                   background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',color: 'transparent',WebkitBackgroundClip: 'text',
                 }}
               >
@@ -59,7 +60,7 @@ const Breadcrumpbusiness = ({ title, back_home = false }) => {
                   fontFamily: 'sans-serif',
                   fontWeight: '200',
                   fontSize: '25px',
-                  marginTop:'20px',
+                  marginTop:'30px',
                 }}
               >
                   Elevate Your Business with <br /> Robust IP Protection and Revenue Optimization. <br /> <br /> 
@@ -67,7 +68,7 @@ const Breadcrumpbusiness = ({ title, back_home = false }) => {
 Seamless Transactions, Transparency, <br />and Cost Efficiency Propel Your Business IP Advancement! </p>
 <div style={{textAlign:'center'}}>
 <Link href="/register">
-<button className="tp-btn mr-55 mt-20" style={{ backgroundColor: "#ffffff",color:'#232323' }}>Get In Touch</button>
+<button className="tp-btn mr-55 mt-60" style={{ backgroundColor: "#ffffff",color:'#232323' }}>Get In Touch</button>
      </Link>     
           
            </div>

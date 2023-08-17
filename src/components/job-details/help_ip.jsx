@@ -25,7 +25,7 @@ const ipList=[
 const HelpIP= () => {
     return (
       <>
-        <div className="ac-chose-area mb-130">
+        <div className="ac-chose-area ac-chose-bg3 mb-130">
           <div className="container">
             <div className="row">
             <div className="tp-service-section-box text-center pb-60"> 

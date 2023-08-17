@@ -26,7 +26,8 @@ const GameChanger = () => {
                         <h3 style={{ fontSize: '35px',fontWeight:'800',background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
     WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
     color: 'transparent', fontWeight:'800'}}>  <i className="fa fa-shield" style={{
-         
+      background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text',
             fontSize: '30px',
             padding: '5px',
             borderRadius: '50%',
@@ -48,8 +49,9 @@ const GameChanger = () => {
                         <div className="text">
                         <h3 style={{ fontSize: '35px',fontWeight:'800',background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
     WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
-    color: 'transparent', fontWeight:'800'}}><i className="fa fa-cogs" style={{
-          
+    color:'transparent', fontWeight:'800'}}><i className="fa fa-cogs" style={{
+      background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text',
             fontSize: '30px',
             padding: '5px',
             borderRadius: '50%',
@@ -72,7 +74,8 @@ const GameChanger = () => {
                         <h3 style={{ fontSize: '35px',fontWeight:'800',background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
     WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
     color: 'transparent', fontWeight:'800'}}><i className="fa fa-money-bill-wave" style={{
-           
+      background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text',
             fontSize: '30px',
             padding: '5px',
             borderRadius: '50%',
@@ -108,7 +111,9 @@ const GameChanger = () => {
             fontSize: '31px',
             padding: '5px',
             borderRadius: '50%',
-            marginRight: '10px'
+            marginRight: '10px',
+            background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text',
           }}></i><span style={{color:'#232323',fontSize:'30px'}}>Streamlined IP Oversight</span></h3>
                         </div>
                       </div>
@@ -127,7 +132,8 @@ const GameChanger = () => {
                         <h3 style={{ fontSize: '35px',fontWeight:'800',background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
     WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
     color: 'transparent', fontWeight:'800'}}><i className="fa fa-rocket" style={{
-           
+      background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text',
             fontSize: '30px',
             padding: '5px',
             borderRadius: '50%',
@@ -150,7 +156,8 @@ const GameChanger = () => {
                         <h3 style={{ fontSize: '35px',fontWeight:'800',background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
     WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
     color: 'transparent', fontWeight:'800'}}><i className="fa fa-handshake" style={{
-           
+      background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text',
             fontSize: '30px',
             padding: '5px',
             borderRadius: '50%',

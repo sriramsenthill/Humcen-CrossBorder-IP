@@ -49,16 +49,16 @@ const ServicesArea = () => {
             return (
               <div
                 key={id}
-                className="col-xl-3 col-lg-4 col-md-6 wow tpfadeUp"
+                className="col-xl-3 col-lg-4 col-md-6 wow tpfadeUp m-0"
                 data-wow-duration={duration}
                 data-wow-delay={delay}
               >
                 <div className="tp-sv-border-effect">
                   <div
-                    className="tp-service-item-four mb-30"
-                    style={{ height: "450px" }}
+                    className="tp-service-item-four mb-20"
+                    style={{ height: "420px" }}
                   >
-                    <div class="tp-service-item-four__img mb-40 bg-white ">
+                    <div class="tp-service-item-four__img mb-40 mt-0 bg-white ">
                       <img
                         src={img}
                         alt={title}
@@ -70,8 +70,8 @@ const ServicesArea = () => {
                         <a>{title}</a>
                       </h3>
                     </div>
-                    <div className="tp-service-item-four__text text-justify">
-                      <p style={{ fontSize: "20px" }}>{text_1}</p>
+                    <div className="tp-service-item-four__text" style={{textAlign:'left'}}>
+                      <p style={{ fontSize: "15px",color:'#333333' }}>{text_1}</p>
                     </div>
                   </div>
                 </div>
@@ -85,11 +85,14 @@ const ServicesArea = () => {
             data-wow-duration="1.1s"
             data-wow-delay="1.3s"
           >
-            <div className="sv-color-eight mb-30" style={{ height: "450px" }}>
+            <div className="sv-color-eight mb-30" style={{ height: "420px" }}>
               <div className="sv-color-eight__title text-center d-flex flex-column align-items-center justify-content-center h-100">
                 <h3 className="tp-sv-sm-title">
                   <a onClick={toggleMoreServices} style={{ cursor: "pointer" }}>
-                    <i className="fal fa-long-arrow-down"></i>{" "}
+                    <i className="fal fa-long-arrow-down" style={{background:
+                      "linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)",
+                    color: "transparent",
+                    WebkitBackgroundClip: "text",}}></i>{" "}
                   </a>
                 </h3>
                 <p className="tp-sv-sm-title">

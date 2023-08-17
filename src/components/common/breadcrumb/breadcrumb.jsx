@@ -51,6 +51,7 @@ const Breadcrumb = ({ title, back_home = false }) => {
                   fontFamily: 'Poppins, sans-serif',
                   fontWeight: '800',
                   fontSize: '70px',
+                  marginTop:'37px',
                   background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',color: 'transparent',WebkitBackgroundClip: 'text',
                 }}
               >
@@ -63,6 +64,7 @@ const Breadcrumb = ({ title, back_home = false }) => {
                   fontFamily: 'sans-serif',
                   fontWeight: '200',
                   fontSize: '25px',
+                  marginTop:'40px',
                 }}
               >
                 HumCen.io is crafted by a team of IP specialists and Tech enthusiasts to
@@ -80,7 +82,7 @@ const Breadcrumb = ({ title, back_home = false }) => {
               </p>
               <div style={{textAlign:'center'}}>
               <Link href="/register">
-              <button className="tp-btn mr-55 mt-20" style={{ backgroundColor: "#ffffff",color:'#232323' }}>Get In Touch</button>
+              <button className="tp-btn mr-55 mt-60" style={{ backgroundColor: "#ffffff",color:'#232323' }}>Get In Touch</button>
            </Link>
            </div>
             </div>

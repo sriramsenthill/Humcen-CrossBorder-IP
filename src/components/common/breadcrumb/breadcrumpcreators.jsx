@@ -46,6 +46,7 @@ const BreadcrumbCreators = ({ title, back_home = false }) => {
                   fontFamily: 'Poppins, sans-serif',
                   fontWeight: '800',
                   fontSize: '50px',
+                  marginTop:'50px',
                   background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',color: 'transparent',WebkitBackgroundClip: 'text',
                 }}
               >
@@ -74,7 +75,7 @@ const BreadcrumbCreators = ({ title, back_home = false }) => {
               </p>
               <div style={{textAlign:'center'}}>
               <Link href="/register">
-              <button className="tp-btn mr-55 mt-20" style={{ backgroundColor: "#ffffff",color:'#232323' }}>Get In Touch</button>
+              <button className="tp-btn mr-55 mt-50" style={{ backgroundColor: "#ffffff",color:'#232323' }}>Get In Touch</button>
               </Link>
          
            </div>

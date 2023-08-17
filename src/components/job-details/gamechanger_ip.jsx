@@ -24,7 +24,8 @@ const GameChangerIP = () => {
                           <h3 style={{ fontSize: '35px',fontWeight:'800',background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
     WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
     color: 'transparent', fontWeight:'800'}}><i className="fa fa-search" style={{
-           
+      background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text',
            fontSize: '30px',
            padding: '5px',
            borderRadius: '50%',
@@ -47,7 +48,8 @@ const GameChangerIP = () => {
                           <h3 style={{ fontSize: '35px',fontWeight:'800',background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
     WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
     color: 'transparent', fontWeight:'800'}}><i className="fa fa-folder-open" style={{
-           
+      background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text',
            fontSize: '30px',
            padding: '5px',
            borderRadius: '50%',
@@ -70,7 +72,8 @@ const GameChangerIP = () => {
                           <h3 style={{ fontSize: '35px',fontWeight:'800', background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
     WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
     color: 'transparent', fontWeight:'800'}}><i className="fas fa-dollar-sign" style={{
-           
+      background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text',
            fontSize: '30px',
            padding: '5px',
            borderRadius: '50%',
@@ -102,7 +105,8 @@ const GameChangerIP = () => {
                           <h3 style={{ fontSize: '35px',fontWeight:'800',background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
     WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
     color: 'transparent', fontWeight:'800' }}><i className="fa fa-cogs" style={{
-           
+      background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text',
            fontSize: '30px',
            padding: '5px',
            borderRadius: '50%',
@@ -125,7 +129,8 @@ const GameChangerIP = () => {
                           <h3 style={{ fontSize: '35px',fontWeight:'800', background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
     WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
     color: 'transparent', fontWeight:'800' }}><i className="fa fa-globe-americas" style={{
-           
+      background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text',
            fontSize: '30px',
            padding: '5px',
            borderRadius: '50%',
@@ -148,7 +153,8 @@ const GameChangerIP = () => {
                           <h3 style={{ fontSize: '35px',fontWeight:'800', background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
     WebkitBackgroundClip: 'text', // Use -webkit prefix for browser compatibility
     color: 'transparent', fontWeight:'800' }}><i className="fa fa-users" style={{
-           
+      background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
+    WebkitBackgroundClip: 'text',
            fontSize: '30px',
            padding: '5px',
            borderRadius: '50%',
