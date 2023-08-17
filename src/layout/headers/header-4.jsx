@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import NotifyUser from '../../components/elements/notify_user';
 import useSticky from '../../hooks/use-sticky';
 import MobileMenu from './mobile-menu';
 import styled from 'styled-components';
@@ -49,6 +50,7 @@ const CenteredDialogActions = styled(DialogActions)({
 
 const HeaderFour = () => {
   const { headerSticky } = useSticky();
+  const [notify, setNotify] = useState(false);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
   const openDialog = () => {
@@ -57,6 +59,7 @@ const HeaderFour = () => {
 
   const closeDialog = () => {
     setIsDialogOpen(false);
+    setNotify(true);
   };
   return (
     <React.Fragment>
@@ -98,17 +101,16 @@ const HeaderFour = () => {
       <DialogTitle style={{textAlign:'center',}}>
        We are Excited to Bring You Our Cross Border IP Platform!
       </DialogTitle>
-      <DialogContent style={{textAlign:"center",fontWeight:"400",fontSize:"19px",fontFamily:'Inter',color:"#8C8E8F"}}>
+      <DialogContent style={{textAlign:"center",fontWeight:"400",fontSize:"20px", position: "relative", top: "22px" ,fontFamily:'Inter',color:"#8C8E8F"}}>
        
         Currently Under Construction, Coming Soon!<br/>Click the Button Below to Get Notified When We Launch!
       </DialogContent>
       <DialogActions>
-        <ColorButton onClick={closeDialog} style={{width:"170px",height:"60px",fontFamily:'Inter',fontWeight:'600'}}>Notify Me on Launch</ColorButton>
+        <ColorButton onClick={closeDialog} style={{width:"170px",height:"60px",position: "relative" , top: "45px", fontFamily:'Inter',fontWeight:'600'}}>Notify Me on Launch</ColorButton>
       </DialogActions>
       </CenteredDialogActions>
-
 </WhiteDialog>
-
+  <NotifyUser shouldOpen={notify} title="Subscribe to Us" img_url="assets/img/logo/logo-blue.png" />
       {/* <!-- mobile-menu-area --> */}
       <MobileMenu logo={"logo-blue.png"} />
       {/* <!-- mobile-menu-area-end --> */}

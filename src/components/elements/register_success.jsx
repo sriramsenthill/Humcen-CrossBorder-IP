@@ -28,7 +28,7 @@ const ColorButton = styled(Button)(({ theme }) => ({
     "& .MuiPaper-root": {
       backgroundColor: "white",
       width: "490px",
-      height: "340px",
+      height: "380px",
     padding:'6px',
       borderRadius: "10px",
     },
@@ -44,7 +44,7 @@ const ColorButton = styled(Button)(({ theme }) => ({
 
  
 
-export default function RegisterDialogBox({title, description, img_url}){
+export default function RegisterDialogBox({shouldOpen, title, description, img_url}){
    
     const router = useRouter();
     const handleOk = () => {
@@ -54,7 +54,7 @@ export default function RegisterDialogBox({title, description, img_url}){
     
 
       return(
-        <WhiteDialog open={true}>
+        <WhiteDialog open={shouldOpen}>
      <CenteredDialogActions>
       <DialogTitle>
         {/* Replace 'your-image-url.jpg' with the actual URL of the image */}
