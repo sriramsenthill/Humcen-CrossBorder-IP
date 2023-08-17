@@ -33,10 +33,10 @@ const HelpCreators= () => {
               <span className='tp-title-sm'style={{fontSize:'48px', background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',color: 'transparent',WebkitBackgroundClip: 'text',}}>IP Future!</span></h2>
             </div>
             <div className='d-flex m-0' style={{width:'100%'}}>
-              <ChoseItem duration='.3s' delay='.5s' icon='flaticon-group' image={'/assets/img/about/security_10650589.png'} title={<>Protect Your IP Creations</>}
+              <ChoseItem duration='.3s' delay='.5s' icon='flaticon-group' image={'/assets/img/about/creation.png'} title={<>Protect Your IP Creations</>}
                 text={'24+ Team Member'} listItems={innovatorsList}/>
-              <ChoseItem duration='.5s' delay='.7s' item_num={'tpchosebox-three'} color="fea-color-5" icon='fas fa-star' title={<>Manage Your IP Portfolio </>} image={'/assets/img/about/personal-data_1809793.png'} text={'100% Client Satisfied'} listItems={businessList} />
-              <ChoseItem duration='.7s' delay='.9s' item_num={'tpchosebox-two'} color="fea-color-4" icon='flaticon-web' title={<>Monetize Your IP Assets </>} image={'/assets/img/about/lock_7498866.png'} text={'65.04 k Reach'} listItems={ipList} />
+              <ChoseItem duration='.5s' delay='.7s' item_num={'tpchosebox-three'} color="fea-color-5" icon='fas fa-star' title={<>Manage Your IP Portfolio </>} image={'/assets/img/about/port.png'} text={'100% Client Satisfied'} listItems={businessList} />
+              <ChoseItem duration='.7s' delay='.9s' item_num={'tpchosebox-two'} color="fea-color-4" icon='flaticon-web' title={<>Monetize Your IP Assets </>} image={'/assets/img/about/assest.png'} text={'65.04 k Reach'} listItems={ipList} />
           </div>
           </div>
         </div>

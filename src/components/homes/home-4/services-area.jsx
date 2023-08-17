@@ -56,9 +56,9 @@ const ServicesArea = () => {
                 <div className="tp-sv-border-effect">
                   <div
                     className="tp-service-item-four mb-30"
-                    style={{ height: "500px" }}
+                    style={{ height: "450px" }}
                   >
-                    <div className="tp-service-item-four__img mb-40">
+                    <div class="tp-service-item-four__img mb-40 bg-white ">
                       <img
                         src={img}
                         alt={title}
@@ -66,7 +66,7 @@ const ServicesArea = () => {
                       />
                     </div>
                     <div className="tp-service-item-four__title">
-                      <h3 className="tp-sv-sm-title">
+                      <h3 className="tp-sv-sm-title" style={{fontWeight:"bold "}}>
                         <a>{title}</a>
                       </h3>
                     </div>
@@ -85,7 +85,7 @@ const ServicesArea = () => {
             data-wow-duration="1.1s"
             data-wow-delay="1.3s"
           >
-            <div className="sv-color-eight mb-30" style={{ height: "500px" }}>
+            <div className="sv-color-eight mb-30" style={{ height: "450px" }}>
               <div className="sv-color-eight__title text-center d-flex flex-column align-items-center justify-content-center h-100">
                 <h3 className="tp-sv-sm-title">
                   <a onClick={toggleMoreServices} style={{ cursor: "pointer" }}>

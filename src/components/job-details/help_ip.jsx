@@ -33,10 +33,10 @@ const HelpIP= () => {
               <span className='tp-title-sm'style={{fontSize:'48px', background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',color: 'transparent',WebkitBackgroundClip: 'text',}}>Elevate your IP career starting today.</span></h2>
             </div>
             <div className='d-flex m-0' style={{width:'100%'}}>
-              <ChoseItem duration='.3s' delay='.5s' icon='flaticon-group' image={'/assets/img/about/graph_8708754.png'} title={<>Boost Your IP Expertise</>}
+              <ChoseItem duration='.3s' delay='.5s' icon='flaticon-group' image={'/assets/img/about/exp.png'} title={<>Boost Your IP Expertise</>}
                 text={'24+ Team Member'} listItems={innovatorsList}/>
-              <ChoseItem duration='.5s' delay='.7s' item_num={'tpchosebox-three'} color="fea-color-5" icon='fas fa-star' image={'/assets/img/about/business_10737760.png'} title={<>Fine-tuned IP portfolio control </>} text={'100% Client Satisfied'} listItems={businessList} />
-              <ChoseItem duration='.7s' delay='.9s' item_num={'tpchosebox-two'} color="fea-color-4" icon='flaticon-web' image={'/assets/img/about/innovation_1481978.png'} title={<>Monetize IP Strategies </>} text={'65.04 k Reach'} listItems={ipList} />
+              <ChoseItem duration='.5s' delay='.7s' item_num={'tpchosebox-three'} color="fea-color-5" icon='fas fa-star' image={'/assets/img/about/portf.png'} title={<>Fine-tuned IP portfolio control </>} text={'100% Client Satisfied'} listItems={businessList} />
+              <ChoseItem duration='.7s' delay='.9s' item_num={'tpchosebox-two'} color="fea-color-4" icon='flaticon-web' image={'/assets/img/about/Monetize.png'} title={<>Monetize IP Strategies </>} text={'65.04 k Reach'} listItems={ipList} />
           </div>
           </div>
         </div>

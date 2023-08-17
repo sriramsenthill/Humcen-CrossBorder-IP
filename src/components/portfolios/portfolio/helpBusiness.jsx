@@ -33,10 +33,10 @@ const helpBusiness= () => {
               <span className='tp-title-sm'style={{fontSize:'48px',  background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',color: 'transparent',WebkitBackgroundClip: 'text',}}>Start amplifying your IP potential today.</span></h2>
             </div>
             <div className='d-flex m-0' style={{width:'100%'}}>
-              <ChoseItem duration='.3s' delay='.5s' icon='flaticon-group' image={'/assets/img/about/padlock_3090004.png'} title={<>Fortify Your Business IP Assets </>}
+              <ChoseItem duration='.3s' delay='.5s' icon='flaticon-group' image={'/assets/img/about/assest.png'} title={<>Fortify Your Business IP Assets </>}
                 text={'24+ Team Member'} listItems={innovatorsList}/>
-              <ChoseItem duration='.5s' delay='.7s' item_num={'tpchosebox-three'} color="fea-color-5" icon='fas fa-star' image={'/assets/img/about/productivity_9563284.png'} title={<>Maximize IP Portfolio Management</>} text={'100% Client Satisfied'} listItems={businessList} />
-              <ChoseItem duration='.7s' delay='.9s' item_num={'tpchosebox-two'} color="fea-color-4" icon='flaticon-web' image={'/assets/img/about/growth_3281306.png'} title={<>Monetize Your Business IP</>} text={'65.04 k Reach'} listItems={ipList} />
+              <ChoseItem duration='.5s' delay='.7s' item_num={'tpchosebox-three'} color="fea-color-5" icon='fas fa-star' image={'/assets/img/about/mang.png'} title={<>Maximize IP Portfolio Management</>} text={'100% Client Satisfied'} listItems={businessList} />
+              <ChoseItem duration='.7s' delay='.9s' item_num={'tpchosebox-two'} color="fea-color-4" icon='flaticon-web' image={'/assets/img/about/busi.png'} title={<>Monetize Your Business IP</>} text={'65.04 k Reach'} listItems={ipList} />
           </div>
           </div>
         </div>

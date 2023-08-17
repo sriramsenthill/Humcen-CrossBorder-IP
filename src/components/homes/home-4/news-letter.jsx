@@ -12,7 +12,7 @@ const { bg_img, btn_text, img, subtitle, title } = news_letter_contents;
 
 const NewsLetter = () => {
   return (
-    <div className="tp-news-letter-area tp-news-letter-bg pt-100 pb-100 mb-55 mx-auto mt-55" style={{ backgroundImage: 'url(assets/img/brand/newbg.png)', borderRadius: '28px', maxWidth: '1000px' }}>
+    <div className="tp-news-letter-area tp-news-letter-bg pt-100 pb-50 mb-55 mx-auto mt-55" style={{ backgroundImage: 'url(assets/img/brand/newbg.png)', borderRadius: '28px', maxWidth: '850px' }}>
       <div className="container">
         <div className="row align-items-center wow tpfadeUp" data-wow-duration=".3s" data-wow-delay=".5s">
           <div className="col-12 text-center">
