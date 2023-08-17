@@ -80,7 +80,7 @@ const Breadcrumb = ({ title, back_home = false }) => {
               </p>
               <div style={{textAlign:'center'}}>
               <Link href="/register">
-              <button className="tp-btn mr-55" style={{ backgroundColor: "#ffffff",color:'#232323' }}>Get In Touch</button>
+              <button className="tp-btn mr-55 mt-20" style={{ backgroundColor: "#ffffff",color:'#232323' }}>Get In Touch</button>
            </Link>
            </div>
             </div>
