@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import NotifyUser from '../../components/elements/notify_user';
 import { useEffect,useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import useFirebase from '../../hooks/use-firebase';
@@ -62,6 +63,7 @@ const HeaderSix = () => {
   const {logout} = useFirebase();
   // dispatch
   const dispatch = useDispatch();
+  const [notify, setNotify] = useState(false);
   const [isDialogOpen, setIsDialogOpen] = useState(false);
 
   const openDialog = () => {
@@ -70,6 +72,7 @@ const HeaderSix = () => {
 
   const closeDialog = () => {
     setIsDialogOpen(false);
+    setNotify(true);
   };
   
   // get_user
@@ -107,19 +110,20 @@ const HeaderSix = () => {
                         <button className="tp-btn mr-55" style={{ backgroundColor: "#00002B" }} onClick={openDialog}>Platform</button>
                         <WhiteDialog open={isDialogOpen} onClose={closeDialog}>
      <CenteredDialogActions>
-      <DialogTitle  style={{textAlign:'center'}}>
+      <DialogTitle style={{textAlign:'center',}}>
        We are Excited to Bring You Our Cross Border IP Platform!
       </DialogTitle>
-      <DialogContent style={{textAlign:"center",fontWeight:"500",fontSize:"20px",fontFamily:'Inter',color:"#8C8E8F"}}>
+      <DialogContent style={{textAlign:"center",fontWeight:"400",fontSize:"20px", position: "relative", top: "22px" ,fontFamily:'Inter',color:"#8C8E8F"}}>
        
         Currently Under Construction, Coming Soon!<br/>Click the Button Below to Get Notified When We Launch!
       </DialogContent>
       <DialogActions>
-        <ColorButton onClick={closeDialog} style={{width:"170px",height:"60px",fontFamily:'Inter',fontWeight:'600'}}>Notify Me on Launch</ColorButton>
+        <ColorButton onClick={closeDialog} style={{width:"170px",height:"60px",position: "relative" , top: "45px", fontFamily:'Inter',fontWeight:'600'}}>Notify Me on Launch</ColorButton>
       </DialogActions>
       </CenteredDialogActions>
-
 </WhiteDialog>
+ <NotifyUser shouldOpen={notify} title="Subscribe to Us" img_url="assets/img/logo/logo-blue.png" />
+ 
                   </div>
                 </div>
               </div>
