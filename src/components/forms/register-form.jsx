@@ -3,6 +3,7 @@ import { Card } from '@material-ui/core';
 import axios from "axios"
 import { CFormSwitch } from '@coreui/react'
 import { useState } from 'react';
+import RegisterDialogBox from '../elements/register_success';
 import DropDown from '../elements/dropdown';
 import { useFormik } from 'formik';
 import { registerSchema } from '../../utils/validation-schema';
@@ -37,6 +38,7 @@ const RegisterForm = () => {
   const [totalMedium, setMedium] = useState(mediums);
   const [medium, handleMediumChange] = useState("");
   const [type, handleTypeChange] = useState("");
+  const [success, setSuccess] = useState(false);
   const [different, setDifferent] = useState(false);
   const [formData, setFormData] = useState({
     name: '',
@@ -62,6 +64,7 @@ const RegisterForm = () => {
 
   const handleSubmit = async(e) => {
     e.preventDefault();
+    setSuccess(true);
     console.log("Final : " + formData);
     const values = Object.values(formData);
     let proceed = true;
@@ -123,9 +126,9 @@ const RegisterForm = () => {
       <div className="tp-mail">
         <label htmlFor="comp">Enquiry Type</label>
         <DropDown intro="Select a Type" choices={totalTypes} onSelect={handleTypeSelect} selectedType={formData.enquiry}/>
-      {type === totalTypes[4] && <div style={{
+      {formData.enquiry === totalTypes[4] && <div style={{
         paddingTop: "20px",
-      }}> <input value={formData.enquiry} onChange={(e) => { setFormData(data => ({...data, enquiry: e.target.value}))}}
+      }}> <input onBlur={(e) => { setFormData(data => ({...data, enquiry: e.target.value}))}}
           type="text" placeholder="Enter the Enquiry Type" id="comp" required/> </div>}
       </div>
 
@@ -134,9 +137,9 @@ const RegisterForm = () => {
       }}>
         <label htmlFor="comp">How did you hear about us?</label>
         <DropDown intro="Select the Medium" choices={totalMedium} onSelect={handleMediumSelect} selectedType={formData.medium}/>
-      {medium === totalMedium[3] && <div style={{
+      {formData.medium === totalMedium[3] && <div style={{
         paddingTop: "20px",
-      }}> <input value={formData.medium} onChange={(e) => { setFormData(data => ({...data, medium: e.target.value}))}}
+      }}> <input onBlur={(e) => { setFormData(data => ({...data, medium: e.target.value}))}}
          type="text" placeholder="Enter the Medium" id="comp" required/> </div>}
       </div>
 
@@ -156,6 +159,9 @@ const RegisterForm = () => {
       <div className="tp-login-button">
         <button className="tp-btn mr-55" style={{ backgroundColor: "#00002B" }} type="submit">Register</button>
       </div>
+
+      {success && <RegisterDialogBox title="Success" description="New User Registered Successfully." img_url="/assets/img/enquiry/done.jpg" />}
+  
     </form>
   );
 };
