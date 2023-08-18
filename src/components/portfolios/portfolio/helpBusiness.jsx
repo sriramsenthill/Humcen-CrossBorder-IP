@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
 const innovatorsList=[
@@ -32,11 +33,11 @@ const helpBusiness= () => {
               <h2>Empower Businesses in Shaping a Resilient IP Future<br/>
               <span className='tp-title-sm'style={{fontSize:'48px',  background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',color: 'transparent',WebkitBackgroundClip: 'text',}}>Start amplifying your IP potential today.</span></h2>
             </div>
-            <div className='d-flex m-0' style={{width:'100%'}}>
-              <ChoseItem duration='.3s' delay='.5s' icon='flaticon-group' image={'/assets/img/about/assest.png'} title={<>Fortify Your Business IP Assets </>}
+            <div className='row' style={{width:'100%', textAlign: "center"}}>
+              <ResponsiveItem duration='.3s' delay='.5s' icon='flaticon-group' image={'/assets/img/about/assest.png'} title={<>Fortify Your Business IP Assets </>}
                 text={'24+ Team Member'} listItems={innovatorsList}/>
-              <ChoseItem duration='.5s' delay='.7s' item_num={'tpchosebox-three'} color="fea-color-5" icon='fas fa-star' image={'/assets/img/about/mang.png'} title={<>Maximize IP Portfolio Management</>} text={'100% Client Satisfied'} listItems={businessList} />
-              <ChoseItem duration='.7s' delay='.9s' item_num={'tpchosebox-two'} color="fea-color-4" icon='flaticon-web' image={'/assets/img/about/busi.png'} title={<>Monetize Your Business IP</>} text={'65.04 k Reach'} listItems={ipList} />
+              <ResponsiveItem duration='.5s' delay='.7s' item_num={'tpchosebox-three'} color="fea-color-5" icon='fas fa-star' image={'/assets/img/about/mang.png'} title={<>Maximize IP Portfolio Management</>} text={'100% Client Satisfied'} listItems={businessList} />
+              <ResponsiveItem duration='.7s' delay='.9s' item_num={'tpchosebox-two'} color="fea-color-4" icon='flaticon-web' image={'/assets/img/about/busi.png'} title={<>Monetize Your Business IP</>} text={'65.04 k Reach'} listItems={ipList} />
           </div>
           </div>
         </div>
@@ -46,6 +47,65 @@ const helpBusiness= () => {
   };
   
 export default helpBusiness;
+
+const ResponsiveItem = ({ duration, delay, item_num,image,listItems, title, text, color }) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 767 );
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+  return (
+    <div
+    className="col-xl-4 col-lg-6 col-md-6 wow tpfadeUp"
+    style={{
+      textAlign: "justify",
+    }}
+    data-wow-duration={duration}
+    data-wow-delay={delay}
+  >
+    <div style={{ marginBottom: "50px", position: "relative", right: isMobile ? "10%" : 0}}>
+      <div
+        className="tp-service-item-four mb-20"
+        style={{
+          height: isMobile ? "600px" : "500px", 
+          width: isMobile ? "340px" : "400px",
+        }}
+      >
+        <div className="tp-service-item-four__img mb-40 mt-0 ml-90 bg-white" style={{textAlign: "right"}}>
+          <img
+            src={image}
+            alt={title}
+            style={{width:'88px'}}
+          />
+        </div>
+        <div className="tp-service-item-four__title">
+        <h4 style={{textAlign:'center'}}>
+                  <a className='tp-title-sm' style={{fontSize:'35px',cursor:'pointer',}}>{title}</a>
+              </h4>
+        </div>
+        <div className="tp-service-item-four__text" style={{textAlign:'left'}}>
+        <ul>
+                {listItems.map(item => (
+             <li key={item.id} style={{ listStyle: 'disc',fontSize:'21px',margin:'15px',textAlign:'justify'}}>{item.text}</li>
+            ))}
+             </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  )
+
+}
+
 
 const ChoseItem = ({ duration, delay, item_num,image,listItems, title, text, color }) => {
 

@@ -104,8 +104,8 @@ const ResponsiveItem = ({ duration, delay, item_num,image,listItems, title, text
       <div
         className="tp-service-item-four mb-20"
         style={{
-          height: "420px", 
-          width: "400px",
+          height: "460px", 
+          width: isMobile ? "340px" : "400px",
         }}
       >
         <div className="tp-service-item-four__img mb-40 mt-0 ml-90 bg-white" style={{textAlign: "right"}}>

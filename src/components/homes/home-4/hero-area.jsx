@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import React from 'react';
+import { useState, useEffect } from 'react';
 import useModal from '../../../hooks/use-modal';
 import { HighlightTwo } from '../../../svg';
 import VideoModal from '../../common/modals/modal-video';
@@ -16,6 +17,20 @@ const hero_contents = {
 const { btn_text, hero_img, shapes,text, title } = hero_contents;
 
 const HeroArea = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 767 );
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
     <React.Fragment>
       <div className="tp-hero-area-two  pt-130 p-relative fix">
@@ -25,26 +40,25 @@ const HeroArea = () => {
         </div>)}
         <div className="container">
           <div className="row">
-            <div className="col-xl-6 col-lg-6">
+            <div className="col-xl-6 col-lg-6 col-sm-12 mb-50">
               <div className="tp-hero-section-box tp-hero-section-box-four pt-120 pb-140">
-              <h3 className="tp-hero-bd-title  wow tpfadeUp" data-wow-duration=".3s" data-wow-delay=".6s" style={{background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',fontSize:"67px",color: 'transparent',WebkitBackgroundClip: 'text',}}>Cross-Border <br/>
+              <h3 className="tp-hero-bd-title  wow tpfadeUp" data-wow-duration=".3s" data-wow-delay=".6s" style={{background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',fontSize: isMobile ? "45px" : "67px",color: 'transparent',WebkitBackgroundClip: 'text',}}>Cross-Border <br/>
  IP Aggregator <br /> and beyond</h3>
                 <p className="wow tpfadeUp" data-wow-duration=".5s" data-wow-delay=".7s">{text}</p>
                 <div className="tp-hero-three-button-box d-flex align-items-center wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".9s">
               
   <Link href="/register">
-    <a className="tp-btn mr-55" style={{ backgroundColor: "#00002B" }}>{btn_text}</a>
+    <a className="tp-btn mr-55" style={{ backgroundColor: "#00002B", position: "relative", left: isMobile ? "20%" : 0 }}>{btn_text}</a>
   </Link>
                 </div>
               </div>
             </div>
-            <div className="col-xl-6 col-lg-6 wow fadeInRight" data-wow-duration=".7s" data-wow-delay=".9s" style={{ marginTop: "-20px" }}>
-  <div className="tp-hero-right-img-four pt-90 col-12 d-none d-lg-block">
-    <img src={hero_img} alt="" style={{ maxWidth: "170%", height: "auto", marginTop: "-95px", marginLeft: "-300px" }} />
+            <div className="col-xl-6 col-lg-6 col-sm-12 wow fadeInRight" data-wow-duration=".7s" data-wow-delay=".9s" style={{ marginTop: "-20px" }}>
+  <div className="tp-hero-right-img-four pt-90 col-12 d-lg-block">
+    <img src={hero_img} alt="" style={{ maxWidth: "170%", height: "auto", marginTop: "-95px", marginLeft: "-300px", width: isMobile && "420px", position: "relative", left: isMobile && "65%" }} />
   </div>
 </div>
-
-          </div>
+    </div>
         </div>
       </div>
 
