@@ -1,4 +1,5 @@
 import React from 'react';
+import {useState, useEffect} from "react";
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -13,17 +14,31 @@ const cardStyle = {
   /* Add any additional inline styling you want for the card appearance */
 };
 
-const connectingLineStyle = {
-  position: 'absolute',
-  top: 0,
-  left: '50%', // Position in the middle
-  transform: 'translateX(-50%)',
-  width: '2px', 
-  height: '100%', 
-  background: '#ccc', 
-};
 
 const Stories = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 1170);
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+  const connectingLineStyle = {
+    position: 'absolute',
+    top: 0,
+    left: isMobile ? "15px" : '50%',
+    transform: isMobile ? 'none' : 'translateX(-50%)',
+    width: '2px',
+    height: '100%',
+    background: '#ccc',
+  };
   return (
     <>
     <h3
@@ -51,10 +66,11 @@ const Stories = () => {
     <VerticalTimeline>
     <div style={connectingLineStyle}></div>
       <VerticalTimelineElement
-        className="vertical-timeline-element"
+        className="vertical-timeline-element--work"
   iconStyle={{ background: '#00002B', color: '#fff' }}
   icon={<FontAwesomeIcon icon={faRocket} />}
   contentStyle={{ border: 'none', padding: '0' }}
+
       >
       <div style={cardStyle}>
         <h3 style={{fontSize:'32px',    background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',

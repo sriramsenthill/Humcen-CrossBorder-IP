@@ -55,7 +55,7 @@ const HelpServices= () => {
       <>
         <div className="ac-chose-area mb-130 ac-chose-bg2">
           <div className="container">
-            <div className="row">
+            <div className="row justify-content-center">
             <div className="tp-service-section-box text-center pb-60"> 
               <h2>Our platform solves major stakeholders challenges in <br/>
               <span className='tp-title-sm'style={{fontSize:'48px',background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',color: 'transparent',WebkitBackgroundClip: 'text',}}>Cross Border IP Industry</span></h2>
@@ -77,26 +77,42 @@ const HelpServices= () => {
 export default HelpServices;
 
 const ResponsiveItem = ({ duration, delay, item_num,image,listItems, title, text, color }) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 767 );
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
     <div
-    className="col-xl-4 col-lg-6 col-md-6 col-sm-12 wow tpfadeUp mr-0"
+    className="col-xl-4 col-lg-6 col-md-6 wow tpfadeUp"
+    style={{
+      textAlign: "justify",
+    }}
     data-wow-duration={duration}
     data-wow-delay={delay}
   >
-    <div style={{width:'100%', position: "relative"}}>
+    <div style={{ marginBottom: "50px", position: "relative", right: isMobile ? "15%" : 0}}>
       <div
         className="tp-service-item-four mb-20"
         style={{
-          height: "100%",
-          position: "relative",
-          left: "5%",
+          height: "420px", 
+          width: "400px",
         }}
       >
-        <div class="tp-service-item-four__img mb-40 mt-0 bg-white ">
+        <div className="tp-service-item-four__img mb-40 mt-0 ml-90 bg-white" style={{textAlign: "right"}}>
           <img
             src={image}
             alt={title}
-            style={{width:'88px', position: "relative", left: "120%"}}
+            style={{width:'88px'}}
           />
         </div>
         <div className="tp-service-item-four__title">

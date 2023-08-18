@@ -28,7 +28,7 @@ const HeroArea = () => {
             <div className="col-xl-6 col-lg-6">
               <div className="tp-hero-section-box tp-hero-section-box-four pt-120 pb-140">
               <h3 className="tp-hero-bd-title  wow tpfadeUp" data-wow-duration=".3s" data-wow-delay=".6s" style={{background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',fontSize:"67px",color: 'transparent',WebkitBackgroundClip: 'text',}}>Cross-Border <br/>
- IP Aggregator,and beyond</h3>
+ IP Aggregator <br /> and beyond</h3>
                 <p className="wow tpfadeUp" data-wow-duration=".5s" data-wow-delay=".7s">{text}</p>
                 <div className="tp-hero-three-button-box d-flex align-items-center wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".9s">
               
