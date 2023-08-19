@@ -23,7 +23,7 @@ const ipList=[
     },
 ]
 
-const helpBusiness= () => {
+const HelpBusiness= () => {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
@@ -60,7 +60,7 @@ const helpBusiness= () => {
     );
   };
   
-export default helpBusiness;
+export default HelpBusiness;
 
 const ResponsiveItem = ({ duration, delay, item_num,image,listItems, title, text, color }) => {
   const [isMobile, setIsMobile] = useState(false);
