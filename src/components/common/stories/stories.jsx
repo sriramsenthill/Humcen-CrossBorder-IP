@@ -6,14 +6,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRocket,faCompass,faCheckCircle,faDraftingCompass} from '@fortawesome/free-solid-svg-icons';
 
 
-const cardStyle = {
-  backgroundColor: '#fff',
-  borderRadius: '8px',
-  padding: '16px',
-  boxShadow: '0 8px 12px rgba(0, 0, 0, 0.1)' , // Adjust the values for a thicker shadow
-  /* Add any additional inline styling you want for the card appearance */
-};
-
 
 const Stories = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -39,6 +31,15 @@ const Stories = () => {
     height: '100%',
     background: '#ccc',
   };
+
+  const cardStyle = {
+    backgroundColor: '#fff',
+    borderRadius: '8px',
+    padding: '16px',
+    boxShadow: '0 8px 12px rgba(0, 0, 0, 0.1)' , // Adjust the values for a thicker shadow
+    /* Add any additional inline styling you want for the card appearance */
+  };
+
   return (
     <>
     <h3
@@ -48,7 +49,7 @@ const Stories = () => {
       fontFamily: 'Poppins, sans-serif',
       fontWeight: '800',
       marginBottom:'60px',
-      fontSize: '58px',
+      fontSize: isMobile ? "42px" : '58px',
     }}
   >
     The Story,<br/>Unearthing Our <span
@@ -69,7 +70,7 @@ const Stories = () => {
         className="vertical-timeline-element--work"
   iconStyle={{ background: '#00002B', color: '#fff' }}
   icon={<FontAwesomeIcon icon={faRocket} />}
-  contentStyle={{ border: 'none', padding: '0' }}
+  contentStyle={{ border: 'none', padding: '0', width: isMobile && "83%" }}
 
       >
       <div style={cardStyle}>
@@ -90,7 +91,7 @@ const Stories = () => {
       <VerticalTimelineElement
         className="vertical-timeline-element"
   iconStyle={{ background: '#00002B', color: '#fff' }}
-  contentStyle={{ border: 'none', padding: '0' }}
+  contentStyle={{ border: 'none', padding: '0', width: isMobile && "83%" }}
         icon={<FontAwesomeIcon icon={faCompass} />}
       >
        <div style={cardStyle}>
@@ -109,7 +110,7 @@ const Stories = () => {
       <VerticalTimelineElement
        className="vertical-timeline-element"
   iconStyle={{ background: '#00002B', color: '#fff' }}
-  contentStyle={{ border: 'none', padding: '0' }}
+  contentStyle={{ border: 'none', padding: '0', width: isMobile && "83%" }}
         icon={<FontAwesomeIcon icon={faDraftingCompass} />}
 
       >
@@ -127,7 +128,7 @@ const Stories = () => {
       className="vertical-timeline-element"
   iconStyle={{ background: '#00002B', color: '#fff' }}
   icon={<FontAwesomeIcon icon={faCheckCircle} />}
-  contentStyle={{ border: 'none', padding: '0' }}
+  contentStyle={{ border: 'none', padding: '0', width: isMobile && "83%" }}
       >
       <div style={cardStyle}>
       <h3 style={{fontSize:'32px',    background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',
