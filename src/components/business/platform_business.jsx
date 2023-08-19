@@ -1,18 +1,32 @@
 import React from 'react';
+import { useState, useEffect } from 'react';
 const image3 = "/assets/img/feature/Tab_Mockup_3.png";
 
 const PlatformBusiness = () => {
+  const [isMobile, setIsMobile] = useState(false);
+  const [widthNow, setWidth] = useState("");
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 767 );
+      setWidth(widthNow);
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
-    <div className="tp-feature-arae pt-20 pb-100 p-relative">
-      <div className="ce-chose-shape d-none d-lg-block">
-        <img src="/assets/img/hero/hero-shape-4.png" alt=""/>
-      </div>
+    <div className={`tp-feature-arae pt-20 ${isMobile ? "pb-20" : "pb-100"} p-relative`}>
       <div className="container">
         <div className="row">
-          <div className="col-xl-6 col-lg-6  wow tpfadeRight ml-110 ml-lg-0 mr-lg-50" data-wow-duration=".5s" data-wow-delay=".7s">
+          <div className={`col-xl-6 col-lg-6  wow tpfadeRight ${isMobile ? "ml-0" : "ml-110"} ml-lg-0 mr-lg-50`} data-wow-duration=".5s" data-wow-delay=".7s">
             <div className="tp-fea-right-side">
               <div className="tp-fea-section-box">
-                <h2 className="tp-title-sm pb-40" style={{fontSize:'47px'}}>The HumCen.io Platform for <span style={{  background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',color: 'transparent',WebkitBackgroundClip: 'text',}}>Businesses</span>
+                <h2 className="tp-title-sm pb-40" style={{fontSize: isMobile ? "33px" :'42px', textAlign: "justify", maxWidth: widthNow}}>The HumCen.io Platform for <span style={{  background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',color: 'transparent',WebkitBackgroundClip: 'text',}}>Businesses</span>
                 </h2>
               </div>
               <div className="fea-wrapper-main">
@@ -32,8 +46,8 @@ const PlatformBusiness = () => {
             </div>
           </div>
           <div className="col-xl-5 col-lg-5 wow tpfadeLeft" data-wow-duration=".5s" data-wow-delay=".5s" style={{ paddingRight: "20px" }}>
-            <div className="tp-fea-img col-12 d-none d-lg-block" style={{ marginLeft: "-308px" , width: "148%", height: "auto", marginTop:"-10px"}}>
-              <img src={image3} alt="" className='ml-130 mt-130' />
+            <div className="tp-fea-img col-12 d-lg-block" style={{ marginLeft: "-308px" , width: isMobile ? "390px" : "148%", height:"auto", marginTop:"-10px", position: "relative", left: isMobile ? "80%" : "5%"}}>
+              <img src={image3} alt="" className={`${isMobile ? "ml-0" : "ml-130" } mt-130`} />
             </div>
           </div>
         </div>

@@ -1,7 +1,22 @@
 import Link from 'next/link';
+import {useState, useEffect} from "react";
 import React from 'react';
 
 const Breadcrumpbusiness = ({ title, back_home = false }) => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 1057);
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
 <section
   style={{
@@ -38,14 +53,16 @@ const Breadcrumpbusiness = ({ title, back_home = false }) => {
       >
         <div className="row wow tpfadeUp">
           <div className="col-xxl-12">
-            <div>
+            <div style={{
+              paddingBottom: isMobile && "80px",
+            }}>
               <h3
                 style={{
                   color: '#ffffff',
                   textAlign: 'center',
                   fontFamily: 'Poppins, sans-serif',
                   fontWeight: '800',
-                  fontSize: '50px',
+                  fontSize: isMobile ? "30px" : '50px',
                   marginTop:'45px',
                   background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',color: 'transparent',WebkitBackgroundClip: 'text',
                 }}
@@ -59,16 +76,17 @@ const Breadcrumpbusiness = ({ title, back_home = false }) => {
                   textAlign: 'center',
                   fontFamily: 'sans-serif',
                   fontWeight: '200',
-                  fontSize: '25px',
+                  fontSize: isMobile ? "20px" : '25px',
+                  textAlign: "center",
                   marginTop:'30px',
                 }}
               >
                   Elevate Your Business with <br /> Robust IP Protection and Revenue Optimization. <br /> <br /> 
               Strategically Boost Your IP Portfolios Worth
 Seamless Transactions, Transparency, <br />and Cost Efficiency Propel Your Business IP Advancement! </p>
-<div style={{textAlign:'center'}}>
+<div style={{textAlign:'center',  position: "relative", bottom: isMobile && "60%", marginBottom: isMobile && "30px"}}>
 <Link href="/register">
-<button className="tp-btn mr-55 mt-60" style={{ backgroundColor: "#ffffff",color:'#232323' }}>Get In Touch</button>
+<button className={`tp-btn mr-55 ${isMobile ? "mt-0" : "mt-60"} ${isMobile ? "mb-30" : "mb-20"}`} style={{ backgroundColor: "#ffffff",color:'#232323', textAlign: "center", position: "relative", left: isMobile ? "8%" : "3%" }}>Get In Touch</button>
      </Link>     
           
            </div>
