@@ -60,7 +60,7 @@ const HelpServices= () => {
               <h2>Our platform solves major stakeholders challenges in <br/>
               <span className='tp-title-sm'style={{fontSize:'48px',background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',color: 'transparent',WebkitBackgroundClip: 'text',}}>Cross Border IP Industry</span></h2>
             </div>
-            <div className='row' style={{width:'100%', textAlign: "center"}}>
+            <div className='row' style={{width:'100%', alignItems: "center"}}>
               <ResponsiveItem duration='.3s' delay='.5s' icon='flaticon-group' title={<>Creators</>}
                 text={'24+ Team Member'} listItems={innovatorsList} image={'/assets/img/about/innovator (1).png'}/>
               <ResponsiveItem duration='.5s' delay='.7s' item_num={'tpchosebox-three'} color="fea-color-5" icon='fas fa-star' title={<>Businesses</>} text={'100% Client Satisfied'} listItems={businessList} image={'/assets/img/about/corporation.png'}/>
@@ -93,7 +93,7 @@ const ResponsiveItem = ({ duration, delay, item_num,image,listItems, title, text
   }, []);
   return (
     <div
-    className="col-xl-4 col-lg-6 col-md-6 wow tpfadeUp"
+    className="col-xl-4 col-lg-4 col-md-9 col-sm-12 wow tpfadeUp"
     style={{
       textAlign: "justify",
     }}
@@ -104,20 +104,24 @@ const ResponsiveItem = ({ duration, delay, item_num,image,listItems, title, text
       <div
         className="tp-service-item-four mb-20"
         style={{
-          height: "460px", 
-          width: isMobile ? "340px" : "400px",
+          height: isMobile ? "auto" : "460px", 
+          width: isMobile ? "130%" : "400px",
         }}
       >
-        <div className="tp-service-item-four__img mb-40 mt-0 ml-90 bg-white" style={{textAlign: "right"}}>
+        <div className="tp-service-item-four__img mb-40 mt-0 bg-white" style={{textAlign: "right"}}>
           <img
             src={image}
             alt={title}
-            style={{width:'88px'}}
+            style={{width:'88px', position: "absolute",
+    left: "50%",
+    transform: "translateX(-50%)" }}
           />
         </div>
-        <div className="tp-service-item-four__title">
+        <div className="tp-service-item-four__title pb-60">
         <h4 style={{textAlign:'center'}}>
-                  <a className='tp-title-sm' style={{fontSize:'35px',cursor:'pointer',}}>{title}</a>
+                  <a className='tp-title-sm' style={{fontSize:'125%',cursor:'pointer' , position: "absolute",
+    left: "50%",
+    transform: "translateX(-50%)"}}>{title}</a>
               </h4>
         </div>
         <div className="tp-service-item-four__text" style={{textAlign:'left'}}>
