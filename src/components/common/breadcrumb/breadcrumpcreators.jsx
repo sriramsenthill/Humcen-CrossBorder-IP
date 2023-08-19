@@ -63,7 +63,7 @@ const BreadcrumbCreators = ({ title, back_home = false }) => {
                   textAlign: 'center',
                   fontFamily: 'Poppins, sans-serif',
                   fontWeight: '800',
-                  fontSize: isMobile ? "30px" : '50px',
+                  fontSize: isMobile ? "35px" : '50px',
                   marginTop:'50px',
                   background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',color: 'transparent',WebkitBackgroundClip: 'text',
                 }}
@@ -76,7 +76,7 @@ const BreadcrumbCreators = ({ title, back_home = false }) => {
                   textAlign: 'center',
                   fontFamily: 'sans-serif',
                   fontWeight: '200',
-                  fontSize: isMobile ? "18px" : '23px',
+                  fontSize: '23px',
                   marginTop:'20px',
                   textAlign: "center",
                 }}

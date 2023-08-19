@@ -67,7 +67,7 @@ const Breadcrumb = ({ title, back_home = false }) => {
                   textAlign: 'center',
                   fontFamily: 'Poppins, sans-serif',
                   fontWeight: '800',
-                  fontSize: isMobile ? "40px" : '70px',
+                  fontSize: isMobile ? "50px" : '70px',
                   marginTop:'37px',
                   background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',color: 'transparent',WebkitBackgroundClip: 'text',
                 }}
@@ -80,7 +80,7 @@ const Breadcrumb = ({ title, back_home = false }) => {
                   textAlign: 'center',
                   fontFamily: 'sans-serif',
                   fontWeight: '200',
-                  fontSize: isMobile ? "18px" : '25px',
+                  fontSize: '25px',
                   marginTop:'40px',
                 }}
               >
