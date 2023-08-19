@@ -28,7 +28,7 @@ const helpBusiness= () => {
       <>
         <div className="ac-chose-area ac-chose-bg3 mb-130">
           <div className="container">
-            <div className="row">
+            <div className="row justify-content-center">
             <div className="tp-service-section-box text-center pb-60"> 
               <h2>Empower Businesses in Shaping a Resilient IP Future<br/>
               <span className='tp-title-sm'style={{fontSize:'48px',  background: 'linear-gradient(270deg, #02E1B9 0%, #00ACF6 100%)',color: 'transparent',WebkitBackgroundClip: 'text',}}>Start amplifying your IP potential today.</span></h2>
@@ -65,37 +65,41 @@ const ResponsiveItem = ({ duration, delay, item_num,image,listItems, title, text
   }, []);
   return (
     <div
-    className="col-xl-4 col-lg-6 col-md-6 wow tpfadeUp"
+    className="col-xl-4 col-lg-4 col-md-9 col-sm-12 wow tpfadeUp"
     style={{
       textAlign: "justify",
     }}
     data-wow-duration={duration}
     data-wow-delay={delay}
   >
-    <div style={{ marginBottom: "50px", position: "relative", right: isMobile ? "10%" : 0}}>
+    <div style={{ marginBottom: "50px", position: "relative", right: isMobile ? "15%" : 0}}>
       <div
         className="tp-service-item-four mb-20"
         style={{
-          height: isMobile ? "600px" : "500px", 
-          width: isMobile ? "340px" : "400px",
+          height: isMobile ? "auto" : "520px", 
+          width: isMobile ? "130%" : "400px",
         }}
       >
-        <div className="tp-service-item-four__img mb-40 mt-0 ml-90 bg-white" style={{textAlign: "right"}}>
+        <div className="tp-service-item-four__img mb-40 mt-0 bg-white" style={{textAlign: "right"}}>
           <img
             src={image}
             alt={title}
-            style={{width:'88px'}}
+            style={{width:'88px', position: "absolute",
+    left: "50%",
+    transform: "translateX(-50%)" }}
           />
         </div>
-        <div className="tp-service-item-four__title">
+        <div className="tp-service-item-four__title pb-120">
         <h4 style={{textAlign:'center'}}>
-                  <a className='tp-title-sm' style={{fontSize:'35px',cursor:'pointer',}}>{title}</a>
+                  <a className='tp-title-sm' style={{fontSize:'125%',cursor:'pointer' , position: "absolute",
+    left: "50%",
+    transform: "translateX(-50%)"}}>{title}</a>
               </h4>
         </div>
         <div className="tp-service-item-four__text" style={{textAlign:'left'}}>
         <ul>
                 {listItems.map(item => (
-             <li key={item.id} style={{ listStyle: 'disc',fontSize:'21px',margin:'15px',textAlign:'justify'}}>{item.text}</li>
+             <p key={item.id} style={{ listStyle: 'disc',fontSize:'21 px', textAlign: "justify"}}>{item.text}</p>
             ))}
              </ul>
         </div>
@@ -105,7 +109,6 @@ const ResponsiveItem = ({ duration, delay, item_num,image,listItems, title, text
   )
 
 }
-
 
 const ChoseItem = ({ duration, delay, item_num,image,listItems, title, text, color }) => {
 
