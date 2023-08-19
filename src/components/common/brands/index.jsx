@@ -54,7 +54,13 @@ const Index = () => {
         // when window width is >= 576px
         576: {
           slidesPerView: 3,
-        }
+        },
+        433: {
+          slidesPerView: 2,
+        },
+        325: {
+          slidesPerView: 1,
+        },
       }}
     >
       {brand_images.map((brand, i) => (
