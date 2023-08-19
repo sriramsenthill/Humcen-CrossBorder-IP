@@ -24,9 +24,23 @@ const ipList=[
 ]
 
 const HelpIP= () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 767 );
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
     return (
       <>
-        <div className="ac-chose-area ac-chose-bg3 mb-130">
+        <div className={`ac-chose-area ac-chose-bg3 ${isMobile ? "mb-20" : "mb-130" }`}>
           <div className="container">
             <div className="row justify-content-center">
             <div className="tp-service-section-box text-center pb-60"> 
