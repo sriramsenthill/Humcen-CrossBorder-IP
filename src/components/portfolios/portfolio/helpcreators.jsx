@@ -24,9 +24,23 @@ const ipList=[
 ]
 
 const HelpCreators= () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 767 );
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
     return (
       <>
-        <div className="ac-chose-area ac-chose-bg3 mb-130">
+        <div className={`ac-chose-area ac-chose-bg3 ${isMobile ? "mb-0" : "mb-130" }`}>
           <div className="container">
             <div className="row justify-content-center">
             <div className="tp-service-section-box text-center pb-60"> 
@@ -90,7 +104,7 @@ const ResponsiveItem = ({ duration, delay, item_num,image,listItems, title, text
     transform: "translateX(-50%)" }}
           />
         </div>
-        <div className="tp-service-item-four__title pb-80">
+        <div className="tp-service-item-four__title pb-110">
         <h4 style={{textAlign:'center'}}>
                   <a className='tp-title-sm' style={{fontSize:'125%',cursor:'pointer' , position: "absolute",
     left: "50%",
