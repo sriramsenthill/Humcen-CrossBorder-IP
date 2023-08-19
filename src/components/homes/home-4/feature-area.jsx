@@ -1,9 +1,10 @@
 import React from 'react';
 import { FeatureOne, FeatureThree, FeatureTwo, } from '../../../svg';
+import { useState, useEffect } from 'react';
 import FeatureOnes from '../../../svg/feature-one';
 import FeatureTwos from '../../../svg/feature-two';
 import FeatureThrees from '../../../svg/feature-three';
-  const image3 = "/assets/img/feature/tab_2.png";
+const image3 = "/assets/img/feature/tab_2.png";
 
 const feature_contents = {
   feature_img:'/assets/img/feature/tab_1.png',
@@ -54,16 +55,32 @@ const feature_lists_2=[
 const {feature_img,feature_lists,highlight_text,subtitle,title} = feature_contents;
 
 const FeatureArea = () => {
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 767 );
+    };
+
+    handleResize(); // Initial check
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
   return (
-    <div className="tp-feature-arae pt-130 pb-100 p-relative">
-      <div className="ce-chose-shape d-none d-lg-block">
+    <div className={`tp-feature-arae ${isMobile ? "pt-35" : "pt-130"} ${isMobile ? "pb-20" : "pb-100"} p-relative`}>
+      <div className="ce-chose-shape d-lg-block">
         <img src="/assets/img/hero/hero-shape-4.png" alt=""/>
       </div>
       <div className="container">
         <div className="row">
         <div className="col-xl-6 col-lg-6 wow tpfadeLeft" data-wow-duration=".5s" data-wow-delay=".5s" style={{ paddingRight: "20px" }}>
-  <div className="tp-fea-img col-12 d-none d-lg-block" style={{ marginLeft: "-308px" , width: "138%", height: "auto", marginTop:"-10px"}}>
-    <img src={feature_img} alt="" className='ml-110 mt-140' />
+  <div className="tp-fea-img col-12 d-lg-block" style={{ marginLeft: "-308px" , width: "132%", height: "auto", marginTop:"-10px"}}>
+    <img src={feature_img} alt="" className={`ml-110 ${isMobile ? "mt-0" : "mt-140"}`} style={{width: isMobile && "390px",  position: "relative",
+    left: isMobile ? "80%" : "55%",
+    transform: "translateX(-50%)"}} />
   </div>
 </div>
 
@@ -118,8 +135,10 @@ const FeatureArea = () => {
           </div>
 
           <div className="col-xl-6 col-lg-6 ml-220 wow tpfadeLeft" data-wow-duration=".5s" data-wow-delay=".5s" style={{ paddingRight: "20px" }}>
-      <div className="tp-fea-img col-12 d-none d-lg-block" style={{  width: "120%", height: "auto", marginTop:"-10px"}}>
-    <img src={image3} alt="" className='mr-120 mt-90'/>
+      <div className="tp-fea-img col-12 d-lg-block" style={{  width: "120%", height: "auto", marginTop:"-10px"}}>
+    <img src={image3} alt="" className={`mr-120 ${ isMobile ? "mt-0" : "mt-90"}`} style={{width: isMobile && "390px",  position: "relative",
+    left: isMobile ? "42%" : "45%",
+    transform: "translateX(-50%)"}}/>
   </div>
 </div>
 
