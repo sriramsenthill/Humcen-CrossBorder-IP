@@ -136,7 +136,7 @@ const FeatureArea = () => {
 
           <div className="col-xl-6 col-lg-6 ml-220 wow tpfadeLeft" data-wow-duration=".5s" data-wow-delay=".5s" style={{ paddingRight: "20px" }}>
       <div className="tp-fea-img col-12 d-lg-block" style={{  width: "120%", height: "auto", marginTop:"-10px"}}>
-    <img src={image3} alt="" className={`mr-120 ${ isMobile ? "mt-0" : "mt-90"}`} style={{width: isMobile && "390px",  position: "relative",
+    <img src={image3} alt="" className={`${ isMobile ? "mr-0" : "mr-120"} ${ isMobile ? "mt-0" : "mt-90"}`} style={{width: isMobile && "390px",  position: "relative",
     left: isMobile ? "42%" : "45%",
     transform: "translateX(-50%)"}}/>
   </div>

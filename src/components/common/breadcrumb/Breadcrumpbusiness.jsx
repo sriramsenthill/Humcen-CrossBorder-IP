@@ -21,7 +21,7 @@ const Breadcrumpbusiness = ({ title, back_home = false }) => {
 <section
   style={{
     backgroundImage: 'url(assets/img/brand/bg.png)', // Updated image path
-    height: '100vh',
+    height: isMobile ? "auto" : '100vh',
     backgroundPosition: 'center', // Center the background image
     backgroundSize: 'cover', // Make the background image cover the entire area
     position: 'relative', // Add this to enable curved bottom
@@ -48,10 +48,10 @@ const Breadcrumpbusiness = ({ title, back_home = false }) => {
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
-          height: '100%',
+          height: "auto",
         }}
       >
-        <div className="row wow tpfadeUp">
+        <div className={`row wow tpfadeUp ${isMobile ? "mt-80" : "mt-140"}`}>
           <div className="col-xxl-12">
             <div style={{
               paddingBottom: isMobile && "80px",
@@ -86,7 +86,7 @@ const Breadcrumpbusiness = ({ title, back_home = false }) => {
 Seamless Transactions, Transparency, <br />and Cost Efficiency Propel Your Business IP Advancement! </p>
 <div style={{textAlign:'center',  position: "relative", bottom: isMobile && "60%", marginBottom: isMobile && "30px"}}>
 <Link href="/register">
-<button className={`tp-btn mr-55 ${isMobile ? "mt-0" : "mt-60"} ${isMobile ? "mb-30" : "mb-20"}`} style={{ backgroundColor: "#ffffff",color:'#232323', textAlign: "center", position: "relative", left: isMobile ? "8%" : "3%" }}>Get In Touch</button>
+<button className={`tp-btn mr-75 ${isMobile ? "mt-0" : "mt-40"} ${isMobile ? "mb-30" : "mb-20"}`} style={{ backgroundColor: "#ffffff",color:'#232323', textAlign: "center", position: "relative", left: isMobile ? "8%" : "3%" }}>Get In Touch</button>
      </Link>     
           
            </div>

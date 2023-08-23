@@ -21,7 +21,7 @@ const HomeFour = () => {
 
   return (
     <Wrapper>
-      <HeaderFour />
+      <HeaderFour home={true} />
       <HeroArea/>
       <WhatWeDo/>
       <HelpServices/>

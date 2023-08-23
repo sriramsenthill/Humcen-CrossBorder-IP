@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { FooterThree, HeaderSix, Wrapper } from '../../layout';
+import { FooterThree, HeaderFour, Wrapper } from '../../layout';
 import { animationCreate } from '../../utils/utils';
 import BreadcrumbIP from '../common/breadcrumb/breadcrumb_ip';
 import JobDetailsArea from './job-details-area';
@@ -19,7 +19,7 @@ const JobDetails = ({job}) => {
 
   return (
     <Wrapper>
-      <HeaderSix/>
+      <HeaderFour/>
       <BreadcrumbIP />
       <HelpIP />
       <PlatformIP />

@@ -48,7 +48,7 @@ const HeroArea = () => {
                 <div className="tp-hero-three-button-box d-flex align-items-center wow tpfadeUp" data-wow-duration=".7s" data-wow-delay=".9s">
               
   <Link href="/register">
-    <a className="tp-btn mr-55" style={{ backgroundColor: "#00002B", position: "relative", left: isMobile ? "20%" : 0 }}>{btn_text}</a>
+    <a className="tp-btn mr-55" style={{ backgroundColor: "#00002B", position: "relative", left: 0 }}>{btn_text}</a>
   </Link>
                 </div>
               </div>

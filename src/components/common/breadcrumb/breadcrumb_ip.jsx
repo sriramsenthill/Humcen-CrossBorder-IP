@@ -21,7 +21,7 @@ const BreadcrumbIP = ({ title, back_home = false }) => {
     <section
     style={{
       backgroundImage: 'url(assets/img/brand/bg.png)', // Updated image path
-      height: '100vh',
+      height: isMobile ? "auto" : '100vh',
       backgroundPosition: 'center', // Center the background image
       backgroundSize: 'cover', // Make the background image cover the entire area
       position: 'relative', // Add this to enable curved bottom
@@ -48,12 +48,14 @@ const BreadcrumbIP = ({ title, back_home = false }) => {
           flexDirection: 'column',
           justifyContent: 'center',
           alignItems: 'center',
-          height: '100%',
+          height: 'auto',
         }}
       >
-        <div className="row wow tpfadeUp">
+        <div className={`row wow tpfadeUp ${isMobile ? "mt-80" : "mt-140"}`}>
           <div className="col-xxl-12">
-            <div>
+            <div style={{
+              paddingBottom: isMobile && "80px",
+            }}>
               <h3
                 style={{
                   color: '#ffffff',
@@ -83,9 +85,9 @@ const BreadcrumbIP = ({ title, back_home = false }) => {
 
              Join our platform as we onboard skilled IP professionals from around the world.<br/> Unlock abundant job prospects, work remotely, and boost your earnings.
               </p>
-              <div style={{textAlign:'center' ,  position: "relative", bottom: isMobile && "60%", marginBottom: isMobile && "180px"}}>
+              <div style={{textAlign:'center' ,  position: "relative", bottom: isMobile && "60%" , marginBottom: isMobile && "180px"}}>
               <Link href="/register">
-              <button className={`tp-btn mr-55 ${isMobile ? "mt-0" : "mt-70"}`} style={{ backgroundColor: "#ffffff",color:'#232323', textAlign: "center", position: "relative", left: isMobile ? "8%" : "3%" }}>Get In Touch</button>
+              <button className={`tp-btn mr-75 ${isMobile ? "mt-0" : "mt-40"}`} style={{ backgroundColor: "#ffffff",color:'#232323', textAlign: "center", position: "relative", left: isMobile ? "8%" : "3%" }}>Get In Touch</button>
               </Link>
            </div>
             </div>

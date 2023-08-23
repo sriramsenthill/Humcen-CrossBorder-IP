@@ -19,7 +19,7 @@ const Portfolio = () => {
 
   return (
     <Wrapper>
-    <HeaderSix/>
+    <HeaderFour/>
      <BreadcrumbCreators/>
      <HelpCreators/>
      <PlatformCreators/>

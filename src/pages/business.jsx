@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { FooterThree, HeaderSix, Wrapper } from '../layout';
+import { FooterThree, HeaderFour, Wrapper } from '../layout';
 import { animationCreate } from '../utils/utils';
 import Breadcrumb from '../components/common/breadcrumb/breadcrumb';
 import Breadcrumpbusiness from '../components/common/breadcrumb/Breadcrumpbusiness';
@@ -21,7 +21,7 @@ const Business = () => {
   return (
     <Wrapper>
      <SEO pageTitle={'Humcen - Cross Border IP Aggregator'} />
-      <HeaderSix />
+      <HeaderFour />
       <Breadcrumpbusiness />
       <HelpBusiness />
       <PlatformBusiness />

@@ -119,15 +119,22 @@ const ResponsiveItem = ({ duration, delay, item_num,image,listItems, title, text
         </div>
         <div className="tp-service-item-four__title pb-60">
         <h4 style={{textAlign:'center'}}>
-                  <a className='tp-title-sm' style={{fontSize:'125%',cursor:'pointer' , position: "absolute",
+                  <a className='tp-title-sm' style={{fontSize: isMobile ? '112%': "125%",cursor:'pointer' , position: "absolute",
     left: "50%",
     transform: "translateX(-50%)"}}>{title}</a>
               </h4>
         </div>
-        <div className="tp-service-item-four__text" style={{textAlign:'left'}}>
-        <ul>
+        <div className="tp-service-item-four__text" style={{
+    position: "relative",
+    textAlign: "justify",
+    left: "57%",
+    transform: "translateX(-50%)"
+        }}>
+        <ul style={{
+          textAlign: "center",
+        }}>
                 {listItems.map(item => (
-             <li key={item.id} style={{ listStyle: 'disc',fontSize:'21px',margin:'15px',textAlign:'justify'}}>{item.text}</li>
+             <li key={item.id} style={{ listStyle: 'disc',fontSize: isMobile ? "16px" : '21px',margin:'15px',textAlign:'left'}}>{item.text}</li>
             ))}
              </ul>
         </div>
