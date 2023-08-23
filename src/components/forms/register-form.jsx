@@ -157,7 +157,7 @@ const RegisterForm = () => {
       </div>
 
       <div className="tp-login-button">
-        <button className="tp-btn mr-55" style={{ backgroundColor: "#00002B" }} type="submit">Register</button>
+        <button className="tp-btn mr-55" style={{ backgroundColor: "#00002B" }} type="submit">Submit</button>
       </div>
     <RegisterDialogBox shouldOpen={success} title="Success" description="New User Registered Successfully." img_url="/assets/img/enquiry/done.jpg" />
   

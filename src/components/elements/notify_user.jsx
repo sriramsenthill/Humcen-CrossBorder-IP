@@ -56,15 +56,21 @@ export default function NotifyUser({shouldOpen, title, img_url}){
     const [email, setEmail] = useState("");
     const [open, setShouldOpen] = useState(shouldOpen);
     const handleOk = async() => {
+      if (email.length > 0) {
         shouldOpen = false;
         setShouldOpen(true);
-        console.log(email);
-        const response = await api.put("notify-customer", {
+      } else {
+        try {
+          const response = await api.put("notify-customer", {
             customerEmail: email
         });
-        console.log("Response sent Successfully");
-        window.location.reload(true);
-        window.location.href = '/';
+        } catch(error) {
+          console.error("Error in sending the User Email.");
+        }
+      console.log("Response sent Successfully");
+      window.location.reload(true);
+      window.location.href = '/';
+      }
       };
     
 
@@ -87,6 +93,7 @@ export default function NotifyUser({shouldOpen, title, img_url}){
             fullWidth
             variant="standard"
             onBlur={(e) => setEmail(e.target.value)} // Add this line to check if typing works
+            required={true}
           />
         {/* <h1 style={{textAlign:"center",fontWeight:"600",fontSize:"22px",fontFamily:'Inter',color:"#00002B"}}>{title}</h1>
         <input type="email" placeholder="Enter your Email Address" ></input> */}

@@ -116,7 +116,7 @@ const HeaderFour = ({home}) => {
 </WhiteDialog>
   <NotifyUser shouldOpen={notify} title="Subscribe to Us" img_url="assets/img/logo/logo-blue.png" />
       {/* <!-- mobile-menu-area --> */}
-      <MobileMenu />
+      <MobileMenu home={true} />
       {/* <!-- mobile-menu-area-end --> */}
     </React.Fragment>
   );

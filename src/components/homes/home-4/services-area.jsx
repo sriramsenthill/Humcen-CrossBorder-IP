@@ -18,7 +18,7 @@ const ServicesArea = () => {
   };
 
   return (
-    <div className="tp-service-area pb-90 grey-bg mt-80">
+    <div className="tp-service-area pb-90 grey-bg mt-0">
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-xl-7 col-lg-10">
@@ -82,8 +82,8 @@ const ServicesArea = () => {
             className={`col-xl-3 col-lg-4 col-md-6 wow tpfadeUp ${
               showMoreServices ? "d-none" : ""
             }`}
-            data-wow-duration="1.1s"
-            data-wow-delay="1.3s"
+            data-wow-duration="0.5s"
+            data-wow-delay="0.7s"
           >
             <div className="sv-color-eight mb-30" style={{ height: "420px" }}>
               <div className="sv-color-eight__title text-center d-flex flex-column align-items-center justify-content-center h-100">

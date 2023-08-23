@@ -19,7 +19,7 @@ const WhatWeDo = () => {
     };
   }, []);
   return (
-       <div className={`ac-chose-bg3 ${isMobile ? "mb-0" : "mb-50"}`}>
+       <div className={`ac-chose-bg3 "mb-0"`}>
         <div className="row">
         <div className="col-xl-5 col-lg-5 wow tpfadeLeft" data-wow-duration=".5s" data-wow-delay=".5s" style={{ paddingRight: "20px" }}>
       { !isMobile && <div className="tp-fea-img col-12 d-lg-block" style={{ marginLeft: "-308px" , width: isMobile ? "420px" : "170%", height: "auto", marginTop:"-10px", position: "relative", left: isMobile && "60%"}}>

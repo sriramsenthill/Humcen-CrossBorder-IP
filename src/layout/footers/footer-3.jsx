@@ -15,7 +15,7 @@ const footer_contents = {
   ],
   subscribe_title: 'Subscribe Newslatter',
   subscribe_text: 'Exerci tation ullamcorper suscipit lobortis nisl aliquip ex ea commodo',
-  copy_right_text: <>© Copyright ©{new Date().getFullYear()} HumCen. All Rights Reserved Copyright</>,
+  copy_right_text: <>All Rights Reserved</>,
   conditions: []
 }
 
