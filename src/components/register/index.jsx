@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { FooterThree, HeaderSix, Wrapper } from '../../layout';
+import { FooterThree, HeaderFour, Wrapper } from '../../layout';
 import { animationCreate } from '../../utils/utils';
 import RegisterArea from './register-area';
 
@@ -14,14 +14,9 @@ const Register = () => {
 
   return (
     <Wrapper>
-      <HeaderSix />
-      <div style={{
-        position: "relative",
-        top: "150px",
-        paddingBottom: "150px",
-      }}>
+      <HeaderFour home={true} />
+      <div style={{paddingBottom: "150px"}}></div>
         <RegisterArea/>
-      </div>
       <FooterThree />
     </Wrapper>
   );

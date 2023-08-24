@@ -3,9 +3,10 @@ import React from 'react';
 import menu_data from './menu-data';
 
 const NavMenus = ({textColor}) => {
+  const newMenuData = menu_data.slice(0, -1) ;
   return (
     <ul>
-      {menu_data.map((menu, i) => (
+      {newMenuData.map((menu, i) => (
         <li key={i} className={`${menu.has_dropdown ? 'has-dropdown' : ''}
       ${menu.mega_menu ? 'has-mega-menu' : ''}`}>
           <Link href={menu.link}>

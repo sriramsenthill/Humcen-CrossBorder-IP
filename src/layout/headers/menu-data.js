@@ -46,7 +46,15 @@ const menu_data = [
   sub_menus: [
   ],
   },
- 
+  {
+    id:5,
+    mega_menu:false,
+    has_dropdown:false,
+    title:'Contact Us',
+    link:'/register',
+    sub_menus: [
+    ],
+    }
 ]
 export default menu_data;
 
