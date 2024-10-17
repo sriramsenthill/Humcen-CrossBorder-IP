@@ -4,7 +4,7 @@
 Humcen CrossBorder IP is an innovative IP aggregator platform designed to streamline the process of applying for patents anywhere in the world. Our platform enhances the IP application experience for both IP professionals and customers, ensuring efficient and effective global patent management.
 
 ## Project Live Link🌱
-[Insert your project's live link here]
+[https://humcen.io](https://humcen.io)
 
 ## Key Features
 
@@ -33,9 +33,9 @@ Humcen CrossBorder IP is an innovative IP aggregator platform designed to stream
 To install the project, clone the repository:
 
 ```bash
-git clone https://github.com/sriramsenthill/trance.git
+git clone https://github.com/sriramsenthill/Humcen-CrossBorder-IP.git
 ```
-## Setting Up Your MERN Stack Project: Trance
+## Setting Up Your MERN Stack Project: Humcen-CrossBorder-IP
 
 ### Prerequisites
 Before we begin, ensure you have the following installed:
@@ -58,43 +58,28 @@ cd humcen-project
 ### 2. Clone the Project from GitHub
 Clone the project repository using Git:
 ```bash
-git clone https://github.com/sriramsenthill/trance.git
+git clone https://github.com/sriramsenthill/Humcen-CrossBorder-IP.git
 ```
 
 ### 3. Install Dependencies
 Install the necessary dependencies for your MERN stack project:
-1. Open the `client` directory:
+1. Open the `Humcen-CrossBorder-IP` directory:
    ```bash
-   cd trance-project/trance/client
+   cd Humcen-CrossBorder-IP
    ```
 3. Run this command to install dependencies:
    ```bash
    npm i --legacy-peer-deps
    ```
-4. Once the installation is complete, go to the `server` directory:
-   ```bash
-   cd trance-project/trance/server
-   ```
-5. Run the command to install client dependencies:
-   ```bash
-   npm i
-   ```
-6. Install `bcryptjs` for password hashing:
-   ```bash
-   npm install bcryptjs
-   ```
-
+   
 ### 4. Start the Development Server
-1. Go back to the `Server` directory and run:
-   ```bash
-   npm run dev
-   ```
-2. Open another terminal window, navigate to the `client` directory again, and run:
+
+1.  Run this command:
    ```bash
    npm run dev
    ```
 
-This should start both the client and server on your local host at ports 3000 (server) and 3001 (client).
+This should start the client on your local host at port 3000(client).
 
 ---
 
